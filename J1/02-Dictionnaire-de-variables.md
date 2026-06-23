@@ -224,6 +224,28 @@ fact_lead ──(devient)──> dim_membre ──< fact_abonnement ──< fact
 | `taux_ouverture` | Décimal | Taux d'ouverture moyen | `0.34` |
 | `taux_clic_email` | Décimal | Taux de clic email | `0.04` |
 
+### 4.11 `fact_audience` — Audience web (date × appareil)
+| Variable | Type | Description | Exemple |
+|---|---|---|---|
+| `date` | Date | Jour | `2026-06-15` |
+| `device` | Énum | `mobile` · `desktop` · `tablette` | `mobile` |
+| `sessions` | Entier | Sessions | `186` |
+| `utilisateurs` | Entier | Visiteurs uniques | `148` |
+| `duree_moy_session_sec` | Entier | Durée moyenne de session (s) | `78` |
+| `pages_par_session` | Décimal | Pages vues par session | `2.2` |
+| `taux_rebond` | Décimal | Part de sessions à 1 page | `0.60` |
+
+### 4.12 `fact_pages` — Pages vues (date × page)
+| Variable | Type | Description | Exemple |
+|---|---|---|---|
+| `date` | Date | Jour | `2026-06-15` |
+| `page` | Texte | Page du site | `Essai gratuit` |
+| `pages_vues` | Entier | Vues | `112` |
+| `duree_moy_page_sec` | Entier | Temps moyen sur la page (s) | `55` |
+| `taux_sortie` | Décimal | Part de sorties depuis la page | `0.31` |
+
+> Source : Google Analytics. Reliées par `date` (+ `device` / `page`). Sessions cohérentes avec `fact_acquisition.sessions_site`.
+
 ---
 
 ## 5. Indicateurs calculés (KPI)

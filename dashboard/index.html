@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<style>.pane{display:none}.pane.active{display:block}.diag{display:block}</style></head>
+<style>.pane{display:none}.pane.active{display:block}.diag{display:block}nav[data-tab="web"] .mu-nav[data-nav="web"]{background:rgba(170,203,85,0.16)!important;color:#FFFDF8!important;border-left-color:#AACB55!important;font-weight:600!important;}</style></head>
 <body>
 
 
@@ -66,7 +66,8 @@
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
         <span>Rétention / churn</span>
       </div>
-    </nav>
+    <div onclick="go('web')" data-nav="web" class="mu-nav"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><span>Audience web</span></div>
+      </nav>
 
     <div style="margin-top:auto;">
       <div style="border:1px solid rgba(255,253,248,0.14);border-radius:6px;padding:14px;">
@@ -111,7 +112,12 @@
     </header>
 
     <!-- ============ KPI ROW (shared, always visible) ============ -->
-    <section style="display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px;margin-bottom:26px;">
+    
+
+    <!-- ============ TAB: VUE D'ENSEMBLE ============ -->
+    <div class="pane active" data-pane="overview">
+    <div data-screen-label="Vue d'ensemble">
+      <section style="display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px;margin-bottom:26px;">
       <div style="background:#FFFDF8;border:1px solid color-mix(in srgb,#737D74 25%,transparent);border-radius:4px;padding:18px;">
         <div style="font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#737D74;font-weight:500;">MRR · revenu mensuel</div>
         <div style="font-size:27px;font-weight:700;letter-spacing:-0.02em;color:#2A432E;margin-top:10px;line-height:1;white-space:nowrap;">67 120 <span style="font-size:16px;color:#859356;">€</span></div>
@@ -133,7 +139,7 @@
         <div style="font-size:11.5px;color:#737D74;margin-top:8px;">82 adhésions / 600 leads</div>
       </div>
       <div style="background:#FFFDF8;border:1px solid color-mix(in srgb,#737D74 25%,transparent);border-radius:4px;padding:18px;border-left:3px solid #2A432E;">
-        <div style="font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#737D74;font-weight:500;">Risque churn élevé</div>
+        <div style="font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#737D74;font-weight:500;">Risque de churn estimé</div>
         <div style="font-size:27px;font-weight:700;letter-spacing:-0.02em;color:#2A432E;margin-top:10px;line-height:1;white-space:nowrap;">333</div>
         <div style="font-size:11.5px;color:#2A432E;margin-top:8px;font-weight:600;">28 % de la base · à cibler</div>
       </div>
@@ -143,10 +149,6 @@
         <div style="font-size:11.5px;color:#2A432E;margin-top:8px;font-weight:600;">+ 187 inactifs &gt; 30 j</div>
       </div>
     </section>
-
-    <!-- ============ TAB: VUE D'ENSEMBLE ============ -->
-    <div class="pane active" data-pane="overview">
-    <div data-screen-label="Vue d'ensemble">
       <div style="display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:18px;margin-bottom:18px;">
 
         <!-- Funnel -->
@@ -558,7 +560,7 @@
     </div>
     </div>
 
-  </main>
+  <div class="pane" data-pane="web"><div data-screen-label="Audience web"><section style="display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:13px;margin-bottom:18px"><div style="background:#FFFDF8;border:1px solid color-mix(in srgb,#737D74 25%,transparent);border-radius:4px;padding:18px"><div style="font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#737D74;font-weight:500">Sessions</div><div style="font-size:25px;font-weight:700;letter-spacing:-0.02em;color:#2A432E;margin-top:10px;line-height:1;white-space:nowrap">26 705</div><div style="font-size:11.5px;color:#737D74;margin-top:8px">avril → juin</div></div><div style="background:#FFFDF8;border:1px solid color-mix(in srgb,#737D74 25%,transparent);border-radius:4px;padding:18px"><div style="font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#737D74;font-weight:500">Utilisateurs</div><div style="font-size:25px;font-weight:700;letter-spacing:-0.02em;color:#2A432E;margin-top:10px;line-height:1;white-space:nowrap">20 866</div><div style="font-size:11.5px;color:#737D74;margin-top:8px">visiteurs uniques</div></div><div style="background:#FFFDF8;border:1px solid color-mix(in srgb,#737D74 25%,transparent);border-radius:4px;padding:18px"><div style="font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#737D74;font-weight:500">Pages vues</div><div style="font-size:25px;font-weight:700;letter-spacing:-0.02em;color:#2A432E;margin-top:10px;line-height:1;white-space:nowrap">68 950</div><div style="font-size:11.5px;color:#737D74;margin-top:8px">2,6 / session</div></div><div style="background:#FFFDF8;border:1px solid color-mix(in srgb,#737D74 25%,transparent);border-radius:4px;padding:18px"><div style="font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#737D74;font-weight:500">Durée moy. session</div><div style="font-size:25px;font-weight:700;letter-spacing:-0.02em;color:#2A432E;margin-top:10px;line-height:1;white-space:nowrap">1 min 42 s</div><div style="font-size:11.5px;color:#737D74;margin-top:8px">toutes sources</div></div><div style="background:#FFFDF8;border:1px solid color-mix(in srgb,#737D74 25%,transparent);border-radius:4px;padding:18px"><div style="font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#737D74;font-weight:500">Pages / session</div><div style="font-size:25px;font-weight:700;letter-spacing:-0.02em;color:#2A432E;margin-top:10px;line-height:1;white-space:nowrap">2,6</div><div style="font-size:11.5px;color:#737D74;margin-top:8px">profondeur</div></div><div style="background:#FFFDF8;border:1px solid color-mix(in srgb,#737D74 25%,transparent);border-radius:4px;padding:18px"><div style="font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#737D74;font-weight:500">Taux de rebond</div><div style="font-size:25px;font-weight:700;letter-spacing:-0.02em;color:#2A432E;margin-top:10px;line-height:1;white-space:nowrap">55<span style="font-size:16px;color:#859356"> %</span></div><div style="font-size:11.5px;color:#737D74;margin-top:8px">sessions 1 page</div></div></section><div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:18px;margin-bottom:18px"><div style="background:#FFFDF8;border:1px solid color-mix(in srgb,#737D74 25%,transparent);border-radius:4px;padding:24px"><h2 style="margin:0 0 4px;font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:-0.01em;color:#2A432E">Par appareil.</h2><p style="margin:0 0 18px;font-size:12px;color:#737D74">Répartition des sessions.</p><div style="margin-bottom:15px"><div style="display:flex;justify-content:space-between;font-size:13px;margin-bottom:6px"><span style="font-weight:500;text-transform:capitalize">mobile</span><span style="color:#737D74">60 % · 1 min 15 s · rebond 62 %</span></div><div style="height:22px;border-radius:3px;background:color-mix(in srgb,#737D74 8%,transparent)"><div style="height:100%;width:100%;border-radius:3px;background:#AACB55"></div></div></div><div style="margin-bottom:15px"><div style="display:flex;justify-content:space-between;font-size:13px;margin-bottom:6px"><span style="font-weight:500;text-transform:capitalize">desktop</span><span style="color:#737D74">33 % · 2 min 30 s · rebond 44 %</span></div><div style="height:22px;border-radius:3px;background:color-mix(in srgb,#737D74 8%,transparent)"><div style="height:100%;width:55%;border-radius:3px;background:#2A432E"></div></div></div><div style="margin-bottom:15px"><div style="display:flex;justify-content:space-between;font-size:13px;margin-bottom:6px"><span style="font-weight:500;text-transform:capitalize">tablette</span><span style="color:#737D74">7 % · 1 min 50 s · rebond 54 %</span></div><div style="height:22px;border-radius:3px;background:color-mix(in srgb,#737D74 8%,transparent)"><div style="height:100%;width:12%;border-radius:3px;background:#D6E393"></div></div></div></div><div style="background:#FFFDF8;border:1px solid color-mix(in srgb,#737D74 25%,transparent);border-radius:4px;padding:24px"><h2 style="margin:0 0 18px;font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:-0.01em;color:#2A432E">Pages les plus vues.</h2><table style="width:100%;border-collapse:collapse;font-size:13px"><thead><tr style="text-align:right;color:#737D74;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase"><th style="text-align:left;padding:0 0 10px;font-weight:500">Page</th><th style="padding:0 0 10px;font-weight:500">Vues</th><th style="padding:0 0 10px;font-weight:500">Durée moy.</th><th style="padding:0 0 10px;font-weight:500">Sortie</th></tr></thead><tbody style="color:#2A432E"><tr style="border-top:1px solid color-mix(in srgb,#737D74 18%,transparent);text-align:right"><td style="text-align:left;padding:11px 0;font-weight:500">Accueil</td><td style="padding:11px 0">20 749</td><td style="padding:11px 0;color:#737D74">40 s</td><td style="padding:11px 0">35 %</td></tr><tr style="border-top:1px solid color-mix(in srgb,#737D74 18%,transparent);text-align:right"><td style="text-align:left;padding:11px 0;font-weight:500">Offres & tarifs</td><td style="padding:11px 0">13 650</td><td style="padding:11px 0;color:#737D74">1 min 10 s</td><td style="padding:11px 0">45 %</td></tr><tr style="border-top:1px solid color-mix(in srgb,#737D74 18%,transparent);text-align:right"><td style="text-align:left;padding:11px 0;font-weight:500">Essai gratuit</td><td style="padding:11px 0">9 603</td><td style="padding:11px 0;color:#737D74">56 s</td><td style="padding:11px 0">30 %</td></tr><tr style="border-top:1px solid color-mix(in srgb,#737D74 18%,transparent);text-align:right"><td style="text-align:left;padding:11px 0;font-weight:500">Cours collectifs</td><td style="padding:11px 0">8 254</td><td style="padding:11px 0;color:#737D74">50 s</td><td style="padding:11px 0">50 %</td></tr><tr style="border-top:1px solid color-mix(in srgb,#737D74 18%,transparent);text-align:right"><td style="text-align:left;padding:11px 0;font-weight:500">Coaching</td><td style="padding:11px 0">5 568</td><td style="padding:11px 0;color:#737D74">59 s</td><td style="padding:11px 0">48 %</td></tr><tr style="border-top:1px solid color-mix(in srgb,#737D74 18%,transparent);text-align:right"><td style="text-align:left;padding:11px 0;font-weight:500">Le club</td><td style="padding:11px 0">4 848</td><td style="padding:11px 0;color:#737D74">35 s</td><td style="padding:11px 0">52 %</td></tr><tr style="border-top:1px solid color-mix(in srgb,#737D74 18%,transparent);text-align:right"><td style="text-align:left;padding:11px 0;font-weight:500">Blog</td><td style="padding:11px 0">3 515</td><td style="padding:11px 0;color:#737D74">2 min 01 s</td><td style="padding:11px 0">70 %</td></tr><tr style="border-top:1px solid color-mix(in srgb,#737D74 18%,transparent);text-align:right"><td style="text-align:left;padding:11px 0;font-weight:500">Contact</td><td style="padding:11px 0">2 763</td><td style="padding:11px 0;color:#737D74">30 s</td><td style="padding:11px 0">55 %</td></tr></tbody></table></div></div><div style="background:#FFFDF8;border:1px solid color-mix(in srgb,#737D74 25%,transparent);border-radius:4px;border-left:3px solid #AACB55;padding:18px 20px"><div style="font-size:13px;font-weight:600;color:#2A432E;margin-bottom:6px">Lecture</div><p style="margin:0;font-size:12.5px;color:#737D74;line-height:1.5"><b style="color:#2A432E">60 % du trafic est mobile</b> (rebond 62 %). La page « Essai gratuit » a le taux de sortie le plus bas → bon point de conversion à pousser sur mobile.</p></div></div></div></main>
 </div>
 
 

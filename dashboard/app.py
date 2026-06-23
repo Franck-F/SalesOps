@@ -170,61 +170,6 @@ def bar(label, value_txt, pct, color, h=24):
             f'style="--target-width:{pct:.1f}%;background:{color}"></div></div></div>')
 
 d = get_data()
-
-# ---------- Sidebar ----------
-with st.sidebar:
-    logo_path = Path(__file__).resolve().parent.parent / "logomoveup.png"
-    if logo_path.exists():
-        st.image(str(logo_path), width=180)
-    st.markdown('<div class="mu-sub" style="margin-top:-10px;">Pilotage SalesOps</div>', unsafe_allow_html=True)
-    st.markdown("---")
-    st.markdown('<div style="font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,253,248,0.35);font-weight:600;padding:0 4px;margin-bottom:6px">Navigation</div>', unsafe_allow_html=True)
-    tab = st.radio("nav", ["Vue d'ensemble", "Funnel & commercial",
-                           "Acquisition / ROI", "Rétention / churn"], label_visibility="collapsed")
-
-    st.markdown('<div class="mu-bottom-wrapper"><div class="mu-salle"><div class="k">Salle</div>'
-                '<div class="v">124 / 170</div><div class="s">Capacité actuelle</div></div>'
-                '<div class="mu-user"><div class="mu-avatar">CG</div>'
-                '<div class="mu-user-info"><div class="mu-name">Camille G.</div>'
-                '<div class="mu-role">Admin SalesOps</div></div></div></div>', unsafe_allow_html=True)
-
-# ---------- Header & Filtres ----------
-hc = st.columns([2.5, 1.5])
-with hc[0]:
-    st.markdown('<h1 class="mu-title">Pilotage commercial.</h1>'
-                f'<p style="margin:9px 0 0;font-size:14px;color:{MUTE}">Ce qu\'un Excel partagé ne '
-                'montrait pas — leads, conversion, acquisition &amp; rétention, en un coup d\'œil.</p>',
-                unsafe_allow_html=True)
-with hc[1]:
-    TODAY = pd.Timestamp("2026-06-23")
-    periodes = {
-        "2 dernières semaines": TODAY - pd.Timedelta(weeks=2),
-        "4 dernières semaines": TODAY - pd.Timedelta(weeks=4),
-        "8 dernières semaines": TODAY - pd.Timedelta(weeks=8),
-        "12 dernières semaines": TODAY - pd.Timedelta(weeks=12),
-        "Tout l'historique": None,
-    }
-
-    h_cols = st.columns([0.4, 2.5, 2.2])
-    with h_cols[0]:
-        st.markdown('<div style="margin-top:6px;text-align:right">'
-                    '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#737D74" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'
-                    '<rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>'
-                    '<line x1="16" y1="2" x2="16" y2="6"></line>'
-                    '<line x1="8" y1="2" x2="8" y2="6"></line>'
-                    '<line x1="3" y1="10" x2="21" y2="10"></line></svg></div>', unsafe_allow_html=True)
-    with h_cols[1]:
-        periode_sel = st.selectbox("Période d'analyse", list(periodes.keys()), index=0, label_visibility="collapsed")
-    with h_cols[2]:
-        st.markdown('<div style="text-align:right;margin-bottom:8px;margin-top:2px"><span class="mu-badge">'
-                    '<span style="width:7px;height:7px;border-radius:50%;background:#859356"></span>'
-                    'Modèle CIBLE</span></div>', unsafe_allow_html=True)
-    
-    start_date = periodes[periode_sel]
-    if start_date:
-        d["lead"] = d["lead"][d["lead"]["date_creation"] >= start_date]
-        d["acquisition"] = d["acquisition"][d["acquisition"]["date"] >= start_date]
-
 k = D.kpis(d)
 q = D.qualite_commerciale(d)
 roi = D.roi_canal(d)
@@ -246,7 +191,31 @@ def bar(label, value_txt, pct, color, h=24):
     return (f'<div style="margin-bottom:13px"><div class="mu-row">'
             f'<span style="font-weight:500">{label}</span><span style="color:{MUTE}">{value_txt}</span></div>'
             f'<div class="mu-track" style="height:{h}px"><div class="mu-fill" '
-            f'style="--target-width:{pct:.1f}%;background:{color}"></div></div></div>')
+            f'style="width:{pct:.1f}%;background:{color}"></div></div></div>')
+
+
+# ---------- Sidebar ----------
+with st.sidebar:
+    st.markdown('<div class="mu-logo">MoveUp<span>.</span></div>'
+                '<div class="mu-sub">Pilotage SalesOps</div>', unsafe_allow_html=True)
+    st.markdown("---")
+    tab = st.radio("nav", ["Vue d'ensemble", "Funnel & commercial",
+                           "Acquisition / ROI", "Rétention / churn"], label_visibility="collapsed")
+    st.markdown('<div class="mu-salle"><div class="k">Salle</div>'
+                '<div class="v">MoveUp · Versailles</div>'
+                '<div class="s">1 000 m² · 1 200 adhérents</div></div>', unsafe_allow_html=True)
+
+# ---------- Header ----------
+hc = st.columns([3, 1])
+with hc[0]:
+    st.markdown('<h1 class="mu-title">Pilotage commercial.</h1>'
+                f'<p style="margin:9px 0 0;font-size:14px;color:{MUTE}">Ce qu\'un Excel partagé ne '
+                'montrait pas — leads, conversion, acquisition &amp; rétention, en un coup d\'œil.</p>',
+                unsafe_allow_html=True)
+with hc[1]:
+    st.markdown('<div style="text-align:right;margin-top:6px"><span class="mu-badge">'
+                '<span style="width:7px;height:7px;border-radius:50%;background:#859356"></span>'
+                'Modèle CIBLE · fictif</span></div>', unsafe_allow_html=True)
 
 # ---------- KPI row (toujours visible) ----------
 _icon_euro   = '<svg viewBox="0 0 24 24" fill="none" stroke="#859356" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>'
@@ -266,21 +235,21 @@ def kpi_card(label, val, unit, sub, icon_svg, is_accent=False):
             f'<div class="s">{sub}</div></div>')
 
 kpis_html = '<div class="mu-kpigrid">'
-kpis_html += kpi_card('MRR', nb(k["mrr"]), '€', 'Base abonnements actifs', _icon_euro)
-kpis_html += kpi_card('ARPM · panier', pc(k["arpm"]), '€', 'Essentiel 49 € · Premium 69 €', _icon_basket)
-kpis_html += kpi_card('Adhérents actifs', nb(k["n_actifs"]), '', f'Capacité max 170 simultanés', _icon_users)
-kpis_html += kpi_card('Conversion L→A', pc(k["conv"]*100), '%', f'{k["n_adh"]} adhésions / {k["n_leads"]} leads', _icon_conv)
-kpis_html += kpi_card('Risque churn élevé', k["risque_eleve"], '', f'{round(100*k["risque_eleve"]/ch["total"])} % de la base · à cibler', _icon_alert, True)
-kpis_html += kpi_card('Résiliations 30 j', k["churn30"], '', f'+ {ch["inactifs"]} inactifs &gt; 30 j', _icon_churn, True)
+kpis_html += f'<div class="mu-kpi"><div class="l">MRR · revenu mensuel</div><div class="v">{nb(k["mrr"])} <span class="u">€</span></div><div class="s">Base abonnements actifs</div></div>'
+kpis_html += f'<div class="mu-kpi"><div class="l">ARPM · panier moyen</div><div class="v">{pc(k["arpm"])} <span class="u">€</span></div><div class="s">Essentiel 49 € · Premium 69 €</div></div>'
+kpis_html += f'<div class="mu-kpi"><div class="l">Adhérents actifs</div><div class="v">{nb(k["n_actifs"])}</div><div class="s">Capacité max 170 simultanés</div></div>'
+kpis_html += f'<div class="mu-kpi"><div class="l">Conversion lead → adhérent</div><div class="v">{pc(k["conv"]*100)} <span class="u">%</span></div><div class="s">{k["n_adh"]} adhésions / {k["n_leads"]} leads</div></div>'
+kpis_html += f'<div class="mu-kpi accent"><div class="l">Risque churn élevé</div><div class="v">{k["risque_eleve"]}</div><div class="s" style="color:#2A432E;font-weight:600">{round(100*k["risque_eleve"]/ch["total"])} % de la base · à cibler</div></div>'
+kpis_html += f'<div class="mu-kpi accent"><div class="l">Résiliations · 30 j</div><div class="v">{k["churn30"]}</div><div class="s" style="color:#2A432E;font-weight:600">+ {ch["inactifs"]} inactifs &gt; 30 j</div></div>'
 kpis_html += '</div>'
-st.markdown(kpis_html, unsafe_allow_html=True)
 
-f = D.funnel(d)
+f = D.funnel(fd)
 fv = dict(zip(f.etape, f.volume))
 fcolors = {"Lead": LIME, "Contacté": LIME, "Visite": OLIVE, "Essai réalisé": OLIVE, "Adhésion": INK}
 
 # ===================== VUE D'ENSEMBLE =====================
 if tab == "Vue d'ensemble":
+    st.markdown(kpis_html, unsafe_allow_html=True)
     g = st.columns([1.25, 1])
     with g[0]:
         bars = ('<div class="mu-card"><div style="display:flex;justify-content:space-between;align-items:baseline">'
@@ -306,7 +275,7 @@ if tab == "Vue d'ensemble":
 
     st.markdown('<div class="mu-card"><div class="mu-h2">Volume hebdomadaire.</div>'
                 f'<div class="mu-sub2">Leads (lime) vs adhésions (vert foncé) par semaine.</div>', unsafe_allow_html=True)
-    lh = D.leads_hebdo(d)
+    lh = D.leads_hebdo(fd)
     fig = go.Figure()
     fig.add_trace(go.Scatter(x=lh.semaine, y=lh.Leads, name="Leads", mode="lines",
                              line=dict(color=LIME, width=2.6), fill="tozeroy", fillcolor="rgba(170,203,85,0.14)"))
