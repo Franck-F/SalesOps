@@ -16,7 +16,7 @@ import data as D  # noqa: E402
 CREAM, INK, MUTE = "#FFFDF8", "#2A432E", "#737D74"
 LIME, OLIVE, LIGHT = "#AACB55", "#859356", "#D6E393"
 
-st.set_page_config(page_title="MoveUp — Pilotage SalesOps", page_icon="📊",
+st.set_page_config(page_title="MoveUp — Pilotage SalesOps", page_icon="",
                    layout="wide", initial_sidebar_state="expanded")
 
 st.markdown("""
@@ -29,20 +29,17 @@ html, body, [class*="css"], .stApp, button, input, select, textarea {
 [data-testid="stHeader"] { background:transparent; }
 [data-testid="stSidebarCollapseButton"] { display:none; }
 [data-testid="collapsedControl"] { display:none; }
+button[title="View fullscreen"], [data-testid="StyledFullScreenButton"], [data-testid="stImage"] button { display:none !important; }
 .block-container { padding-top:1.4rem; padding-bottom:3rem; max-width:1320px; }
 ::selection { background:rgba(170,203,85,0.35); }
 
 /* ----- Sidebar sombre ----- */
-[data-testid="stSidebar"] { background:#2A432E; }
+[data-testid="stSidebar"] { background:#2A432E; position: relative !important; }
 [data-testid="stSidebar"] * { color:#FFFDF8; }
-[data-testid="stSidebar"] .block-container { padding-top:1.5rem; padding-bottom:140px; }
-.mu-logo { font-weight:700; font-size:20px; letter-spacing:-0.03em; text-transform:uppercase; display: flex; align-items: center; gap: 8px; }
-.mu-logo::before {
-  content: ''; display:inline-block; width:22px; height:22px; background-color:#AACB55;
-  -webkit-mask-size:contain; -webkit-mask-repeat:no-repeat; -webkit-mask-position:center;
-  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 3v18h18'/%3E%3Cpath d='M18 17V9'/%3E%3Cpath d='M13 17V5'/%3E%3Cpath d='M8 17v-3'/%3E%3C/svg%3E");
-}
-.mu-logo span { color:#AACB55; }
+[data-testid="stSidebar"] .block-container { padding-top:1.5rem; padding-bottom:160px; position: static !important; }
+[data-testid="stSidebar"] [data-testid="stVerticalBlock"] { position: static !important; }
+[data-testid="stSidebar"] [data-testid="stVerticalBlock"] > div { position: static !important; }
+
 .mu-sub { font-size:11px; letter-spacing:0.12em; text-transform:uppercase;
   color:rgba(255,253,248,0.5); margin:6px 0 14px; }
 [data-testid="stSidebar"] hr { border-color:rgba(255,253,248,0.12); }
@@ -64,7 +61,8 @@ html, body, [class*="css"], .stApp, button, input, select, textarea {
 [data-testid="stSidebar"] [role="radiogroup"] label:has(input:checked) {
   background:rgba(170,203,85,0.16); color:#FFFDF8; border-left-color:#AACB55; font-weight:600; }
 [data-testid="stSidebar"] [role="radiogroup"] label > div:first-child { display:none; }
-.mu-salle { margin-top:60px; border:1px solid rgba(255,253,248,0.14); border-radius:12px; padding:16px; background:rgba(0,0,0,0.1); }
+.mu-bottom-wrapper { position: absolute; bottom: 1.5rem; left: 1.5rem; right: 1.5rem; z-index: 999; }
+.mu-salle { border:1px solid rgba(255,253,248,0.14); border-radius:12px; padding:16px; background:rgba(0,0,0,0.1); }
 .mu-salle .k { font-size:10.5px; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,253,248,0.5); }
 .mu-salle .v { font-size:14px; font-weight:600; margin-top:3px; }
 .mu-salle .s { font-size:12px; color:rgba(255,253,248,0.55); margin-top:2px; }
@@ -89,25 +87,28 @@ html, body, [class*="css"], .stApp, button, input, select, textarea {
 }
 
 /* ----- Cartes / éléments ----- */
-.mu-card { background:#FFFDF8; border:1px solid color-mix(in srgb,#737D74 15%,transparent); box-shadow: 0 4px 16px rgba(0,0,0,0.03);
-  border-radius:12px; padding:24px; margin-bottom:16px; animation: slideUp 0.4s ease-out forwards; transition: all 0.2s ease; }
-.mu-h2 { margin:0 0 4px; font-size:17px; font-weight:700; text-transform:uppercase;
-  letter-spacing:-0.01em; color:#2A432E; }
+.mu-card { background:#FFFDF8; border:1px solid color-mix(in srgb,#737D74 13%,transparent); box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  border-radius:16px; padding:24px; margin-bottom:16px; animation: slideUp 0.4s ease-out forwards; transition: all 0.25s ease; }
+.mu-h2 { margin:0 0 4px; font-size:16px; font-weight:700; text-transform:uppercase;
+  letter-spacing:0.01em; color:#2A432E; }
 .mu-sub2 { margin:0 0 16px; font-size:13px; color:#737D74; }
-.mu-kpigrid { display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); gap:16px; margin-bottom:24px; }
-.mu-kpi { background:#FFFDF8; border:1px solid color-mix(in srgb,#737D74 15%,transparent); box-shadow: 0 4px 12px rgba(0,0,0,0.02);
-  border-radius:12px; padding:18px; animation: slideUp 0.4s ease-out forwards; transition: all 0.2s ease; }
-.mu-kpi.accent { border-left:4px solid #2A432E; }
-.mu-kpi .l { font-size:11px; letter-spacing:0.07em; text-transform:uppercase; color:#737D74; font-weight:600; }
-.mu-kpi .v { font-size:28px; font-weight:700; letter-spacing:-0.02em; margin-top:10px; line-height:1; white-space:nowrap; }
-.mu-kpi .v .u { font-size:16px; color:#859356; }
-.mu-kpi .s { font-size:12px; color:#737D74; margin-top:10px; }
+.mu-kpigrid { display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); gap:14px; margin-bottom:24px; }
+.mu-kpi { background:#FFFDF8; border:1px solid color-mix(in srgb,#737D74 13%,transparent); box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+  border-radius:16px; padding:20px; animation: slideUp 0.4s ease-out forwards; transition: all 0.25s ease; position:relative; overflow:hidden; }
+.mu-kpi.accent { background:linear-gradient(135deg,rgba(42,67,46,0.04) 0%,rgba(42,67,46,0.01) 100%); border-color:rgba(42,67,46,0.2); border-top:3px solid #2A432E; }
+.mu-kpi.accent .v { color:#2A432E; }
+.mu-kpi .icon { position:absolute; top:14px; right:14px; width:28px; height:28px; border-radius:8px; display:flex; align-items:center; justify-content:center; }
+.mu-kpi .icon svg { width:14px; height:14px; }
+.mu-kpi .l { font-size:10.5px; letter-spacing:0.08em; text-transform:uppercase; color:#737D74; font-weight:600; }
+.mu-kpi .v { font-size:30px; font-weight:700; letter-spacing:-0.03em; margin-top:12px; line-height:1; white-space:nowrap; color:#2A432E; }
+.mu-kpi .v .u { font-size:15px; color:#859356; font-weight:600; }
+.mu-kpi .s { font-size:11.5px; color:#737D74; margin-top:10px; line-height:1.4; }
 .mu-grid2 { display:grid; grid-template-columns:minmax(0,1.25fr) minmax(0,1fr); gap:16px; }
 .mu-grid2e { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
 .mu-grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
 .mu-grid4 { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
-.mu-mini { border:1px solid color-mix(in srgb,#737D74 15%,transparent); border-radius:12px; padding:16px; box-shadow: 0 2px 8px rgba(0,0,0,0.015); background:#FFFDF8; animation: slideUp 0.4s ease-out forwards; transition: all 0.2s ease; }
-.mu-card:hover, .mu-kpi:hover, .mu-mini:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.06); }
+.mu-mini { border:1px solid color-mix(in srgb,#737D74 13%,transparent); border-radius:14px; padding:18px; box-shadow: 0 2px 8px rgba(0,0,0,0.025); background:#FFFDF8; animation: slideUp 0.4s ease-out forwards; transition: all 0.25s ease; }
+.mu-card:hover, .mu-kpi:hover, .mu-mini:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(0,0,0,0.07); }
 
 /* Animation des graphiques Plotly */
 .stPlotlyChart { opacity: 0; animation: chartPop 0.8s cubic-bezier(0.1, 0.8, 0.2, 1) 0.1s forwards; }
@@ -172,19 +173,20 @@ d = get_data()
 
 # ---------- Sidebar ----------
 with st.sidebar:
-    st.markdown('<div class="mu-logo">MoveUp<span>.</span></div>'
-                '<div class="mu-sub">Pilotage SalesOps</div>', unsafe_allow_html=True)
+    logo_path = Path(__file__).resolve().parent.parent / "logomoveup.png"
+    if logo_path.exists():
+        st.image(str(logo_path), width=180)
+    st.markdown('<div class="mu-sub" style="margin-top:-10px;">Pilotage SalesOps</div>', unsafe_allow_html=True)
     st.markdown("---")
-    
+    st.markdown('<div style="font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,253,248,0.35);font-weight:600;padding:0 4px;margin-bottom:6px">Navigation</div>', unsafe_allow_html=True)
     tab = st.radio("nav", ["Vue d'ensemble", "Funnel & commercial",
                            "Acquisition / ROI", "Rétention / churn"], label_visibility="collapsed")
 
-    st.markdown('<div class="mu-salle"><div class="k">Salle</div>'
-                '<div class="v">MoveUp · Versailles</div>'
-                '<div class="s">1 000 m² · 1 200 adhérents</div></div>'
+    st.markdown('<div class="mu-bottom-wrapper"><div class="mu-salle"><div class="k">Salle</div>'
+                '<div class="v">124 / 170</div><div class="s">Capacité actuelle</div></div>'
                 '<div class="mu-user"><div class="mu-avatar">CG</div>'
                 '<div class="mu-user-info"><div class="mu-name">Camille G.</div>'
-                '<div class="mu-role">Admin SalesOps</div></div></div>', unsafe_allow_html=True)
+                '<div class="mu-role">Admin SalesOps</div></div></div></div>', unsafe_allow_html=True)
 
 # ---------- Header & Filtres ----------
 hc = st.columns([2.5, 1.5])
@@ -235,7 +237,9 @@ n_encours = int(open_mask.sum())
 n_chauds = int((open_mask & (lead.score >= 70)).sum())
 
 PLOT = dict(paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)",
-            font=dict(family="Poppins", color=INK), margin=dict(l=8, r=8, t=8, b=8))
+            font=dict(family="Poppins", color=INK), margin=dict(l=8, r=8, t=8, b=8),
+            xaxis=dict(showgrid=False, zeroline=False, showline=False, tickfont=dict(size=11)),
+            yaxis=dict(gridcolor="rgba(115,125,116,0.12)", zeroline=False, showline=False, tickfont=dict(size=11)))
 
 
 def bar(label, value_txt, pct, color, h=24):
@@ -245,13 +249,29 @@ def bar(label, value_txt, pct, color, h=24):
             f'style="--target-width:{pct:.1f}%;background:{color}"></div></div></div>')
 
 # ---------- KPI row (toujours visible) ----------
+_icon_euro   = '<svg viewBox="0 0 24 24" fill="none" stroke="#859356" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>'
+_icon_basket = '<svg viewBox="0 0 24 24" fill="none" stroke="#859356" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>'
+_icon_users  = '<svg viewBox="0 0 24 24" fill="none" stroke="#859356" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>'
+_icon_conv   = '<svg viewBox="0 0 24 24" fill="none" stroke="#859356" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>'
+_icon_alert  = '<svg viewBox="0 0 24 24" fill="none" stroke="#2A432E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>'
+_icon_churn  = '<svg viewBox="0 0 24 24" fill="none" stroke="#2A432E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></svg>'
+
+def kpi_card(label, val, unit, sub, icon_svg, is_accent=False):
+    icon_bg = 'rgba(42,67,46,0.08)' if is_accent else 'rgba(133,147,86,0.1)'
+    accent_cls = ' accent' if is_accent else ''
+    return (f'<div class="mu-kpi{accent_cls}">'
+            f'<div class="icon" style="background:{icon_bg}">{icon_svg}</div>'
+            f'<div class="l">{label}</div>'
+            f'<div class="v">{val}<span class="u">{" "+unit if unit else ""}</span></div>'
+            f'<div class="s">{sub}</div></div>')
+
 kpis_html = '<div class="mu-kpigrid">'
-kpis_html += f'<div class="mu-kpi"><div class="l">MRR · revenu mensuel</div><div class="v">{nb(k["mrr"])} <span class="u">€</span></div><div class="s">Base abonnements actifs</div></div>'
-kpis_html += f'<div class="mu-kpi"><div class="l">ARPM · panier moyen</div><div class="v">{pc(k["arpm"])} <span class="u">€</span></div><div class="s">Essentiel 49 € · Premium 69 €</div></div>'
-kpis_html += f'<div class="mu-kpi"><div class="l">Adhérents actifs</div><div class="v">{nb(k["n_actifs"])}</div><div class="s">Capacité max 170 simultanés</div></div>'
-kpis_html += f'<div class="mu-kpi"><div class="l">Conversion lead → adhérent</div><div class="v">{pc(k["conv"]*100)} <span class="u">%</span></div><div class="s">{k["n_adh"]} adhésions / {k["n_leads"]} leads</div></div>'
-kpis_html += f'<div class="mu-kpi accent"><div class="l">Risque churn élevé</div><div class="v">{k["risque_eleve"]}</div><div class="s" style="color:#2A432E;font-weight:600">{round(100*k["risque_eleve"]/ch["total"])} % de la base · à cibler</div></div>'
-kpis_html += f'<div class="mu-kpi accent"><div class="l">Résiliations · 30 j</div><div class="v">{k["churn30"]}</div><div class="s" style="color:#2A432E;font-weight:600">+ {ch["inactifs"]} inactifs &gt; 30 j</div></div>'
+kpis_html += kpi_card('MRR', nb(k["mrr"]), '€', 'Base abonnements actifs', _icon_euro)
+kpis_html += kpi_card('ARPM · panier', pc(k["arpm"]), '€', 'Essentiel 49 € · Premium 69 €', _icon_basket)
+kpis_html += kpi_card('Adhérents actifs', nb(k["n_actifs"]), '', f'Capacité max 170 simultanés', _icon_users)
+kpis_html += kpi_card('Conversion L→A', pc(k["conv"]*100), '%', f'{k["n_adh"]} adhésions / {k["n_leads"]} leads', _icon_conv)
+kpis_html += kpi_card('Risque churn élevé', k["risque_eleve"], '', f'{round(100*k["risque_eleve"]/ch["total"])} % de la base · à cibler', _icon_alert, True)
+kpis_html += kpi_card('Résiliations 30 j', k["churn30"], '', f'+ {ch["inactifs"]} inactifs &gt; 30 j', _icon_churn, True)
 kpis_html += '</div>'
 st.markdown(kpis_html, unsafe_allow_html=True)
 
@@ -499,7 +519,14 @@ else:
         styled_df = display_df.style.map(style_risk, subset=["Taux"])
         st.dataframe(styled_df, hide_index=True, use_container_width=True, height=400)
     else:
-        st.info("Aucun adhérent ne correspond à ces critères.")
+        st.markdown(
+            '<div style="text-align:center;padding:56px 24px;background:linear-gradient(135deg,rgba(115,125,116,0.04),transparent);'
+            'border:1px dashed rgba(115,125,116,0.3);border-radius:16px;margin-top:8px">'
+            '<svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#A0AAB2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:14px">'
+            '<circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>'
+            '<div style="font-size:15px;font-weight:600;color:#2A432E;margin-bottom:6px">Aucun résultat</div>'
+            '<div style="font-size:13px;color:#737D74">Essayez de modifier vos filtres ou votre recherche.</div></div>',
+            unsafe_allow_html=True)
     
     csv = filtered.to_csv(index=False).encode('utf-8')
     st.download_button(label="📥 Télécharger la liste (CSV)", data=csv, file_name="adherents_risque.csv", mime="text/csv")
