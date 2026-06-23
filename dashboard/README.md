@@ -1,14 +1,23 @@
 # Dashboard MoveUp — Prototype SalesOps (Jour 4)
 
-Prototype de **dashboard de pilotage commercial** (Streamlit + Plotly) branché sur le jeu de
-données **CIBLE** de MoveUp. Il rend visible ce qu'un simple Excel ne permettait pas de voir.
+Dashboard de **pilotage commercial** MoveUp, branché sur le jeu de données **CIBLE**.
+Il rend visible ce qu'un simple Excel ne permettait pas de voir.
 
 ![Aperçu du dashboard MoveUp](preview.png)
 
-> 🎨 Design **MoveUp** (police Poppins, palette crème `#FFFDF8` / vert `#2A432E` / lime `#AACB55`)
-> appliqué via `.streamlit/config.toml` + CSS, d'après la maquette Claude Design.
+**Deux versions** (mêmes données, même design MoveUp — Poppins, crème `#FFFDF8` / vert `#2A432E` / lime `#AACB55`) :
 
-## ▶️ Lancer le dashboard
+| Version | Fichier | Pour qui |
+|---|---|---|
+| 🎯 **HTML fidèle** (recommandé démo) | [`index.html`](index.html) | **Pixel-fidèle** à la maquette Claude Design. Ouvre direct dans le navigateur (double-clic), zéro install, hébergeable GitHub Pages. Onglets + filtres en JS. |
+| 🐍 **Streamlit** (interactif Python) | [`app.py`](app.py) | App data-driven, thème MoveUp approché (Streamlit ne permet pas le pixel-perfect). |
+
+## 🎯 Version HTML (la plus fidèle)
+
+Ouvre simplement **`dashboard/index.html`** dans un navigateur (double-clic) — rien à installer.
+Données réelles intégrées, 4 onglets cliquables, table adhérents filtrable, graphes SVG.
+
+## ▶️ Version Streamlit
 
 **Avec `uv`** (recommandé — environnement reproductible via `pyproject.toml` + `uv.lock`) :
 

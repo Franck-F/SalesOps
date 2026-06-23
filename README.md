@@ -54,7 +54,9 @@ pas de CRM (Excel + tél. perso), funnel non défini, zéro automatisation, aucu
 - [J3-Strategie-conception.md](J3-Strategie-conception.md) : KPI cibles, **funnel TO-BE + règles de passage**, outils, gouvernance.
 
 ### Jour 4 — Prototype & pitch
-- ✅ **Dashboard Streamlit fonctionnel** → [`dashboard/`](dashboard/) (funnel, ROI canal, churn, base adhérents).
+- 🎯 **Dashboard HTML fidèle** (pixel-fidèle à la maquette) → [`dashboard/index.html`](dashboard/index.html) — ouvre dans le navigateur, zéro install.
+- 🐍 **Dashboard Streamlit** (interactif Python) → [`dashboard/app.py`](dashboard/app.py).
+- Contenu : funnel, speed-to-lead, no-show, ROI par canal, churn, base adhérents filtrable.
 
 ---
 

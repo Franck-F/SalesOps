@@ -15,7 +15,8 @@ import data as D  # noqa: E402
 CREAM, INK, MUTE = "#FFFDF8", "#2A432E", "#737D74"
 LIME, OLIVE, LIGHT = "#AACB55", "#859356", "#D6E393"
 
-st.set_page_config(page_title="MoveUp — Pilotage SalesOps", page_icon="📊", layout="wide")
+st.set_page_config(page_title="MoveUp — Pilotage SalesOps", page_icon="📊",
+                   layout="wide", initial_sidebar_state="expanded")
 
 st.markdown("""
 <style>
@@ -24,7 +25,7 @@ html, body, [class*="css"], .stApp, button, input, select, textarea {
   font-family:'Poppins', system-ui, sans-serif; }
 .stApp { background:#FFFDF8; color:#2A432E; }
 #MainMenu, footer, [data-testid="stToolbar"], [data-testid="stDecoration"] { display:none; }
-[data-testid="stHeader"] { background:transparent; height:0; }
+[data-testid="stHeader"] { background:transparent; }
 .block-container { padding-top:1.4rem; padding-bottom:3rem; max-width:1320px; }
 ::selection { background:rgba(170,203,85,0.35); }
 
