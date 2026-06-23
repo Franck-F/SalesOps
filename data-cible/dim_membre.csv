@@ -1,0 +1,1381 @@
+﻿membre_id,lead_id,date_adhesion,proprietaire_origine,age,genre,commune,source_acquisition,statut_membre,date_dernier_passage,frequence_hebdo,utilisation_coaching,score_risque_churn
+MEM-00001,LEAD-2026-0001,2026-05-24,USR-01,25,F,Buc,google_ads,actif,2026-06-21,0.9,faux,65
+MEM-00002,LEAD-2026-0002,2026-06-14,USR-02,26,H,Versailles,google_ads,actif,2026-06-21,2.1,faux,41
+MEM-00003,LEAD-2026-0012,2026-05-16,USR-01,56,F,Versailles,instagram,actif,2026-06-21,4.3,faux,12
+MEM-00004,LEAD-2026-0016,2026-05-11,USR-02,35,H,Versailles,instagram,actif,2026-06-20,3.9,vrai,28
+MEM-00005,LEAD-2026-0020,2026-04-06,USR-02,60,F,Versailles,instagram,actif,2026-06-19,2.2,vrai,49
+MEM-00006,LEAD-2026-0025,2026-04-23,USR-01,50,H,Versailles,google_ads,actif,2026-06-21,3.6,faux,28
+MEM-00007,LEAD-2026-0030,2026-06-02,USR-01,37,H,Viroflay,google_ads,actif,2026-06-20,3.5,faux,32
+MEM-00008,LEAD-2026-0033,2026-04-11,USR-02,31,F,Jouy-en-Josas,instagram,actif,2026-04-30,0.0,faux,100
+MEM-00009,LEAD-2026-0039,2026-04-29,USR-02,57,F,Buc,instagram,actif,2026-04-10,0.0,faux,100
+MEM-00010,LEAD-2026-0045,2026-04-13,USR-02,59,F,Versailles,instagram,actif,2026-06-20,3.4,faux,34
+MEM-00011,LEAD-2026-0046,2026-05-24,USR-02,28,F,Versailles,google_ads,actif,2026-02-22,0.0,faux,100
+MEM-00012,LEAD-2026-0052,2026-05-31,USR-02,49,H,Versailles,google_ads,actif,2026-06-21,3.1,faux,30
+MEM-00013,LEAD-2026-0064,2026-06-17,USR-02,53,H,Viroflay,site_web,actif,2026-03-20,0.0,vrai,100
+MEM-00014,LEAD-2026-0071,2026-05-28,USR-02,48,F,Viroflay,site_web,actif,2026-06-19,2.9,faux,35
+MEM-00015,LEAD-2026-0079,2026-05-07,USR-02,35,H,Versailles,google_ads,actif,2026-06-03,0.3,faux,92
+MEM-00016,LEAD-2026-0089,2026-04-24,USR-02,32,H,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-17,2.6,vrai,41
+MEM-00017,LEAD-2026-0094,2026-04-30,USR-02,56,H,Versailles,instagram,actif,2026-06-21,2.7,vrai,33
+MEM-00018,LEAD-2026-0097,2026-04-16,USR-02,35,H,Le Chesnay-Rocquencourt,instagram,actif,2026-06-21,3.2,faux,28
+MEM-00019,LEAD-2026-0100,2026-05-21,USR-02,30,H,Viroflay,instagram,actif,2026-06-18,2.7,faux,38
+MEM-00020,LEAD-2026-0102,2026-05-29,USR-02,36,F,Viroflay,google_ads,actif,2026-06-21,4.7,faux,2
+MEM-00021,LEAD-2026-0103,2026-05-08,USR-02,50,F,Le Chesnay-Rocquencourt,instagram,actif,2026-06-21,4.8,faux,9
+MEM-00022,LEAD-2026-0109,2026-05-10,USR-01,51,H,Buc,instagram,actif,2026-06-16,4.3,faux,17
+MEM-00023,LEAD-2026-0121,2026-06-10,USR-01,51,F,Bailly,instagram,actif,2026-06-19,2.7,faux,39
+MEM-00024,LEAD-2026-0127,2026-04-24,USR-02,22,F,Versailles,instagram,actif,2026-05-01,0.0,faux,100
+MEM-00025,LEAD-2026-0130,2026-05-21,USR-01,31,F,Versailles,site_web,actif,2026-03-15,0.0,faux,100
+MEM-00026,LEAD-2026-0134,2026-05-20,USR-02,19,F,Versailles,google_ads,actif,2026-06-19,2.7,faux,34
+MEM-00027,LEAD-2026-0144,2026-05-07,USR-02,57,F,Le Chesnay-Rocquencourt,instagram,actif,2026-04-23,0.0,faux,100
+MEM-00028,LEAD-2026-0149,2026-05-04,USR-02,28,H,Saint-Cyr-l'École,instagram,actif,2026-06-19,2.5,faux,50
+MEM-00029,LEAD-2026-0158,2026-06-28,USR-02,38,F,Vélizy-Villacoublay,instagram,actif,2026-06-04,0.3,faux,78
+MEM-00030,LEAD-2026-0163,2026-04-10,USR-01,32,H,Vélizy-Villacoublay,google_ads,actif,2026-06-21,3.4,vrai,31
+MEM-00031,LEAD-2026-0164,2026-05-16,USR-02,33,F,Saint-Cyr-l'École,instagram,actif,2026-06-14,0.3,faux,77
+MEM-00032,LEAD-2026-0172,2026-06-18,USR-02,34,H,Versailles,google_ads,actif,2026-06-19,1.5,vrai,62
+MEM-00033,LEAD-2026-0198,2026-06-21,USR-02,19,H,Viroflay,site_web,actif,2026-06-19,1.8,vrai,60
+MEM-00034,LEAD-2026-0203,2026-06-13,USR-02,60,H,Buc,instagram,actif,2026-06-21,3.2,faux,37
+MEM-00035,LEAD-2026-0210,2026-06-19,USR-02,20,F,Viroflay,google_ads,actif,2026-05-17,0.0,vrai,94
+MEM-00036,LEAD-2026-0211,2026-04-25,USR-02,48,H,Bailly,instagram,actif,2026-06-19,3.0,vrai,29
+MEM-00037,LEAD-2026-0232,2026-04-28,USR-02,22,F,Saint-Cyr-l'École,google_ads,actif,2026-06-19,2.3,faux,45
+MEM-00038,LEAD-2026-0239,2026-06-25,USR-01,28,F,Buc,instagram,actif,2026-06-18,1.7,faux,51
+MEM-00039,LEAD-2026-0274,2026-05-07,USR-02,59,H,Viroflay,instagram,actif,2026-06-21,3.4,faux,22
+MEM-00040,LEAD-2026-0278,2026-05-31,USR-02,44,F,Vélizy-Villacoublay,instagram,actif,2026-06-20,2.8,faux,38
+MEM-00041,LEAD-2026-0290,2026-04-21,USR-02,50,H,Versailles,recommandation,actif,2026-06-20,2.3,faux,43
+MEM-00042,LEAD-2026-0294,2026-06-07,USR-02,20,F,Versailles,site_web,actif,2026-06-16,2.1,faux,46
+MEM-00043,LEAD-2026-0295,2026-06-20,USR-02,41,H,Viroflay,google_ads,actif,2026-06-11,1.9,faux,64
+MEM-00044,LEAD-2026-0306,2026-05-08,USR-02,39,F,Le Chesnay-Rocquencourt,recommandation,actif,2026-06-17,3.3,faux,26
+MEM-00045,LEAD-2026-0322,2026-05-12,USR-02,49,H,Vélizy-Villacoublay,google_ads,actif,2026-06-20,1.6,vrai,61
+MEM-00046,LEAD-2026-0328,2026-06-01,USR-02,27,F,Vélizy-Villacoublay,site_web,actif,2026-06-19,3.2,faux,31
+MEM-00047,LEAD-2026-0331,2026-05-06,USR-02,37,H,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-21,1.8,faux,55
+MEM-00048,LEAD-2026-0340,2026-06-03,USR-02,41,H,Versailles,google_ads,actif,2026-06-20,1.8,vrai,55
+MEM-00049,LEAD-2026-0345,2026-05-03,USR-02,42,F,Viroflay,instagram,actif,2026-06-21,0.3,faux,73
+MEM-00050,LEAD-2026-0352,2026-06-08,USR-02,47,H,Saint-Cyr-l'École,site_web,actif,2026-06-21,1.4,faux,52
+MEM-00051,LEAD-2026-0374,2026-04-09,USR-02,45,F,Versailles,instagram,actif,2026-06-21,2.8,faux,34
+MEM-00052,LEAD-2026-0381,2026-04-21,USR-02,33,F,Versailles,instagram,actif,2026-04-13,0.0,faux,100
+MEM-00053,LEAD-2026-0384,2026-06-09,USR-02,50,H,Versailles,google_ads,actif,2026-06-21,4.9,faux,11
+MEM-00054,LEAD-2026-0399,2026-05-02,USR-02,24,F,Viroflay,site_web,actif,2026-05-17,0.0,faux,100
+MEM-00055,LEAD-2026-0400,2026-05-15,USR-02,42,H,Bailly,instagram,actif,2026-06-20,3.2,faux,30
+MEM-00056,LEAD-2026-0426,2026-05-01,USR-02,51,H,Versailles,google_ads,actif,2026-06-21,2.5,faux,42
+MEM-00057,LEAD-2026-0427,2026-04-10,USR-02,46,F,Versailles,site_web,actif,2026-06-21,2.2,faux,49
+MEM-00058,LEAD-2026-0429,2026-06-06,USR-02,34,F,Buc,instagram,actif,2026-06-14,1.3,faux,58
+MEM-00059,LEAD-2026-0433,2026-05-30,USR-02,31,F,Viroflay,instagram,actif,2026-06-21,1.7,vrai,60
+MEM-00060,LEAD-2026-0449,2026-06-20,USR-02,56,F,Versailles,instagram,actif,2026-06-16,1.0,faux,71
+MEM-00061,LEAD-2026-0464,2026-06-28,USR-01,51,F,Vélizy-Villacoublay,instagram,actif,2026-05-03,0.0,faux,100
+MEM-00062,LEAD-2026-0466,2026-06-02,USR-02,56,H,Saint-Cyr-l'École,google_ads,actif,2026-05-09,0.0,faux,99
+MEM-00063,LEAD-2026-0468,2026-04-10,USR-02,48,F,Viroflay,instagram,actif,2026-06-18,0.6,faux,72
+MEM-00064,LEAD-2026-0470,2026-04-27,USR-02,20,F,Versailles,instagram,actif,2026-04-11,0.0,faux,100
+MEM-00065,LEAD-2026-0471,2026-06-29,USR-02,51,H,Versailles,instagram,actif,2026-06-21,2.6,faux,49
+MEM-00066,LEAD-2026-0476,2026-06-16,USR-02,24,F,Versailles,instagram,actif,2026-06-20,2.5,faux,38
+MEM-00067,LEAD-2026-0478,2026-05-11,USR-01,38,F,Versailles,site_web,actif,2026-06-11,1.9,faux,65
+MEM-00068,LEAD-2026-0490,2026-06-12,USR-01,46,H,Versailles,recommandation,actif,2026-03-06,0.0,faux,100
+MEM-00069,LEAD-2026-0491,2026-04-21,USR-02,34,H,Viroflay,instagram,actif,2026-03-31,0.0,faux,100
+MEM-00070,LEAD-2026-0492,2026-06-02,USR-02,55,F,Versailles,site_web,actif,2026-06-20,1.5,faux,50
+MEM-00071,LEAD-2026-0501,2026-04-11,USR-02,41,F,Le Chesnay-Rocquencourt,recommandation,actif,2026-06-20,3.1,faux,42
+MEM-00072,LEAD-2026-0503,2026-06-04,USR-01,45,F,Saint-Cyr-l'École,site_web,actif,2026-06-20,0.4,faux,69
+MEM-00073,LEAD-2026-0514,2026-06-30,USR-02,23,F,Viroflay,site_web,actif,2026-06-21,3.9,faux,20
+MEM-00074,LEAD-2026-0518,2026-04-27,USR-02,52,H,Viroflay,instagram,actif,2026-04-19,0.0,vrai,100
+MEM-00075,LEAD-2026-0536,2026-06-03,USR-02,22,H,Versailles,instagram,actif,2026-06-19,4.0,vrai,16
+MEM-00076,LEAD-2026-0543,2026-06-09,USR-02,52,F,Viroflay,google_ads,actif,2026-06-20,1.8,faux,48
+MEM-00077,LEAD-2026-0551,2026-05-08,USR-02,30,F,Saint-Cyr-l'École,recommandation,actif,2026-06-19,3.3,faux,25
+MEM-00078,LEAD-2026-0552,2026-05-12,USR-02,49,H,Bailly,instagram,actif,2026-06-21,2.3,faux,45
+MEM-00079,LEAD-2026-0555,2026-05-10,USR-02,51,F,Versailles,instagram,actif,2026-06-20,3.5,faux,32
+MEM-00080,LEAD-2026-0560,2026-05-02,USR-02,45,F,Buc,instagram,actif,2026-06-19,3.1,faux,36
+MEM-00081,LEAD-2026-0565,2026-04-18,USR-02,27,H,Versailles,instagram,actif,2026-06-14,1.1,faux,61
+MEM-00082,LEAD-2026-0570,2026-04-19,USR-02,29,H,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-20,3.4,faux,27
+MEM-00083,,2022-07-30,USR-02,59,F,Le Chesnay-Rocquencourt,instagram,actif,2026-06-18,3.6,faux,29
+MEM-00084,,2025-09-22,USR-02,49,F,Saint-Cyr-l'École,instagram,actif,2026-06-19,1.2,faux,68
+MEM-00085,,2024-06-06,USR-02,43,F,Versailles,google_ads,actif,2026-06-21,1.6,vrai,55
+MEM-00086,,2022-07-03,USR-01,27,F,Vélizy-Villacoublay,recommandation,actif,2026-06-21,3.4,faux,24
+MEM-00087,,2025-08-03,USR-01,20,F,Versailles,instagram,actif,2026-03-29,0.0,vrai,100
+MEM-00088,,2023-08-30,USR-02,31,H,Bailly,google_ads,actif,2026-06-16,3.4,faux,40
+MEM-00089,,2023-08-20,USR-01,21,H,Versailles,instagram,actif,2026-06-20,3.1,faux,28
+MEM-00090,,2023-05-31,USR-02,27,F,Vélizy-Villacoublay,instagram,actif,2026-06-11,1.4,vrai,69
+MEM-00091,,2023-02-15,USR-02,35,H,Le Chesnay-Rocquencourt,recommandation,actif,2026-06-17,2.1,faux,52
+MEM-00092,,2022-06-24,USR-02,54,F,Versailles,instagram,actif,2026-06-21,1.8,faux,47
+MEM-00093,,2022-03-07,USR-02,47,H,Buc,instagram,actif,2026-03-14,0.0,faux,100
+MEM-00094,,2023-09-26,USR-02,42,F,Versailles,instagram,actif,2026-06-21,4.6,faux,19
+MEM-00095,,2025-10-16,USR-02,51,H,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-21,3.3,faux,35
+MEM-00096,,2021-09-05,USR-02,45,H,Viroflay,instagram,actif,2026-06-18,1.3,faux,64
+MEM-00097,,2024-04-27,USR-01,54,H,Versailles,instagram,actif,2026-03-27,0.0,faux,100
+MEM-00098,,2023-08-27,USR-02,29,H,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-20,1.1,faux,61
+MEM-00099,,2025-04-25,USR-02,27,H,Viroflay,instagram,actif,2026-06-16,1.9,faux,58
+MEM-00100,,2021-06-23,USR-02,46,H,Jouy-en-Josas,recommandation,actif,2026-06-14,0.7,faux,75
+MEM-00101,,2026-01-02,USR-02,60,F,Bailly,instagram,actif,2026-06-17,0.3,faux,83
+MEM-00102,,2021-11-21,USR-02,52,F,Vélizy-Villacoublay,recommandation,actif,2026-06-16,1.1,faux,70
+MEM-00103,,2025-10-24,USR-02,54,F,Saint-Cyr-l'École,instagram,actif,2026-06-19,1.8,vrai,56
+MEM-00104,,2022-07-29,USR-02,47,F,Versailles,site_web,actif,2026-06-21,1.6,faux,60
+MEM-00105,,2023-02-15,USR-01,30,H,Le Chesnay-Rocquencourt,recommandation,actif,2026-06-20,1.4,faux,52
+MEM-00106,,2026-02-20,USR-02,58,F,Bailly,recommandation,actif,2026-06-13,2.2,vrai,57
+MEM-00107,,2021-04-20,USR-02,52,F,Versailles,instagram,actif,2026-06-21,4.3,faux,15
+MEM-00108,,2022-04-29,USR-02,48,H,Jouy-en-Josas,google_ads,actif,2026-06-21,2.6,vrai,48
+MEM-00109,,2021-04-30,USR-01,25,F,Versailles,instagram,actif,2026-06-21,1.7,faux,58
+MEM-00110,,2024-08-08,USR-02,35,H,Vélizy-Villacoublay,site_web,actif,2026-06-18,0.9,faux,67
+MEM-00111,,2024-01-10,USR-01,37,H,Versailles,site_web,actif,2026-03-05,0.0,faux,100
+MEM-00112,,2023-10-17,USR-02,41,F,Versailles,google_ads,actif,2026-06-19,2.8,faux,43
+MEM-00113,,2022-06-10,USR-02,39,H,Versailles,recommandation,actif,2026-06-20,2.3,faux,54
+MEM-00114,,2021-05-04,USR-02,34,H,Versailles,instagram,actif,2026-06-21,1.2,faux,69
+MEM-00115,,2025-05-18,USR-01,59,F,Versailles,google_ads,actif,2026-06-09,0.5,faux,84
+MEM-00116,,2024-06-17,USR-02,58,H,Le Chesnay-Rocquencourt,instagram,actif,2026-04-29,0.0,vrai,100
+MEM-00117,,2025-12-22,USR-02,32,H,Versailles,google_ads,actif,2026-06-20,2.5,faux,51
+MEM-00118,,2023-09-06,USR-02,25,F,Buc,instagram,actif,2026-06-21,1.7,faux,54
+MEM-00119,,2024-02-01,USR-02,57,H,Vélizy-Villacoublay,recommandation,actif,2026-06-13,1.4,faux,68
+MEM-00120,,2023-10-18,USR-02,55,H,Versailles,site_web,actif,2026-05-17,0.0,faux,100
+MEM-00121,,2025-08-12,USR-02,29,H,Vélizy-Villacoublay,site_web,actif,2026-06-18,2.9,faux,36
+MEM-00122,,2025-10-06,USR-01,30,H,Versailles,google_ads,actif,2026-06-07,0.3,faux,82
+MEM-00123,,2024-08-01,USR-01,40,H,Vélizy-Villacoublay,site_web,actif,2026-03-30,0.0,faux,100
+MEM-00124,,2025-06-13,USR-02,20,F,Versailles,instagram,actif,2026-04-27,0.0,faux,100
+MEM-00125,,2024-10-31,USR-02,47,F,Le Chesnay-Rocquencourt,recommandation,actif,2026-06-20,2.8,faux,36
+MEM-00126,,2021-10-17,USR-02,56,F,Viroflay,instagram,actif,2026-06-20,1.6,faux,64
+MEM-00127,,2022-02-25,USR-02,43,H,Saint-Cyr-l'École,google_ads,actif,2026-06-18,1.0,faux,68
+MEM-00128,,2025-06-30,USR-02,46,H,Buc,site_web,actif,2026-06-21,2.3,faux,49
+MEM-00129,,2022-04-04,USR-02,57,F,Buc,instagram,actif,2026-06-09,0.5,faux,82
+MEM-00130,,2021-11-12,USR-02,47,H,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-20,2.4,faux,41
+MEM-00131,,2021-07-06,USR-02,40,H,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-20,3.2,vrai,31
+MEM-00132,,2021-10-06,USR-02,60,F,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-21,2.7,faux,39
+MEM-00133,,2022-04-24,USR-02,47,H,Versailles,site_web,actif,2026-06-18,2.6,faux,42
+MEM-00134,,2022-10-28,USR-02,23,F,Bailly,instagram,actif,2026-06-19,3.0,faux,32
+MEM-00135,,2024-05-30,USR-02,19,H,Versailles,recommandation,actif,2026-06-20,2.5,faux,45
+MEM-00136,,2022-06-03,USR-02,19,F,Le Chesnay-Rocquencourt,instagram,actif,2026-06-17,1.6,vrai,57
+MEM-00137,,2022-08-26,USR-01,46,H,Le Chesnay-Rocquencourt,google_ads,actif,2026-03-25,0.0,faux,100
+MEM-00138,,2024-03-10,USR-01,46,F,Versailles,recommandation,actif,2026-06-17,2.1,faux,44
+MEM-00139,,2024-08-16,USR-02,59,H,Versailles,instagram,actif,2026-06-21,1.3,faux,66
+MEM-00140,,2023-09-10,USR-02,60,F,Vélizy-Villacoublay,instagram,actif,2026-03-15,0.0,vrai,100
+MEM-00141,,2024-11-27,USR-02,44,H,Jouy-en-Josas,instagram,actif,2026-06-21,2.6,faux,35
+MEM-00142,,2022-03-28,USR-02,41,F,Jouy-en-Josas,google_ads,actif,2026-06-20,2.8,vrai,35
+MEM-00143,,2023-07-18,USR-02,44,F,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-21,3.7,faux,17
+MEM-00144,,2024-10-30,USR-02,34,H,Vélizy-Villacoublay,recommandation,actif,2026-04-26,0.0,faux,100
+MEM-00145,,2024-11-01,USR-01,34,F,Vélizy-Villacoublay,instagram,actif,2026-06-21,2.7,faux,33
+MEM-00146,,2021-11-27,USR-01,41,H,Versailles,google_ads,actif,2026-05-08,0.0,faux,100
+MEM-00147,,2024-12-02,USR-01,40,H,Buc,site_web,actif,2026-06-19,3.3,faux,36
+MEM-00148,,2024-09-22,USR-01,36,F,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-20,2.7,faux,40
+MEM-00149,,2023-06-18,USR-02,34,H,Buc,instagram,actif,2026-06-20,2.8,faux,33
+MEM-00150,,2021-07-10,USR-01,44,F,Vélizy-Villacoublay,instagram,actif,2026-03-31,0.0,faux,100
+MEM-00151,,2022-03-19,USR-02,57,F,Vélizy-Villacoublay,instagram,actif,2026-06-18,2.9,faux,44
+MEM-00152,,2021-06-12,USR-02,52,H,Saint-Cyr-l'École,instagram,actif,2026-06-18,2.0,faux,53
+MEM-00153,,2021-04-09,USR-02,31,F,Versailles,google_ads,actif,2026-06-19,2.7,faux,42
+MEM-00154,,2023-02-23,USR-02,59,F,Saint-Cyr-l'École,instagram,actif,2026-04-20,0.0,faux,100
+MEM-00155,,2023-07-16,USR-02,52,F,Saint-Cyr-l'École,instagram,actif,2026-06-20,1.8,vrai,50
+MEM-00156,,2023-10-12,USR-02,32,H,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-20,4.7,faux,5
+MEM-00157,,2025-12-20,USR-02,25,F,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-16,2.6,faux,49
+MEM-00158,,2024-02-09,USR-02,28,F,Jouy-en-Josas,instagram,actif,2026-02-28,0.0,faux,100
+MEM-00159,,2022-07-12,USR-02,42,H,Le Chesnay-Rocquencourt,recommandation,actif,2026-06-19,2.2,faux,48
+MEM-00160,,2022-08-19,USR-02,25,H,Buc,site_web,actif,2026-06-13,1.8,vrai,61
+MEM-00161,,2023-10-02,USR-02,31,H,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-21,2.2,faux,53
+MEM-00162,,2023-01-27,USR-02,36,H,Vélizy-Villacoublay,recommandation,actif,2026-06-19,0.9,faux,71
+MEM-00163,,2021-05-16,USR-02,54,F,Viroflay,instagram,actif,2026-06-17,2.3,faux,44
+MEM-00164,,2023-03-29,USR-02,50,F,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-19,1.8,vrai,49
+MEM-00165,,2025-01-24,USR-02,24,H,Bailly,site_web,actif,2026-06-04,0.3,faux,87
+MEM-00166,,2022-02-17,USR-02,43,F,Versailles,recommandation,actif,2026-06-21,3.2,vrai,25
+MEM-00167,,2021-01-16,USR-01,55,F,Versailles,recommandation,actif,2026-06-21,3.2,faux,38
+MEM-00168,,2024-03-20,USR-02,59,F,Versailles,recommandation,actif,2026-04-13,0.0,faux,100
+MEM-00169,,2023-02-05,USR-02,36,H,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-18,2.7,faux,35
+MEM-00170,,2024-12-22,USR-02,27,H,Versailles,recommandation,actif,2026-03-15,0.0,faux,100
+MEM-00171,,2021-08-01,USR-02,21,H,Le Chesnay-Rocquencourt,recommandation,actif,2026-06-07,0.3,faux,80
+MEM-00172,,2023-11-02,USR-02,35,H,Le Chesnay-Rocquencourt,recommandation,actif,2026-06-21,2.3,faux,51
+MEM-00173,,2021-12-24,USR-02,32,F,Versailles,instagram,actif,2026-06-21,4.0,faux,23
+MEM-00174,,2024-08-08,USR-02,30,H,Buc,google_ads,actif,2026-06-13,1.0,faux,69
+MEM-00175,,2023-06-03,USR-02,56,F,Viroflay,instagram,actif,2026-05-18,0.0,faux,100
+MEM-00176,,2025-03-09,USR-01,48,F,Vélizy-Villacoublay,site_web,actif,2026-06-21,4.0,vrai,27
+MEM-00177,,2023-12-12,USR-02,48,F,Versailles,site_web,actif,2026-06-18,0.5,faux,75
+MEM-00178,,2025-08-08,USR-02,36,H,Versailles,google_ads,actif,2026-06-18,3.6,faux,22
+MEM-00179,,2021-11-29,USR-02,58,H,Bailly,instagram,actif,2026-05-08,0.0,vrai,100
+MEM-00180,,2025-09-01,USR-01,41,H,Versailles,instagram,actif,2026-06-20,3.3,faux,26
+MEM-00181,,2021-01-01,USR-02,46,F,Buc,site_web,actif,2026-06-19,3.1,faux,41
+MEM-00182,,2023-03-10,USR-02,21,H,Versailles,google_ads,actif,2026-06-21,3.8,faux,19
+MEM-00183,,2026-02-11,USR-02,42,H,Bailly,google_ads,actif,2026-06-19,1.5,faux,59
+MEM-00184,,2026-05-07,USR-02,42,F,Jouy-en-Josas,instagram,actif,2026-06-19,1.9,faux,51
+MEM-00185,,2021-11-18,USR-02,36,H,Saint-Cyr-l'École,instagram,actif,2026-06-18,3.3,vrai,33
+MEM-00186,,2024-01-30,USR-02,32,F,Buc,site_web,actif,2026-06-21,2.7,faux,42
+MEM-00187,,2024-07-07,USR-02,40,H,Viroflay,google_ads,actif,2026-06-20,1.9,faux,56
+MEM-00188,,2023-02-23,USR-02,58,F,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-19,0.9,faux,75
+MEM-00189,,2023-11-09,USR-01,23,H,Versailles,recommandation,actif,2026-04-18,0.0,vrai,100
+MEM-00190,,2023-02-14,USR-02,36,F,Saint-Cyr-l'École,google_ads,actif,2026-05-08,0.0,faux,100
+MEM-00191,,2024-03-06,USR-02,37,H,Vélizy-Villacoublay,instagram,actif,2026-04-17,0.0,faux,100
+MEM-00192,,2026-04-07,USR-02,23,F,Versailles,recommandation,actif,2026-06-21,2.8,faux,39
+MEM-00193,,2021-11-13,USR-02,24,H,Versailles,recommandation,actif,2026-06-19,1.9,faux,60
+MEM-00194,,2024-11-16,USR-02,41,F,Versailles,site_web,actif,2026-06-19,1.8,faux,58
+MEM-00195,,2021-06-24,USR-02,50,H,Versailles,instagram,actif,2026-06-19,1.7,faux,54
+MEM-00196,,2023-07-17,USR-02,45,H,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-13,1.0,faux,64
+MEM-00197,,2024-04-25,USR-02,35,F,Le Chesnay-Rocquencourt,site_web,actif,2026-06-21,2.2,vrai,43
+MEM-00198,,2023-08-15,USR-02,21,H,Le Chesnay-Rocquencourt,instagram,actif,2026-04-21,0.0,faux,100
+MEM-00199,,2024-01-13,USR-02,20,H,Le Chesnay-Rocquencourt,site_web,actif,2026-06-16,1.2,faux,61
+MEM-00200,,2023-06-10,USR-01,59,H,Vélizy-Villacoublay,site_web,actif,2026-06-21,1.1,faux,69
+MEM-00201,,2021-04-03,USR-02,50,H,Versailles,site_web,actif,2026-06-17,0.6,faux,79
+MEM-00202,,2023-10-26,USR-02,45,F,Viroflay,instagram,actif,2026-06-12,1.4,faux,58
+MEM-00203,,2025-09-17,USR-02,60,H,Versailles,site_web,actif,2026-06-11,2.5,faux,42
+MEM-00204,,2024-04-15,USR-02,60,H,Versailles,google_ads,actif,2026-06-21,2.2,faux,41
+MEM-00205,,2022-04-25,USR-02,60,F,Versailles,instagram,actif,2026-06-21,3.3,faux,31
+MEM-00206,,2025-03-06,USR-02,29,H,Versailles,site_web,actif,2026-06-18,3.5,faux,37
+MEM-00207,,2022-09-18,USR-02,26,H,Jouy-en-Josas,google_ads,actif,2026-06-21,3.8,faux,23
+MEM-00208,,2023-01-20,USR-02,55,F,Viroflay,instagram,actif,2026-06-20,3.8,vrai,31
+MEM-00209,,2021-04-29,USR-02,40,F,Viroflay,recommandation,actif,2026-03-26,0.0,faux,100
+MEM-00210,,2024-06-05,USR-02,33,H,Vélizy-Villacoublay,instagram,actif,2026-06-20,2.3,faux,44
+MEM-00211,,2024-10-25,USR-02,30,F,Saint-Cyr-l'École,google_ads,actif,2026-06-18,2.5,faux,45
+MEM-00212,,2025-04-07,USR-02,55,F,Versailles,site_web,actif,2026-06-20,4.7,faux,14
+MEM-00213,,2021-08-29,USR-02,36,F,Versailles,instagram,actif,2026-06-19,1.5,faux,55
+MEM-00214,,2023-12-18,USR-02,35,H,Bailly,instagram,actif,2026-06-20,2.0,vrai,50
+MEM-00215,,2023-10-20,USR-02,24,H,Jouy-en-Josas,recommandation,actif,2026-06-16,0.6,faux,68
+MEM-00216,,2025-06-05,USR-02,57,H,Buc,google_ads,actif,2026-06-21,2.6,faux,47
+MEM-00217,,2025-09-26,USR-02,28,H,Le Chesnay-Rocquencourt,instagram,actif,2026-06-21,2.7,vrai,40
+MEM-00218,,2023-02-08,USR-02,48,H,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-18,2.9,faux,44
+MEM-00219,,2023-11-09,USR-02,34,F,Viroflay,instagram,actif,2026-04-02,0.0,faux,100
+MEM-00220,,2022-08-25,USR-02,60,F,Le Chesnay-Rocquencourt,instagram,actif,2026-06-20,2.5,faux,50
+MEM-00221,,2023-11-11,USR-02,34,F,Versailles,google_ads,actif,2026-06-21,2.3,faux,46
+MEM-00222,,2021-05-05,USR-01,22,F,Versailles,instagram,actif,2026-06-20,0.9,faux,63
+MEM-00223,,2026-01-30,USR-01,28,H,Le Chesnay-Rocquencourt,instagram,actif,2026-06-18,2.3,faux,47
+MEM-00224,,2023-04-09,USR-02,21,H,Viroflay,google_ads,actif,2026-06-16,2.1,faux,47
+MEM-00225,,2022-08-09,USR-01,23,F,Versailles,recommandation,actif,2026-03-20,0.0,vrai,100
+MEM-00226,,2024-05-22,USR-02,26,H,Le Chesnay-Rocquencourt,recommandation,actif,2026-06-14,1.6,faux,63
+MEM-00227,,2024-01-29,USR-02,28,F,Le Chesnay-Rocquencourt,instagram,actif,2026-06-21,2.9,faux,30
+MEM-00228,,2023-11-30,USR-02,21,H,Viroflay,site_web,actif,2026-04-04,0.0,faux,100
+MEM-00229,,2024-05-03,USR-02,58,H,Versailles,google_ads,actif,2026-06-17,2.5,faux,37
+MEM-00230,,2025-01-01,USR-02,52,H,Jouy-en-Josas,instagram,actif,2026-06-21,1.9,faux,52
+MEM-00231,,2021-10-10,USR-02,27,F,Bailly,site_web,actif,2026-06-19,2.7,faux,48
+MEM-00232,,2023-09-27,USR-02,42,H,Jouy-en-Josas,instagram,actif,2026-06-17,2.7,faux,34
+MEM-00233,,2024-07-04,USR-02,40,H,Viroflay,recommandation,actif,2026-06-20,2.1,vrai,45
+MEM-00234,,2024-08-16,USR-02,37,F,Versailles,recommandation,actif,2026-06-16,0.3,faux,81
+MEM-00235,,2024-07-09,USR-02,55,F,Versailles,instagram,actif,2026-06-13,0.6,vrai,81
+MEM-00236,,2022-12-17,USR-02,28,F,Buc,instagram,actif,2026-06-21,2.7,faux,40
+MEM-00237,,2024-06-03,USR-01,35,H,Viroflay,google_ads,actif,2026-06-20,2.1,faux,56
+MEM-00238,,2026-04-15,USR-02,33,H,Jouy-en-Josas,google_ads,actif,2026-06-20,3.5,faux,28
+MEM-00239,,2025-05-31,USR-02,41,H,Saint-Cyr-l'École,instagram,actif,2026-06-19,1.9,faux,45
+MEM-00240,,2021-11-21,USR-02,22,H,Viroflay,recommandation,actif,2026-06-21,2.1,faux,52
+MEM-00241,,2024-03-07,USR-02,42,F,Versailles,instagram,actif,2026-06-10,1.4,faux,58
+MEM-00242,,2023-04-14,USR-02,49,H,Le Chesnay-Rocquencourt,google_ads,actif,2026-03-31,0.0,faux,100
+MEM-00243,,2024-01-18,USR-02,29,F,Vélizy-Villacoublay,recommandation,actif,2026-06-21,2.9,faux,31
+MEM-00244,,2021-10-02,USR-02,49,H,Versailles,recommandation,actif,2026-06-19,3.3,faux,34
+MEM-00245,,2024-10-09,USR-01,31,H,Versailles,site_web,actif,2026-06-20,3.6,faux,29
+MEM-00246,,2025-09-28,USR-02,54,F,Jouy-en-Josas,google_ads,actif,2026-06-20,2.5,faux,43
+MEM-00247,,2023-03-14,USR-01,51,F,Saint-Cyr-l'École,site_web,actif,2026-06-21,3.4,vrai,29
+MEM-00248,,2022-04-01,USR-01,23,F,Versailles,instagram,actif,2026-06-20,2.3,vrai,53
+MEM-00249,,2022-12-17,USR-02,21,H,Versailles,instagram,actif,2026-04-24,0.0,faux,100
+MEM-00250,,2021-05-12,USR-02,33,F,Versailles,google_ads,actif,2026-06-21,2.5,faux,43
+MEM-00251,,2024-01-26,USR-02,60,F,Jouy-en-Josas,instagram,actif,2026-06-19,2.3,faux,47
+MEM-00252,,2024-11-02,USR-02,39,H,Viroflay,google_ads,actif,2026-06-17,2.9,faux,46
+MEM-00253,,2025-05-23,USR-02,46,F,Viroflay,recommandation,actif,2026-03-06,0.0,vrai,100
+MEM-00254,,2021-01-09,USR-02,29,F,Saint-Cyr-l'École,instagram,actif,2026-06-21,2.8,faux,34
+MEM-00255,,2025-11-27,USR-02,22,H,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-21,2.2,faux,50
+MEM-00256,,2024-02-29,USR-02,45,F,Versailles,site_web,actif,2026-06-17,1.7,faux,57
+MEM-00257,,2024-07-12,USR-02,59,H,Versailles,instagram,actif,2026-04-18,0.0,faux,100
+MEM-00258,,2022-11-08,USR-02,35,H,Versailles,google_ads,actif,2026-06-12,1.4,faux,62
+MEM-00259,,2025-04-11,USR-02,40,H,Versailles,google_ads,actif,2026-02-24,0.0,faux,100
+MEM-00260,,2022-03-21,USR-02,21,F,Le Chesnay-Rocquencourt,recommandation,actif,2026-06-18,3.6,faux,29
+MEM-00261,,2025-10-21,USR-02,43,F,Le Chesnay-Rocquencourt,instagram,actif,2026-06-21,2.7,faux,33
+MEM-00262,,2025-10-20,USR-02,26,H,Versailles,instagram,actif,2026-06-21,3.6,faux,29
+MEM-00263,,2025-08-03,USR-02,33,H,Saint-Cyr-l'École,site_web,actif,2026-04-30,0.0,faux,100
+MEM-00264,,2023-06-16,USR-02,37,F,Versailles,recommandation,actif,2026-03-24,0.0,faux,100
+MEM-00265,,2023-02-11,USR-02,56,F,Versailles,recommandation,actif,2026-06-21,0.5,faux,69
+MEM-00266,,2025-09-12,USR-02,19,F,Viroflay,site_web,actif,2026-06-20,2.0,faux,45
+MEM-00267,,2025-07-23,USR-02,30,F,Versailles,instagram,actif,2026-06-18,0.4,faux,72
+MEM-00268,,2023-01-09,USR-02,35,F,Versailles,recommandation,actif,2026-06-07,0.3,faux,90
+MEM-00269,,2023-04-28,USR-02,26,H,Saint-Cyr-l'École,recommandation,actif,2026-03-23,0.0,vrai,100
+MEM-00270,,2022-08-16,USR-02,49,H,Viroflay,instagram,actif,2026-06-17,2.5,faux,49
+MEM-00271,,2022-06-06,USR-02,53,H,Versailles,google_ads,actif,2026-06-19,1.3,faux,66
+MEM-00272,,2026-05-21,USR-02,40,F,Vélizy-Villacoublay,instagram,actif,2026-06-21,2.1,vrai,54
+MEM-00273,,2026-01-16,USR-02,46,F,Viroflay,google_ads,actif,2026-06-20,2.3,faux,46
+MEM-00274,,2022-02-26,USR-02,55,H,Viroflay,google_ads,actif,2026-06-21,2.4,faux,41
+MEM-00275,,2025-07-30,USR-01,34,F,Versailles,google_ads,actif,2026-06-20,1.9,faux,53
+MEM-00276,,2023-01-13,USR-02,45,F,Versailles,instagram,actif,2026-06-20,1.9,faux,54
+MEM-00277,,2022-11-12,USR-01,19,H,Versailles,site_web,actif,2026-06-21,1.4,faux,64
+MEM-00278,,2025-02-05,USR-02,28,H,Versailles,instagram,actif,2026-06-21,2.9,faux,37
+MEM-00279,,2022-08-29,USR-02,20,H,Vélizy-Villacoublay,instagram,actif,2026-06-07,0.3,faux,87
+MEM-00280,,2026-03-27,USR-01,47,H,Saint-Cyr-l'École,instagram,actif,2026-06-19,0.3,faux,83
+MEM-00281,,2023-12-17,USR-02,45,F,Bailly,instagram,actif,2026-06-21,2.3,faux,39
+MEM-00282,,2021-06-27,USR-02,43,F,Versailles,google_ads,actif,2026-04-21,0.0,faux,100
+MEM-00283,,2021-10-02,USR-02,43,H,Saint-Cyr-l'École,instagram,actif,2026-06-20,1.6,faux,49
+MEM-00284,,2023-11-28,USR-02,28,F,Le Chesnay-Rocquencourt,recommandation,actif,2026-06-18,1.4,faux,63
+MEM-00285,,2021-10-14,USR-02,33,H,Versailles,site_web,actif,2026-03-11,0.0,faux,100
+MEM-00286,,2025-10-05,USR-02,44,H,Vélizy-Villacoublay,instagram,actif,2026-06-12,2.4,faux,47
+MEM-00287,,2021-10-26,USR-01,50,F,Viroflay,recommandation,actif,2026-06-21,3.0,faux,41
+MEM-00288,,2025-08-23,USR-02,59,F,Versailles,site_web,actif,2026-06-14,2.4,faux,51
+MEM-00289,,2025-01-13,USR-02,23,H,Viroflay,google_ads,actif,2026-06-19,1.1,faux,64
+MEM-00290,,2025-10-10,USR-01,28,F,Le Chesnay-Rocquencourt,instagram,actif,2026-06-21,3.6,faux,25
+MEM-00291,,2024-10-16,USR-02,24,F,Buc,site_web,actif,2026-06-20,0.6,faux,65
+MEM-00292,,2024-05-12,USR-02,44,F,Versailles,google_ads,actif,2026-06-21,1.0,faux,65
+MEM-00293,,2024-08-10,USR-02,38,F,Versailles,site_web,actif,2026-06-21,2.4,faux,37
+MEM-00294,,2025-06-26,USR-02,39,F,Versailles,site_web,actif,2026-06-20,3.1,faux,28
+MEM-00295,,2021-02-01,USR-02,59,F,Versailles,instagram,actif,2026-06-20,2.2,faux,44
+MEM-00296,,2022-12-06,USR-02,30,H,Versailles,site_web,actif,2026-06-19,0.9,faux,65
+MEM-00297,,2025-07-13,USR-02,38,F,Vélizy-Villacoublay,site_web,actif,2026-06-20,0.6,faux,80
+MEM-00298,,2023-08-14,USR-02,56,H,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-21,3.5,faux,20
+MEM-00299,,2025-11-02,USR-02,40,F,Le Chesnay-Rocquencourt,site_web,actif,2026-06-21,1.5,faux,61
+MEM-00300,,2024-07-04,USR-02,50,H,Versailles,instagram,actif,2026-05-08,0.0,faux,100
+MEM-00301,,2022-06-22,USR-02,54,F,Versailles,instagram,actif,2026-06-21,2.5,faux,38
+MEM-00302,,2026-04-15,USR-02,54,H,Le Chesnay-Rocquencourt,instagram,actif,2026-03-30,0.0,faux,100
+MEM-00303,,2025-06-29,USR-01,19,F,Le Chesnay-Rocquencourt,instagram,actif,2026-06-20,3.3,vrai,39
+MEM-00304,,2025-07-02,USR-02,45,F,Le Chesnay-Rocquencourt,instagram,actif,2026-06-19,2.5,faux,44
+MEM-00305,,2025-01-15,USR-02,24,H,Versailles,instagram,actif,2026-06-19,2.8,faux,34
+MEM-00306,,2025-01-20,USR-02,27,F,Le Chesnay-Rocquencourt,instagram,actif,2026-06-21,3.3,faux,33
+MEM-00307,,2023-02-03,USR-02,55,H,Versailles,recommandation,actif,2026-06-06,0.3,faux,80
+MEM-00308,,2026-02-11,USR-02,58,F,Buc,instagram,actif,2026-06-10,0.8,vrai,79
+MEM-00309,,2023-12-22,USR-02,34,F,Vélizy-Villacoublay,google_ads,actif,2026-06-20,2.0,vrai,53
+MEM-00310,,2022-05-19,USR-01,30,F,Buc,instagram,actif,2026-06-16,1.4,faux,61
+MEM-00311,,2022-03-28,USR-02,53,H,Le Chesnay-Rocquencourt,instagram,actif,2026-06-20,2.2,faux,41
+MEM-00312,,2021-07-15,USR-02,59,F,Le Chesnay-Rocquencourt,google_ads,actif,2026-04-28,0.0,vrai,100
+MEM-00313,,2025-11-04,USR-02,19,H,Le Chesnay-Rocquencourt,site_web,actif,2026-06-21,3.2,faux,36
+MEM-00314,,2025-10-08,USR-01,33,H,Versailles,site_web,actif,2026-06-21,3.5,faux,31
+MEM-00315,,2023-11-04,USR-01,49,H,Versailles,recommandation,actif,2026-06-19,1.5,faux,62
+MEM-00316,,2022-11-18,USR-02,59,F,Versailles,google_ads,actif,2026-06-20,4.1,faux,27
+MEM-00317,,2026-01-24,USR-02,46,F,Vélizy-Villacoublay,site_web,actif,2026-05-04,0.0,vrai,100
+MEM-00318,,2024-07-01,USR-01,57,F,Le Chesnay-Rocquencourt,instagram,actif,2026-06-17,0.8,faux,75
+MEM-00319,,2021-03-03,USR-02,52,F,Versailles,google_ads,actif,2026-06-19,1.9,faux,49
+MEM-00320,,2021-10-21,USR-02,50,H,Le Chesnay-Rocquencourt,recommandation,actif,2026-06-21,2.1,faux,51
+MEM-00321,,2021-12-19,USR-02,53,F,Versailles,instagram,actif,2026-06-17,3.3,faux,25
+MEM-00322,,2021-01-14,USR-02,30,H,Le Chesnay-Rocquencourt,site_web,actif,2026-06-20,2.7,faux,37
+MEM-00323,,2024-10-08,USR-02,33,H,Versailles,instagram,actif,2026-06-11,2.8,faux,43
+MEM-00324,,2025-12-19,USR-01,53,H,Versailles,instagram,actif,2026-06-16,1.1,faux,62
+MEM-00325,,2023-09-14,USR-01,38,F,Versailles,google_ads,actif,2026-06-20,3.2,faux,30
+MEM-00326,,2023-10-15,USR-01,35,H,Saint-Cyr-l'École,instagram,actif,2026-06-19,2.6,faux,35
+MEM-00327,,2023-01-05,USR-02,45,H,Versailles,instagram,actif,2026-06-20,1.6,faux,63
+MEM-00328,,2024-10-16,USR-02,23,H,Versailles,instagram,actif,2026-06-21,2.6,faux,40
+MEM-00329,,2022-06-13,USR-02,49,F,Viroflay,site_web,actif,2026-06-18,1.2,faux,68
+MEM-00330,,2023-01-14,USR-02,32,H,Versailles,google_ads,actif,2026-06-19,0.8,faux,74
+MEM-00331,,2023-11-02,USR-01,31,H,Buc,google_ads,actif,2026-06-21,4.0,faux,19
+MEM-00332,,2024-04-29,USR-02,59,H,Versailles,instagram,actif,2026-06-20,2.6,faux,35
+MEM-00333,,2025-11-08,USR-02,27,F,Le Chesnay-Rocquencourt,site_web,actif,2026-06-18,2.4,vrai,40
+MEM-00334,,2023-03-26,USR-02,24,H,Le Chesnay-Rocquencourt,site_web,actif,2026-06-21,4.1,faux,23
+MEM-00335,,2026-02-06,USR-01,50,H,Versailles,instagram,actif,2026-06-20,2.9,faux,41
+MEM-00336,,2021-08-02,USR-02,42,F,Versailles,recommandation,actif,2026-06-21,2.5,faux,35
+MEM-00337,,2021-12-25,USR-01,29,F,Viroflay,site_web,actif,2026-02-22,0.0,faux,100
+MEM-00338,,2024-11-05,USR-02,60,H,Versailles,recommandation,actif,2026-05-11,0.0,faux,100
+MEM-00339,,2023-03-09,USR-02,36,H,Versailles,google_ads,actif,2026-06-14,1.8,faux,52
+MEM-00340,,2026-03-08,USR-02,60,F,Saint-Cyr-l'École,google_ads,actif,2026-06-16,2.0,faux,54
+MEM-00341,,2024-12-12,USR-02,51,H,Versailles,instagram,actif,2026-06-21,4.9,vrai,12
+MEM-00342,,2023-08-22,USR-02,60,H,Versailles,google_ads,actif,2026-06-17,2.5,vrai,49
+MEM-00343,,2023-08-28,USR-02,33,H,Bailly,google_ads,actif,2026-06-20,3.3,faux,37
+MEM-00344,,2022-07-31,USR-01,41,H,Saint-Cyr-l'École,instagram,actif,2026-06-20,3.7,faux,22
+MEM-00345,,2022-05-01,USR-02,23,F,Le Chesnay-Rocquencourt,google_ads,actif,2026-03-06,0.0,faux,100
+MEM-00346,,2023-02-18,USR-02,60,H,Versailles,instagram,actif,2026-06-21,2.4,vrai,39
+MEM-00347,,2022-03-28,USR-02,27,F,Viroflay,google_ads,actif,2026-06-21,1.5,faux,54
+MEM-00348,,2024-10-09,USR-02,42,H,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-16,2.3,faux,56
+MEM-00349,,2024-04-12,USR-02,36,F,Versailles,instagram,actif,2026-03-01,0.0,faux,100
+MEM-00350,,2026-02-25,USR-01,24,F,Versailles,instagram,actif,2026-06-21,0.9,faux,74
+MEM-00351,,2022-07-18,USR-02,56,H,Versailles,recommandation,actif,2026-06-21,2.6,faux,47
+MEM-00352,,2025-07-10,USR-02,51,H,Buc,google_ads,actif,2026-06-16,3.0,faux,33
+MEM-00353,,2022-08-04,USR-01,19,F,Versailles,google_ads,actif,2026-04-26,0.0,faux,100
+MEM-00354,,2023-05-29,USR-02,19,H,Versailles,site_web,actif,2026-06-21,3.6,vrai,25
+MEM-00355,,2024-02-09,USR-01,27,H,Viroflay,site_web,actif,2026-06-21,2.4,faux,46
+MEM-00356,,2021-09-05,USR-02,49,F,Viroflay,site_web,actif,2026-06-18,2.7,faux,37
+MEM-00357,,2022-10-03,USR-02,26,H,Versailles,recommandation,actif,2026-06-21,3.2,faux,31
+MEM-00358,,2025-07-15,USR-01,55,H,Viroflay,instagram,actif,2026-03-06,0.0,faux,100
+MEM-00359,,2023-08-14,USR-02,53,F,Versailles,instagram,actif,2026-04-08,0.0,faux,100
+MEM-00360,,2023-06-14,USR-02,29,F,Versailles,recommandation,actif,2026-06-21,2.3,faux,50
+MEM-00361,,2021-03-30,USR-02,22,H,Le Chesnay-Rocquencourt,instagram,actif,2026-06-07,0.3,faux,78
+MEM-00362,,2022-12-22,USR-02,51,F,Buc,site_web,actif,2026-05-19,0.0,faux,100
+MEM-00363,,2025-03-24,USR-01,59,H,Versailles,instagram,actif,2026-06-20,2.9,faux,36
+MEM-00364,,2026-02-02,USR-02,47,H,Versailles,instagram,actif,2026-03-23,0.0,faux,100
+MEM-00365,,2024-09-30,USR-02,58,F,Vélizy-Villacoublay,site_web,actif,2026-06-19,2.8,faux,34
+MEM-00366,,2025-07-01,USR-01,37,F,Jouy-en-Josas,site_web,actif,2026-04-11,0.0,faux,100
+MEM-00367,,2025-12-09,USR-02,54,H,Le Chesnay-Rocquencourt,instagram,actif,2026-06-17,2.7,faux,46
+MEM-00368,,2025-06-27,USR-02,32,H,Versailles,site_web,actif,2026-06-21,1.0,faux,65
+MEM-00369,,2024-05-24,USR-02,47,H,Le Chesnay-Rocquencourt,recommandation,actif,2026-03-05,0.0,faux,100
+MEM-00370,,2022-12-09,USR-02,39,H,Jouy-en-Josas,google_ads,actif,2026-06-20,1.9,vrai,58
+MEM-00371,,2025-10-29,USR-02,49,F,Versailles,google_ads,actif,2026-06-19,2.2,vrai,46
+MEM-00372,,2024-02-01,USR-02,41,F,Versailles,google_ads,actif,2026-06-16,2.6,faux,43
+MEM-00373,,2021-09-18,USR-02,33,H,Le Chesnay-Rocquencourt,instagram,actif,2026-06-18,2.2,faux,45
+MEM-00374,,2025-07-29,USR-02,59,F,Versailles,instagram,actif,2026-04-14,0.0,faux,100
+MEM-00375,,2023-11-07,USR-02,43,F,Versailles,instagram,actif,2026-06-19,2.0,faux,53
+MEM-00376,,2023-08-31,USR-01,22,H,Versailles,google_ads,actif,2026-04-28,0.0,faux,100
+MEM-00377,,2026-02-02,USR-02,23,H,Vélizy-Villacoublay,google_ads,actif,2026-06-17,3.6,faux,29
+MEM-00378,,2024-06-26,USR-02,25,H,Versailles,instagram,actif,2026-06-19,3.6,faux,27
+MEM-00379,,2021-08-17,USR-02,26,F,Versailles,instagram,actif,2026-06-16,0.3,faux,75
+MEM-00380,,2025-04-11,USR-01,34,H,Buc,recommandation,actif,2026-03-15,0.0,faux,100
+MEM-00381,,2022-05-29,USR-02,43,H,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-18,3.0,vrai,37
+MEM-00382,,2023-10-01,USR-02,30,H,Versailles,instagram,actif,2026-06-19,1.9,vrai,52
+MEM-00383,,2023-05-07,USR-02,23,H,Versailles,google_ads,actif,2026-06-21,3.4,faux,22
+MEM-00384,,2022-03-09,USR-02,42,H,Versailles,recommandation,actif,2026-06-16,1.0,faux,64
+MEM-00385,,2025-09-11,USR-02,31,F,Versailles,site_web,actif,2026-06-21,2.4,faux,50
+MEM-00386,,2023-11-27,USR-02,48,F,Jouy-en-Josas,instagram,actif,2026-06-21,4.6,faux,11
+MEM-00387,,2022-08-20,USR-02,37,H,Le Chesnay-Rocquencourt,instagram,actif,2026-06-19,0.9,faux,71
+MEM-00388,,2026-04-12,USR-02,43,H,Buc,google_ads,actif,2026-06-20,2.5,faux,38
+MEM-00389,,2025-01-23,USR-02,57,F,Buc,instagram,actif,2026-05-14,0.0,faux,100
+MEM-00390,,2022-09-11,USR-02,32,H,Le Chesnay-Rocquencourt,instagram,actif,2026-06-19,4.5,faux,12
+MEM-00391,,2024-04-03,USR-02,38,H,Versailles,recommandation,actif,2026-06-21,3.0,faux,35
+MEM-00392,,2025-04-23,USR-02,46,H,Saint-Cyr-l'École,google_ads,actif,2026-06-19,2.4,faux,48
+MEM-00393,,2022-11-09,USR-01,35,H,Versailles,instagram,actif,2026-06-21,1.9,faux,58
+MEM-00394,,2021-06-24,USR-01,34,H,Versailles,instagram,actif,2026-06-21,3.3,faux,36
+MEM-00395,,2026-05-16,USR-02,29,F,Viroflay,site_web,actif,2026-06-20,1.2,faux,57
+MEM-00396,,2022-07-21,USR-02,26,H,Versailles,recommandation,actif,2026-06-21,3.1,faux,33
+MEM-00397,,2025-05-22,USR-02,31,H,Jouy-en-Josas,recommandation,actif,2026-06-20,1.7,faux,47
+MEM-00398,,2024-02-16,USR-02,50,F,Versailles,instagram,actif,2026-06-19,3.2,faux,36
+MEM-00399,,2022-04-29,USR-02,55,H,Versailles,site_web,actif,2026-06-21,1.6,faux,49
+MEM-00400,,2023-05-05,USR-02,52,H,Jouy-en-Josas,instagram,actif,2026-06-21,2.7,faux,39
+MEM-00401,,2023-02-15,USR-02,21,H,Versailles,google_ads,actif,2026-06-19,1.8,faux,55
+MEM-00402,,2026-03-15,USR-02,33,F,Versailles,google_ads,actif,2026-06-16,2.0,faux,51
+MEM-00403,,2021-07-07,USR-02,32,H,Jouy-en-Josas,instagram,actif,2026-06-13,0.7,vrai,81
+MEM-00404,,2021-01-28,USR-02,47,H,Saint-Cyr-l'École,instagram,actif,2026-03-16,0.0,faux,100
+MEM-00405,,2026-01-03,USR-02,21,H,Versailles,recommandation,actif,2026-06-21,2.5,faux,46
+MEM-00406,,2021-02-19,USR-02,29,H,Jouy-en-Josas,site_web,actif,2026-06-18,0.9,faux,70
+MEM-00407,,2025-05-07,USR-01,20,H,Vélizy-Villacoublay,recommandation,actif,2026-06-10,0.3,faux,89
+MEM-00408,,2021-04-21,USR-02,42,H,Vélizy-Villacoublay,google_ads,actif,2026-06-06,0.3,faux,82
+MEM-00409,,2022-11-12,USR-02,36,F,Versailles,instagram,actif,2026-06-21,3.2,faux,26
+MEM-00410,,2021-10-25,USR-02,59,F,Versailles,site_web,actif,2026-06-21,4.3,faux,11
+MEM-00411,,2025-11-29,USR-02,33,H,Bailly,instagram,actif,2026-05-16,0.0,faux,100
+MEM-00412,,2021-08-31,USR-02,36,F,Viroflay,instagram,actif,2026-06-07,0.3,vrai,82
+MEM-00413,,2026-01-09,USR-02,31,F,Vélizy-Villacoublay,site_web,actif,2026-03-08,0.0,faux,100
+MEM-00414,,2024-05-24,USR-02,43,F,Le Chesnay-Rocquencourt,instagram,actif,2026-06-19,3.5,faux,23
+MEM-00415,,2025-12-10,USR-01,59,H,Bailly,instagram,actif,2026-06-20,4.5,faux,11
+MEM-00416,,2025-07-06,USR-02,48,F,Bailly,recommandation,actif,2026-03-22,0.0,faux,100
+MEM-00417,,2022-04-13,USR-02,55,F,Vélizy-Villacoublay,site_web,actif,2026-06-20,2.4,vrai,45
+MEM-00418,,2023-01-04,USR-02,51,H,Saint-Cyr-l'École,instagram,actif,2026-03-29,0.0,faux,100
+MEM-00419,,2022-01-29,USR-02,41,F,Versailles,site_web,actif,2026-06-20,2.0,faux,57
+MEM-00420,,2023-01-14,USR-02,20,H,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-20,1.5,faux,66
+MEM-00421,,2023-10-05,USR-02,60,H,Le Chesnay-Rocquencourt,instagram,actif,2026-06-20,1.5,faux,55
+MEM-00422,,2021-06-17,USR-02,23,H,Versailles,instagram,actif,2026-06-13,0.3,vrai,78
+MEM-00423,,2021-07-03,USR-02,33,H,Le Chesnay-Rocquencourt,instagram,actif,2026-06-20,2.7,faux,44
+MEM-00424,,2025-09-06,USR-02,24,H,Versailles,site_web,actif,2026-06-12,2.3,faux,51
+MEM-00425,,2021-04-09,USR-02,41,F,Viroflay,recommandation,actif,2026-06-19,1.7,vrai,49
+MEM-00426,,2025-03-01,USR-02,56,F,Vélizy-Villacoublay,instagram,actif,2026-06-19,1.8,faux,50
+MEM-00427,,2024-11-20,USR-02,31,F,Buc,google_ads,actif,2026-06-21,3.6,faux,31
+MEM-00428,,2023-10-24,USR-02,44,H,Versailles,instagram,actif,2026-06-18,1.3,faux,66
+MEM-00429,,2021-03-16,USR-02,40,F,Viroflay,site_web,actif,2026-06-19,2.7,faux,41
+MEM-00430,,2024-05-08,USR-02,44,F,Viroflay,google_ads,actif,2026-04-26,0.0,faux,100
+MEM-00431,,2023-03-01,USR-02,33,H,Le Chesnay-Rocquencourt,instagram,actif,2026-04-26,0.0,vrai,100
+MEM-00432,,2021-08-31,USR-01,37,F,Versailles,google_ads,actif,2026-06-21,3.2,faux,30
+MEM-00433,,2023-07-20,USR-02,28,H,Versailles,recommandation,actif,2026-02-25,0.0,vrai,100
+MEM-00434,,2022-10-26,USR-02,34,F,Bailly,recommandation,actif,2026-06-17,1.6,faux,53
+MEM-00435,,2021-01-14,USR-02,22,F,Versailles,recommandation,actif,2026-06-21,4.4,faux,11
+MEM-00436,,2022-02-23,USR-02,45,H,Buc,instagram,actif,2026-06-17,1.7,faux,53
+MEM-00437,,2022-12-09,USR-02,37,H,Versailles,instagram,actif,2026-04-20,0.0,faux,100
+MEM-00438,,2023-09-10,USR-01,22,F,Versailles,instagram,actif,2026-06-10,1.5,faux,67
+MEM-00439,,2025-06-05,USR-02,47,H,Viroflay,instagram,actif,2026-06-21,3.7,faux,17
+MEM-00440,,2025-09-26,USR-02,26,H,Versailles,google_ads,actif,2026-06-20,2.7,faux,40
+MEM-00441,,2021-08-15,USR-02,50,H,Le Chesnay-Rocquencourt,instagram,actif,2026-06-21,2.0,faux,45
+MEM-00442,,2023-10-26,USR-01,57,H,Saint-Cyr-l'École,site_web,actif,2026-06-20,2.9,vrai,43
+MEM-00443,,2021-02-21,USR-02,33,F,Bailly,google_ads,actif,2026-06-20,2.4,faux,45
+MEM-00444,,2025-12-02,USR-02,27,F,Buc,instagram,actif,2026-06-21,3.0,faux,41
+MEM-00445,,2021-01-22,USR-02,28,F,Versailles,site_web,actif,2026-06-19,0.8,faux,68
+MEM-00446,,2021-07-20,USR-02,40,H,Versailles,google_ads,actif,2026-06-02,0.3,faux,83
+MEM-00447,,2022-08-10,USR-02,59,H,Versailles,google_ads,actif,2026-06-13,2.0,faux,59
+MEM-00448,,2022-12-12,USR-02,28,F,Versailles,instagram,actif,2026-06-18,1.9,faux,53
+MEM-00449,,2021-12-29,USR-02,56,H,Versailles,instagram,actif,2026-06-21,2.8,faux,38
+MEM-00450,,2022-09-24,USR-02,30,H,Vélizy-Villacoublay,instagram,actif,2026-02-24,0.0,faux,100
+MEM-00451,,2026-02-22,USR-02,48,H,Versailles,site_web,actif,2026-06-21,3.3,faux,23
+MEM-00452,,2022-04-13,USR-02,60,H,Buc,instagram,actif,2026-04-15,0.0,faux,100
+MEM-00453,,2022-04-18,USR-01,33,F,Versailles,google_ads,actif,2026-06-21,1.8,faux,54
+MEM-00454,,2021-09-09,USR-02,30,F,Versailles,instagram,actif,2026-06-13,0.7,faux,81
+MEM-00455,,2025-10-22,USR-02,27,F,Buc,instagram,actif,2026-06-19,2.8,faux,45
+MEM-00456,,2024-06-22,USR-02,57,H,Versailles,google_ads,actif,2026-06-21,3.9,vrai,28
+MEM-00457,,2024-08-03,USR-02,23,F,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-19,3.2,faux,30
+MEM-00458,,2024-09-25,USR-02,43,F,Versailles,recommandation,actif,2026-06-20,3.4,faux,33
+MEM-00459,,2026-02-08,USR-01,57,H,Saint-Cyr-l'École,instagram,actif,2026-06-21,3.2,faux,32
+MEM-00460,,2022-06-25,USR-02,58,F,Versailles,recommandation,actif,2026-06-21,1.8,faux,59
+MEM-00461,,2022-02-02,USR-02,40,H,Le Chesnay-Rocquencourt,instagram,actif,2026-05-12,0.0,vrai,100
+MEM-00462,,2021-09-16,USR-02,28,H,Buc,instagram,actif,2026-06-06,0.9,faux,82
+MEM-00463,,2025-07-03,USR-02,31,H,Versailles,recommandation,actif,2026-06-18,1.8,faux,50
+MEM-00464,,2024-01-30,USR-02,44,H,Viroflay,google_ads,actif,2026-06-16,2.1,faux,58
+MEM-00465,,2024-12-31,USR-01,57,H,Versailles,recommandation,actif,2026-06-18,2.7,faux,37
+MEM-00466,,2023-04-16,USR-02,49,H,Le Chesnay-Rocquencourt,site_web,actif,2026-06-17,1.1,faux,64
+MEM-00467,,2025-07-29,USR-02,21,H,Le Chesnay-Rocquencourt,instagram,actif,2026-04-26,0.0,faux,100
+MEM-00468,,2023-04-11,USR-02,48,H,Jouy-en-Josas,site_web,actif,2026-06-19,3.2,faux,38
+MEM-00469,,2021-03-27,USR-02,34,H,Versailles,site_web,actif,2026-03-20,0.0,faux,100
+MEM-00470,,2022-10-16,USR-02,46,H,Viroflay,instagram,actif,2026-06-20,2.1,faux,50
+MEM-00471,,2022-12-24,USR-02,45,F,Vélizy-Villacoublay,site_web,actif,2026-06-21,2.0,faux,56
+MEM-00472,,2023-05-06,USR-02,31,F,Le Chesnay-Rocquencourt,instagram,actif,2026-06-20,2.6,faux,49
+MEM-00473,,2025-02-21,USR-01,28,F,Le Chesnay-Rocquencourt,site_web,actif,2026-06-19,2.0,faux,56
+MEM-00474,,2022-01-09,USR-01,24,H,Vélizy-Villacoublay,google_ads,actif,2026-03-01,0.0,faux,100
+MEM-00475,,2023-11-07,USR-02,29,F,Versailles,google_ads,actif,2026-06-20,1.6,faux,54
+MEM-00476,,2023-03-22,USR-02,34,H,Versailles,instagram,actif,2026-06-20,1.5,faux,59
+MEM-00477,,2022-11-02,USR-02,40,H,Viroflay,instagram,actif,2026-06-19,2.5,faux,51
+MEM-00478,,2026-02-25,USR-02,22,F,Versailles,instagram,actif,2026-06-19,1.0,faux,60
+MEM-00479,,2022-12-09,USR-02,47,F,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-20,4.4,faux,12
+MEM-00480,,2023-03-04,USR-02,23,F,Viroflay,google_ads,actif,2026-06-19,2.2,faux,53
+MEM-00481,,2024-06-04,USR-02,46,H,Le Chesnay-Rocquencourt,recommandation,actif,2026-06-20,2.3,faux,47
+MEM-00482,,2021-02-04,USR-01,31,H,Buc,google_ads,actif,2026-06-20,1.1,faux,68
+MEM-00483,,2023-05-16,USR-02,30,F,Versailles,recommandation,actif,2026-06-20,1.7,faux,57
+MEM-00484,,2021-03-21,USR-02,33,H,Le Chesnay-Rocquencourt,recommandation,actif,2026-06-18,1.5,faux,58
+MEM-00485,,2022-05-28,USR-02,42,H,Versailles,recommandation,actif,2026-06-17,1.1,faux,67
+MEM-00486,,2026-01-21,USR-02,53,F,Versailles,instagram,actif,2026-06-20,1.4,faux,66
+MEM-00487,,2024-11-15,USR-02,44,H,Versailles,site_web,actif,2026-06-16,1.5,faux,53
+MEM-00488,,2024-07-25,USR-02,56,F,Versailles,recommandation,actif,2026-06-20,2.4,faux,44
+MEM-00489,,2024-06-22,USR-02,57,H,Versailles,google_ads,actif,2026-06-20,2.4,vrai,37
+MEM-00490,,2025-07-19,USR-01,54,F,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-19,2.2,faux,44
+MEM-00491,,2024-04-02,USR-02,29,F,Viroflay,site_web,actif,2026-06-21,2.1,faux,46
+MEM-00492,,2021-01-10,USR-02,58,H,Buc,instagram,actif,2026-06-21,3.0,faux,33
+MEM-00493,,2021-05-12,USR-01,48,H,Versailles,google_ads,actif,2026-06-21,1.5,faux,59
+MEM-00494,,2021-05-26,USR-01,32,F,Jouy-en-Josas,google_ads,actif,2026-06-21,2.8,faux,36
+MEM-00495,,2021-12-29,USR-02,56,F,Le Chesnay-Rocquencourt,recommandation,actif,2026-06-18,2.9,faux,37
+MEM-00496,,2025-04-18,USR-02,59,H,Versailles,google_ads,actif,2026-05-14,0.0,faux,100
+MEM-00497,,2026-02-25,USR-02,43,F,Viroflay,instagram,actif,2026-06-17,1.9,faux,50
+MEM-00498,,2022-09-13,USR-02,57,F,Versailles,instagram,actif,2026-06-18,0.3,faux,71
+MEM-00499,,2024-02-08,USR-01,56,F,Versailles,recommandation,actif,2026-06-20,2.7,vrai,47
+MEM-00500,,2025-04-22,USR-01,25,F,Versailles,instagram,actif,2026-04-21,0.0,faux,100
+MEM-00501,,2022-12-07,USR-01,43,F,Viroflay,instagram,actif,2026-04-02,0.0,faux,100
+MEM-00502,,2024-06-05,USR-01,29,H,Versailles,google_ads,actif,2026-05-20,0.0,faux,100
+MEM-00503,,2025-01-03,USR-02,32,H,Viroflay,recommandation,actif,2026-06-20,4.4,faux,22
+MEM-00504,,2021-09-02,USR-02,26,H,Viroflay,instagram,actif,2026-06-19,3.2,vrai,37
+MEM-00505,,2021-02-20,USR-02,36,F,Versailles,instagram,actif,2026-06-19,4.6,vrai,18
+MEM-00506,,2022-05-10,USR-01,58,F,Versailles,instagram,actif,2026-06-21,1.6,vrai,62
+MEM-00507,,2023-09-02,USR-02,40,F,Vélizy-Villacoublay,recommandation,actif,2026-03-10,0.0,vrai,100
+MEM-00508,,2021-05-07,USR-01,41,H,Le Chesnay-Rocquencourt,instagram,actif,2026-06-21,3.5,faux,30
+MEM-00509,,2022-03-29,USR-02,59,H,Le Chesnay-Rocquencourt,recommandation,actif,2026-06-21,3.8,vrai,28
+MEM-00510,,2025-06-03,USR-02,58,H,Vélizy-Villacoublay,recommandation,actif,2026-04-24,0.0,faux,100
+MEM-00511,,2025-10-17,USR-02,22,F,Versailles,instagram,actif,2026-06-21,2.9,faux,42
+MEM-00512,,2022-08-07,USR-02,31,F,Le Chesnay-Rocquencourt,google_ads,actif,2026-04-02,0.0,faux,100
+MEM-00513,,2021-08-29,USR-02,51,H,Le Chesnay-Rocquencourt,instagram,actif,2026-02-24,0.0,faux,100
+MEM-00514,,2022-08-11,USR-01,32,H,Versailles,recommandation,actif,2026-06-20,0.3,faux,77
+MEM-00515,,2022-08-04,USR-02,29,F,Jouy-en-Josas,recommandation,actif,2026-03-02,0.0,faux,100
+MEM-00516,,2025-07-22,USR-02,38,H,Viroflay,site_web,actif,2026-05-08,0.0,faux,100
+MEM-00517,,2025-06-10,USR-02,37,H,Versailles,instagram,actif,2026-06-19,4.3,faux,19
+MEM-00518,,2022-05-04,USR-02,26,F,Versailles,instagram,actif,2026-06-07,1.1,faux,79
+MEM-00519,,2023-02-12,USR-02,53,F,Versailles,site_web,actif,2026-06-17,2.5,faux,37
+MEM-00520,,2023-02-27,USR-02,39,H,Viroflay,instagram,actif,2026-06-21,3.0,vrai,39
+MEM-00521,,2024-07-14,USR-02,41,F,Versailles,google_ads,actif,2026-06-21,3.9,faux,14
+MEM-00522,,2024-12-08,USR-02,31,F,Versailles,google_ads,actif,2026-04-14,0.0,faux,100
+MEM-00523,,2022-09-22,USR-02,44,F,Versailles,instagram,actif,2026-06-21,1.9,faux,44
+MEM-00524,,2024-06-27,USR-02,47,H,Versailles,instagram,actif,2026-06-21,2.1,faux,46
+MEM-00525,,2024-09-01,USR-02,60,F,Vélizy-Villacoublay,google_ads,actif,2026-06-19,3.3,vrai,36
+MEM-00526,,2022-11-19,USR-02,27,H,Vélizy-Villacoublay,instagram,actif,2026-06-17,1.0,faux,64
+MEM-00527,,2025-02-20,USR-02,20,H,Versailles,google_ads,actif,2026-06-13,1.2,faux,61
+MEM-00528,,2024-01-25,USR-01,54,F,Versailles,instagram,actif,2026-06-21,3.1,faux,38
+MEM-00529,,2024-07-08,USR-02,58,H,Viroflay,google_ads,actif,2026-06-20,1.9,faux,51
+MEM-00530,,2023-11-05,USR-02,38,F,Versailles,recommandation,actif,2026-05-17,0.0,faux,95
+MEM-00531,,2025-12-21,USR-02,49,H,Versailles,google_ads,actif,2026-06-17,3.1,vrai,34
+MEM-00532,,2024-07-01,USR-02,23,F,Versailles,recommandation,actif,2026-06-21,2.4,vrai,40
+MEM-00533,,2023-12-12,USR-02,46,F,Versailles,google_ads,actif,2026-06-21,2.7,faux,46
+MEM-00534,,2021-07-11,USR-01,40,F,Le Chesnay-Rocquencourt,site_web,actif,2026-06-21,1.9,faux,51
+MEM-00535,,2024-11-20,USR-02,36,H,Viroflay,site_web,actif,2026-03-08,0.0,faux,100
+MEM-00536,,2022-06-30,USR-02,44,F,Versailles,google_ads,actif,2026-06-21,3.2,faux,25
+MEM-00537,,2025-12-07,USR-02,34,F,Versailles,google_ads,actif,2026-06-21,2.2,faux,50
+MEM-00538,,2024-06-12,USR-02,37,F,Versailles,google_ads,actif,2026-06-13,0.3,faux,88
+MEM-00539,,2021-02-12,USR-02,47,F,Vélizy-Villacoublay,instagram,actif,2026-06-18,3.1,faux,41
+MEM-00540,,2023-02-26,USR-02,45,H,Saint-Cyr-l'École,instagram,actif,2026-06-21,2.6,faux,45
+MEM-00541,,2021-02-03,USR-02,42,F,Versailles,instagram,actif,2026-06-21,3.8,faux,28
+MEM-00542,,2024-09-06,USR-01,33,H,Versailles,recommandation,actif,2026-06-19,2.8,vrai,46
+MEM-00543,,2024-03-07,USR-02,50,H,Le Chesnay-Rocquencourt,instagram,actif,2026-06-20,4.6,faux,11
+MEM-00544,,2025-10-02,USR-02,49,H,Le Chesnay-Rocquencourt,instagram,actif,2026-06-12,0.7,faux,72
+MEM-00545,,2022-04-08,USR-01,47,F,Versailles,instagram,actif,2026-06-21,2.5,faux,42
+MEM-00546,,2026-04-26,USR-02,19,H,Saint-Cyr-l'École,google_ads,actif,2026-03-20,0.0,faux,100
+MEM-00547,,2025-01-19,USR-02,36,H,Versailles,site_web,actif,2026-06-20,3.7,faux,32
+MEM-00548,,2022-03-18,USR-02,45,F,Viroflay,site_web,actif,2026-06-14,2.7,faux,51
+MEM-00549,,2022-06-12,USR-02,53,F,Versailles,instagram,actif,2026-06-21,1.6,faux,51
+MEM-00550,,2021-05-24,USR-02,34,H,Le Chesnay-Rocquencourt,google_ads,actif,2026-05-16,0.0,faux,100
+MEM-00551,,2025-11-17,USR-02,37,H,Viroflay,google_ads,actif,2026-06-21,2.3,faux,43
+MEM-00552,,2022-09-23,USR-02,29,H,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-17,1.5,faux,66
+MEM-00553,,2026-04-20,USR-02,28,H,Le Chesnay-Rocquencourt,instagram,actif,2026-03-01,0.0,faux,100
+MEM-00554,,2023-10-23,USR-02,31,F,Saint-Cyr-l'École,google_ads,actif,2026-06-21,1.6,vrai,64
+MEM-00555,,2023-02-20,USR-02,55,F,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-19,2.6,faux,44
+MEM-00556,,2025-10-19,USR-02,37,H,Versailles,google_ads,actif,2026-06-21,2.3,faux,44
+MEM-00557,,2026-01-17,USR-01,22,H,Jouy-en-Josas,instagram,actif,2026-06-21,3.2,faux,35
+MEM-00558,,2024-10-10,USR-01,60,H,Versailles,google_ads,actif,2026-06-20,1.3,vrai,56
+MEM-00559,,2025-04-03,USR-01,60,H,Le Chesnay-Rocquencourt,instagram,actif,2026-06-21,3.2,vrai,28
+MEM-00560,,2025-06-06,USR-02,24,H,Versailles,instagram,actif,2026-06-21,2.0,faux,45
+MEM-00561,,2025-02-21,USR-02,37,H,Saint-Cyr-l'École,recommandation,actif,2026-06-20,2.5,faux,51
+MEM-00562,,2024-07-02,USR-02,43,H,Jouy-en-Josas,google_ads,actif,2026-06-20,2.0,faux,45
+MEM-00563,,2026-04-08,USR-01,51,F,Versailles,instagram,actif,2026-06-19,1.5,vrai,58
+MEM-00564,,2021-08-25,USR-01,38,F,Viroflay,instagram,actif,2026-06-19,3.3,vrai,33
+MEM-00565,,2025-05-23,USR-02,23,F,Versailles,instagram,actif,2026-04-03,0.0,faux,100
+MEM-00566,,2024-03-29,USR-02,20,H,Versailles,google_ads,actif,2026-06-20,3.6,faux,31
+MEM-00567,,2023-02-02,USR-02,20,H,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-19,2.2,faux,48
+MEM-00568,,2023-04-30,USR-02,40,H,Versailles,instagram,actif,2026-06-21,1.5,faux,63
+MEM-00569,,2022-05-24,USR-02,43,H,Saint-Cyr-l'École,recommandation,actif,2026-06-21,2.5,faux,36
+MEM-00570,,2024-08-27,USR-02,22,H,Jouy-en-Josas,google_ads,actif,2026-06-19,1.0,faux,72
+MEM-00571,,2026-03-03,USR-02,56,H,Versailles,recommandation,actif,2026-06-18,2.7,faux,39
+MEM-00572,,2023-08-11,USR-02,21,H,Viroflay,site_web,actif,2026-06-17,0.7,faux,73
+MEM-00573,,2022-12-31,USR-02,50,H,Viroflay,site_web,actif,2026-06-21,3.0,faux,27
+MEM-00574,,2025-09-03,USR-02,58,H,Versailles,google_ads,actif,2026-06-06,0.8,faux,73
+MEM-00575,,2025-08-23,USR-02,35,H,Versailles,google_ads,actif,2026-06-20,3.6,faux,25
+MEM-00576,,2021-11-09,USR-02,31,F,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-18,1.9,faux,47
+MEM-00577,,2024-03-05,USR-01,48,H,Saint-Cyr-l'École,instagram,actif,2026-06-12,0.4,faux,83
+MEM-00578,,2023-09-01,USR-02,24,F,Versailles,google_ads,actif,2026-06-21,3.3,faux,23
+MEM-00579,,2024-06-19,USR-02,29,F,Viroflay,google_ads,actif,2026-06-21,1.9,vrai,57
+MEM-00580,,2023-07-20,USR-02,57,H,Viroflay,google_ads,actif,2026-03-21,0.0,faux,100
+MEM-00581,,2024-03-25,USR-01,22,F,Viroflay,instagram,actif,2026-04-17,0.0,faux,100
+MEM-00582,,2025-10-03,USR-02,39,F,Vélizy-Villacoublay,google_ads,actif,2026-06-21,3.2,faux,39
+MEM-00583,,2021-08-09,USR-01,54,F,Viroflay,recommandation,actif,2026-06-17,1.5,faux,60
+MEM-00584,,2022-10-28,USR-01,25,F,Buc,instagram,actif,2026-06-21,3.4,faux,24
+MEM-00585,,2024-01-23,USR-02,25,F,Versailles,google_ads,actif,2026-03-04,0.0,faux,100
+MEM-00586,,2021-11-23,USR-02,48,F,Buc,site_web,actif,2026-06-13,1.3,faux,61
+MEM-00587,,2022-10-30,USR-01,30,F,Versailles,recommandation,actif,2026-06-20,1.9,vrai,53
+MEM-00588,,2022-10-08,USR-02,33,H,Saint-Cyr-l'École,instagram,actif,2026-06-21,3.1,faux,35
+MEM-00589,,2025-07-16,USR-01,50,F,Versailles,google_ads,actif,2026-06-16,2.7,vrai,45
+MEM-00590,,2024-12-12,USR-02,21,H,Versailles,instagram,actif,2026-06-21,2.5,faux,44
+MEM-00591,,2023-05-17,USR-02,57,F,Versailles,instagram,actif,2026-06-20,3.6,faux,30
+MEM-00592,,2024-10-28,USR-01,31,F,Viroflay,google_ads,actif,2026-06-18,1.6,vrai,56
+MEM-00593,,2022-01-02,USR-02,22,F,Le Chesnay-Rocquencourt,recommandation,actif,2026-06-21,1.7,faux,57
+MEM-00594,,2022-10-31,USR-02,30,F,Buc,instagram,actif,2026-06-20,2.8,faux,31
+MEM-00595,,2021-06-19,USR-02,54,F,Buc,recommandation,actif,2026-06-19,2.2,faux,50
+MEM-00596,,2021-06-12,USR-02,24,H,Versailles,instagram,actif,2026-06-20,2.2,faux,46
+MEM-00597,,2024-01-03,USR-02,51,H,Versailles,site_web,actif,2026-06-20,2.8,faux,34
+MEM-00598,,2024-05-04,USR-02,47,F,Le Chesnay-Rocquencourt,instagram,actif,2026-06-19,0.6,vrai,75
+MEM-00599,,2023-05-14,USR-02,27,H,Vélizy-Villacoublay,recommandation,actif,2026-05-05,0.0,faux,100
+MEM-00600,,2023-10-07,USR-02,42,H,Versailles,instagram,actif,2026-06-17,0.9,faux,67
+MEM-00601,,2021-02-21,USR-02,52,H,Vélizy-Villacoublay,site_web,actif,2026-06-20,2.8,vrai,38
+MEM-00602,,2021-07-25,USR-02,49,F,Versailles,site_web,actif,2026-06-17,2.1,faux,51
+MEM-00603,,2025-07-25,USR-01,22,F,Saint-Cyr-l'École,recommandation,actif,2026-06-21,1.9,faux,51
+MEM-00604,,2026-02-22,USR-02,37,H,Le Chesnay-Rocquencourt,instagram,actif,2026-05-10,0.0,faux,98
+MEM-00605,,2025-10-01,USR-02,40,H,Versailles,google_ads,actif,2026-06-20,2.6,faux,39
+MEM-00606,,2026-01-22,USR-02,42,F,Viroflay,google_ads,actif,2026-06-21,2.0,faux,51
+MEM-00607,,2023-03-24,USR-01,47,H,Le Chesnay-Rocquencourt,instagram,actif,2026-06-21,0.3,faux,83
+MEM-00608,,2021-08-27,USR-01,41,H,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-13,1.1,faux,73
+MEM-00609,,2025-05-31,USR-02,36,F,Versailles,instagram,actif,2026-06-18,1.5,vrai,63
+MEM-00610,,2023-03-06,USR-02,37,F,Viroflay,recommandation,actif,2026-06-20,1.6,faux,51
+MEM-00611,,2021-05-26,USR-02,27,F,Versailles,instagram,actif,2026-06-20,3.2,faux,30
+MEM-00612,,2025-05-28,USR-02,24,F,Versailles,instagram,actif,2026-06-06,0.3,faux,86
+MEM-00613,,2022-07-18,USR-02,22,H,Versailles,site_web,actif,2026-06-21,3.7,faux,22
+MEM-00614,,2025-06-18,USR-02,29,F,Versailles,instagram,actif,2026-06-20,1.4,vrai,62
+MEM-00615,,2022-10-23,USR-02,57,H,Versailles,instagram,actif,2026-04-26,0.0,faux,100
+MEM-00616,,2025-12-08,USR-02,49,H,Le Chesnay-Rocquencourt,site_web,actif,2026-06-18,2.1,faux,47
+MEM-00617,,2021-03-08,USR-02,20,H,Le Chesnay-Rocquencourt,instagram,actif,2026-06-21,2.7,faux,47
+MEM-00618,,2026-05-04,USR-02,60,F,Versailles,instagram,actif,2026-04-27,0.0,vrai,100
+MEM-00619,,2023-04-29,USR-01,23,H,Versailles,instagram,actif,2026-06-17,1.6,faux,52
+MEM-00620,,2025-11-22,USR-01,28,F,Vélizy-Villacoublay,instagram,actif,2026-06-20,0.3,faux,74
+MEM-00621,,2021-02-20,USR-01,20,H,Jouy-en-Josas,site_web,actif,2026-06-18,2.5,faux,49
+MEM-00622,,2025-10-29,USR-02,26,F,Saint-Cyr-l'École,google_ads,actif,2026-06-18,3.1,faux,36
+MEM-00623,,2021-07-28,USR-02,35,F,Versailles,instagram,actif,2026-06-21,3.9,faux,28
+MEM-00624,,2025-08-19,USR-02,44,H,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-20,2.6,faux,44
+MEM-00625,,2024-01-31,USR-02,54,F,Viroflay,instagram,actif,2026-06-20,3.2,faux,39
+MEM-00626,,2025-05-01,USR-01,33,H,Saint-Cyr-l'École,recommandation,actif,2026-06-17,2.2,faux,49
+MEM-00627,,2026-03-17,USR-02,50,F,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-17,1.8,faux,51
+MEM-00628,,2021-10-14,USR-02,57,F,Buc,google_ads,actif,2026-06-21,2.4,faux,48
+MEM-00629,,2025-05-27,USR-02,50,F,Versailles,recommandation,actif,2026-03-31,0.0,faux,100
+MEM-00630,,2021-09-13,USR-02,46,F,Le Chesnay-Rocquencourt,instagram,actif,2026-06-20,1.5,faux,62
+MEM-00631,,2025-02-05,USR-02,24,H,Versailles,instagram,actif,2026-06-16,1.4,faux,58
+MEM-00632,,2024-04-09,USR-02,57,H,Versailles,google_ads,actif,2026-06-20,4.5,faux,17
+MEM-00633,,2021-06-01,USR-02,44,H,Versailles,google_ads,actif,2026-06-14,1.0,faux,72
+MEM-00634,,2025-05-27,USR-02,28,F,Versailles,instagram,actif,2026-06-17,2.7,vrai,44
+MEM-00635,,2022-10-25,USR-01,49,H,Viroflay,google_ads,actif,2026-06-20,3.1,faux,27
+MEM-00636,,2026-01-17,USR-02,57,F,Versailles,google_ads,actif,2026-06-20,1.8,faux,50
+MEM-00637,,2021-02-11,USR-02,34,H,Versailles,instagram,actif,2026-06-20,1.7,vrai,55
+MEM-00638,,2021-10-27,USR-01,28,F,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-18,3.1,faux,27
+MEM-00639,,2024-02-23,USR-02,37,H,Saint-Cyr-l'École,google_ads,actif,2026-06-21,3.0,faux,43
+MEM-00640,,2024-06-30,USR-01,23,F,Viroflay,google_ads,actif,2026-06-09,0.5,faux,80
+MEM-00641,,2021-02-10,USR-02,60,F,Saint-Cyr-l'École,instagram,actif,2026-06-19,2.6,faux,40
+MEM-00642,,2026-02-15,USR-02,23,H,Versailles,google_ads,actif,2026-05-03,0.0,faux,100
+MEM-00643,,2024-07-25,USR-02,27,F,Versailles,recommandation,actif,2026-06-21,1.0,faux,65
+MEM-00644,,2026-01-03,USR-02,30,H,Versailles,instagram,actif,2026-06-21,3.9,faux,22
+MEM-00645,,2021-04-11,USR-02,31,H,Jouy-en-Josas,recommandation,actif,2026-06-19,3.0,faux,38
+MEM-00646,,2022-04-10,USR-02,54,F,Versailles,instagram,actif,2026-06-20,3.1,faux,40
+MEM-00647,,2026-05-14,USR-02,59,F,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-20,1.4,faux,65
+MEM-00648,,2025-05-23,USR-02,23,H,Buc,recommandation,actif,2026-06-21,2.9,faux,33
+MEM-00649,,2021-01-02,USR-02,52,H,Versailles,instagram,actif,2026-06-19,1.6,faux,55
+MEM-00650,,2023-10-17,USR-02,20,H,Versailles,instagram,actif,2026-06-20,2.8,faux,39
+MEM-00651,,2024-12-27,USR-02,33,H,Viroflay,instagram,actif,2026-04-08,0.0,faux,100
+MEM-00652,,2021-06-05,USR-02,59,F,Versailles,instagram,actif,2026-06-17,3.4,faux,30
+MEM-00653,,2022-03-02,USR-02,49,F,Versailles,google_ads,actif,2026-06-20,2.4,faux,49
+MEM-00654,,2023-05-02,USR-02,32,H,Buc,google_ads,actif,2026-06-21,2.4,vrai,38
+MEM-00655,,2025-08-26,USR-01,35,H,Versailles,google_ads,actif,2026-06-20,1.6,faux,49
+MEM-00656,,2024-09-24,USR-02,46,H,Buc,instagram,actif,2026-06-16,0.3,vrai,80
+MEM-00657,,2022-02-12,USR-02,34,H,Vélizy-Villacoublay,google_ads,actif,2026-06-13,1.4,faux,62
+MEM-00658,,2025-01-02,USR-02,26,H,Versailles,instagram,actif,2026-06-19,3.1,faux,29
+MEM-00659,,2021-08-29,USR-02,30,F,Vélizy-Villacoublay,google_ads,actif,2026-06-21,2.1,faux,53
+MEM-00660,,2025-07-27,USR-02,47,F,Buc,google_ads,actif,2026-06-20,2.4,vrai,47
+MEM-00661,,2021-10-15,USR-02,45,F,Viroflay,google_ads,actif,2026-06-10,1.3,faux,66
+MEM-00662,,2022-12-22,USR-01,23,H,Versailles,instagram,actif,2026-06-20,1.6,faux,54
+MEM-00663,,2022-12-27,USR-02,23,H,Versailles,site_web,actif,2026-06-19,3.2,faux,26
+MEM-00664,,2024-03-12,USR-02,45,F,Viroflay,site_web,actif,2026-06-20,2.1,vrai,57
+MEM-00665,,2023-07-09,USR-01,47,H,Vélizy-Villacoublay,instagram,actif,2026-05-09,0.0,faux,100
+MEM-00666,,2024-01-19,USR-02,30,H,Viroflay,recommandation,actif,2026-06-21,1.4,faux,55
+MEM-00667,,2021-08-29,USR-02,60,F,Viroflay,instagram,actif,2026-06-21,3.3,faux,37
+MEM-00668,,2025-10-31,USR-01,30,H,Vélizy-Villacoublay,site_web,actif,2026-06-21,5.3,faux,4
+MEM-00669,,2021-06-03,USR-02,39,H,Le Chesnay-Rocquencourt,instagram,actif,2026-06-07,0.7,faux,71
+MEM-00670,,2024-11-27,USR-02,54,F,Le Chesnay-Rocquencourt,instagram,actif,2026-06-19,3.2,faux,27
+MEM-00671,,2023-11-21,USR-02,29,H,Versailles,google_ads,actif,2026-06-20,2.5,faux,47
+MEM-00672,,2025-06-24,USR-01,30,F,Viroflay,site_web,actif,2026-06-16,3.7,faux,31
+MEM-00673,,2023-12-20,USR-02,30,H,Versailles,recommandation,actif,2026-06-20,3.9,faux,16
+MEM-00674,,2021-04-19,USR-02,58,F,Versailles,site_web,actif,2026-06-19,1.7,faux,63
+MEM-00675,,2021-06-13,USR-02,57,F,Versailles,google_ads,actif,2026-06-21,2.0,faux,56
+MEM-00676,,2025-02-12,USR-02,22,F,Vélizy-Villacoublay,recommandation,actif,2026-06-14,2.4,faux,48
+MEM-00677,,2023-08-19,USR-01,28,H,Versailles,instagram,actif,2026-06-20,2.0,faux,43
+MEM-00678,,2025-10-24,USR-02,27,F,Bailly,site_web,actif,2026-06-14,1.2,faux,74
+MEM-00679,,2021-05-15,USR-02,41,H,Buc,site_web,actif,2026-06-19,2.7,faux,33
+MEM-00680,,2024-09-19,USR-02,44,F,Versailles,google_ads,actif,2026-06-21,4.3,faux,12
+MEM-00681,,2024-08-17,USR-02,29,H,Vélizy-Villacoublay,site_web,actif,2026-06-19,1.4,vrai,66
+MEM-00682,,2021-11-24,USR-01,23,H,Versailles,recommandation,actif,2026-04-13,0.0,faux,100
+MEM-00683,,2026-04-05,USR-02,22,F,Versailles,google_ads,actif,2026-06-20,3.1,faux,39
+MEM-00684,,2024-11-29,USR-01,48,F,Le Chesnay-Rocquencourt,instagram,actif,2026-06-21,1.2,vrai,65
+MEM-00685,,2024-08-03,USR-02,34,H,Jouy-en-Josas,site_web,actif,2026-06-21,0.9,faux,59
+MEM-00686,,2026-04-29,USR-02,39,F,Versailles,instagram,actif,2026-06-19,1.3,faux,57
+MEM-00687,,2021-06-23,USR-02,54,F,Versailles,site_web,actif,2026-06-14,1.0,faux,71
+MEM-00688,,2022-12-26,USR-02,47,H,Saint-Cyr-l'École,instagram,actif,2026-06-21,1.2,faux,58
+MEM-00689,,2026-02-08,USR-02,31,F,Saint-Cyr-l'École,google_ads,actif,2026-06-20,4.2,faux,24
+MEM-00690,,2023-06-29,USR-01,39,H,Versailles,site_web,actif,2026-06-20,2.4,faux,41
+MEM-00691,,2022-05-24,USR-02,60,H,Versailles,site_web,actif,2026-06-18,1.4,faux,54
+MEM-00692,,2024-02-21,USR-02,38,F,Versailles,instagram,actif,2026-06-19,1.9,faux,59
+MEM-00693,,2024-06-06,USR-02,36,H,Vélizy-Villacoublay,google_ads,actif,2026-04-11,0.0,faux,100
+MEM-00694,,2022-01-28,USR-02,19,H,Jouy-en-Josas,google_ads,actif,2026-06-21,2.3,vrai,45
+MEM-00695,,2021-11-23,USR-02,27,H,Versailles,site_web,actif,2026-06-19,3.2,faux,31
+MEM-00696,,2022-09-27,USR-02,20,F,Bailly,instagram,actif,2026-06-12,2.4,faux,52
+MEM-00697,,2022-10-10,USR-02,40,H,Versailles,instagram,actif,2026-06-18,1.7,faux,62
+MEM-00698,,2024-12-26,USR-02,50,H,Versailles,google_ads,actif,2026-06-13,1.1,faux,75
+MEM-00699,,2022-01-26,USR-02,41,F,Vélizy-Villacoublay,google_ads,actif,2026-06-20,2.6,faux,42
+MEM-00700,,2026-02-11,USR-02,46,F,Versailles,instagram,actif,2026-06-20,3.2,vrai,33
+MEM-00701,,2024-05-05,USR-02,55,H,Versailles,site_web,actif,2026-06-21,2.4,faux,42
+MEM-00702,,2023-10-12,USR-02,58,H,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-19,3.8,faux,24
+MEM-00703,,2021-08-22,USR-02,26,F,Versailles,recommandation,actif,2026-03-04,0.0,faux,100
+MEM-00704,,2021-03-12,USR-02,27,F,Versailles,site_web,actif,2026-06-21,1.0,faux,68
+MEM-00705,,2023-08-26,USR-02,28,H,Versailles,instagram,actif,2026-06-17,0.7,faux,74
+MEM-00706,,2023-03-09,USR-01,25,H,Le Chesnay-Rocquencourt,recommandation,actif,2026-06-20,2.7,faux,39
+MEM-00707,,2021-02-08,USR-02,21,F,Versailles,instagram,actif,2026-06-21,3.1,faux,39
+MEM-00708,,2021-07-29,USR-02,41,F,Jouy-en-Josas,instagram,actif,2026-04-27,0.0,faux,100
+MEM-00709,,2023-06-10,USR-02,57,H,Le Chesnay-Rocquencourt,google_ads,actif,2026-05-12,0.0,faux,100
+MEM-00710,,2022-01-25,USR-02,58,H,Versailles,instagram,actif,2026-03-15,0.0,faux,100
+MEM-00711,,2024-07-23,USR-02,46,H,Versailles,site_web,actif,2026-06-12,0.7,vrai,71
+MEM-00712,,2021-11-25,USR-02,40,H,Versailles,site_web,actif,2026-06-19,0.9,faux,73
+MEM-00713,,2025-10-13,USR-02,43,F,Versailles,google_ads,actif,2026-06-20,3.0,faux,39
+MEM-00714,,2023-12-11,USR-02,39,F,Versailles,google_ads,actif,2026-06-17,1.7,vrai,61
+MEM-00715,,2024-11-27,USR-02,49,H,Vélizy-Villacoublay,google_ads,actif,2026-06-19,2.2,faux,49
+MEM-00716,,2021-08-05,USR-02,59,H,Versailles,google_ads,actif,2026-06-21,2.4,faux,40
+MEM-00717,,2025-01-02,USR-02,26,H,Vélizy-Villacoublay,google_ads,actif,2026-06-17,2.8,faux,42
+MEM-00718,,2025-07-19,USR-01,25,H,Le Chesnay-Rocquencourt,instagram,actif,2026-05-20,0.0,faux,100
+MEM-00719,,2025-09-05,USR-01,48,F,Vélizy-Villacoublay,recommandation,actif,2026-06-20,1.7,faux,47
+MEM-00720,,2023-11-27,USR-02,55,H,Versailles,site_web,actif,2026-02-27,0.0,faux,100
+MEM-00721,,2022-02-14,USR-02,22,F,Buc,instagram,actif,2026-06-21,0.8,faux,68
+MEM-00722,,2023-08-13,USR-01,32,F,Jouy-en-Josas,instagram,actif,2026-06-20,2.7,faux,44
+MEM-00723,,2022-03-12,USR-01,60,F,Vélizy-Villacoublay,google_ads,actif,2026-06-20,4.0,faux,28
+MEM-00724,,2024-02-03,USR-02,47,F,Versailles,instagram,actif,2026-06-20,3.9,faux,24
+MEM-00725,,2026-03-20,USR-02,46,H,Versailles,instagram,actif,2026-06-20,2.2,faux,43
+MEM-00726,,2025-08-24,USR-02,48,H,Vélizy-Villacoublay,site_web,actif,2026-06-13,2.2,faux,48
+MEM-00727,,2023-08-11,USR-01,52,F,Versailles,google_ads,actif,2026-06-21,3.6,faux,31
+MEM-00728,,2025-01-27,USR-02,21,H,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-18,1.4,faux,56
+MEM-00729,,2025-08-05,USR-02,41,F,Versailles,site_web,actif,2026-06-21,2.5,faux,44
+MEM-00730,,2022-09-16,USR-02,53,F,Versailles,instagram,actif,2026-06-20,2.9,faux,38
+MEM-00731,,2024-09-05,USR-01,29,F,Versailles,site_web,actif,2026-06-20,2.6,faux,47
+MEM-00732,,2025-02-25,USR-02,43,H,Vélizy-Villacoublay,google_ads,actif,2026-06-20,2.3,faux,38
+MEM-00733,,2023-07-14,USR-02,47,F,Versailles,instagram,actif,2026-06-20,3.7,faux,30
+MEM-00734,,2024-12-31,USR-02,21,H,Viroflay,instagram,actif,2026-06-20,2.4,vrai,50
+MEM-00735,,2025-06-04,USR-01,44,H,Versailles,google_ads,actif,2026-06-03,0.3,faux,80
+MEM-00736,,2021-09-07,USR-01,48,H,Vélizy-Villacoublay,recommandation,actif,2026-06-19,4.0,faux,16
+MEM-00737,,2025-08-03,USR-01,42,F,Versailles,instagram,actif,2026-06-20,2.3,faux,49
+MEM-00738,,2021-02-25,USR-02,57,F,Buc,instagram,actif,2026-06-14,0.8,faux,77
+MEM-00739,,2021-08-08,USR-02,26,F,Saint-Cyr-l'École,recommandation,actif,2026-02-26,0.0,faux,100
+MEM-00740,,2021-12-05,USR-02,56,H,Versailles,instagram,actif,2026-06-21,2.9,faux,44
+MEM-00741,,2021-09-17,USR-02,55,H,Versailles,instagram,actif,2026-06-21,5.1,faux,11
+MEM-00742,,2025-03-09,USR-02,45,F,Buc,recommandation,actif,2026-06-20,2.4,faux,46
+MEM-00743,,2022-12-13,USR-01,38,H,Le Chesnay-Rocquencourt,site_web,actif,2026-05-09,0.0,faux,100
+MEM-00744,,2024-08-16,USR-01,28,F,Saint-Cyr-l'École,google_ads,actif,2026-06-21,4.9,faux,4
+MEM-00745,,2021-07-18,USR-02,39,H,Saint-Cyr-l'École,site_web,actif,2026-06-20,2.9,faux,35
+MEM-00746,,2023-03-31,USR-02,60,F,Viroflay,recommandation,actif,2026-06-19,3.9,vrai,29
+MEM-00747,,2026-03-08,USR-02,45,F,Le Chesnay-Rocquencourt,recommandation,actif,2026-06-20,1.7,faux,49
+MEM-00748,,2025-09-16,USR-02,22,F,Versailles,google_ads,actif,2026-06-20,3.4,faux,25
+MEM-00749,,2023-09-24,USR-01,52,H,Versailles,site_web,actif,2026-06-13,1.1,faux,62
+MEM-00750,,2021-07-26,USR-02,38,H,Versailles,google_ads,actif,2026-06-21,3.1,faux,26
+MEM-00751,,2021-02-01,USR-02,35,F,Versailles,google_ads,actif,2026-06-16,1.1,faux,70
+MEM-00752,,2023-11-28,USR-02,28,F,Versailles,site_web,actif,2026-06-21,1.8,faux,53
+MEM-00753,,2022-03-31,USR-01,23,H,Versailles,google_ads,actif,2026-06-19,1.1,faux,65
+MEM-00754,,2025-09-25,USR-02,19,H,Vélizy-Villacoublay,instagram,actif,2026-06-09,0.3,faux,76
+MEM-00755,,2025-12-04,USR-02,22,F,Versailles,recommandation,actif,2026-06-19,3.8,vrai,27
+MEM-00756,,2023-03-21,USR-01,54,H,Viroflay,instagram,actif,2026-06-21,3.5,faux,26
+MEM-00757,,2023-03-29,USR-02,46,H,Buc,site_web,actif,2026-06-21,2.3,faux,44
+MEM-00758,,2021-09-25,USR-02,32,H,Saint-Cyr-l'École,google_ads,actif,2026-06-20,2.8,faux,43
+MEM-00759,,2021-01-11,USR-02,33,H,Viroflay,instagram,actif,2026-06-19,1.2,faux,69
+MEM-00760,,2023-05-09,USR-02,34,F,Le Chesnay-Rocquencourt,instagram,actif,2026-06-21,2.2,faux,44
+MEM-00761,,2025-01-05,USR-02,34,H,Vélizy-Villacoublay,recommandation,actif,2026-06-21,4.2,faux,21
+MEM-00762,,2023-12-20,USR-02,31,F,Versailles,instagram,actif,2026-06-21,3.3,faux,37
+MEM-00763,,2024-01-24,USR-02,39,F,Vélizy-Villacoublay,site_web,actif,2026-06-21,2.8,faux,31
+MEM-00764,,2021-05-06,USR-01,19,F,Jouy-en-Josas,instagram,actif,2026-06-19,2.5,faux,43
+MEM-00765,,2025-06-04,USR-01,59,F,Vélizy-Villacoublay,recommandation,actif,2026-06-20,3.8,faux,22
+MEM-00766,,2023-09-14,USR-02,57,H,Viroflay,instagram,actif,2026-06-21,4.1,faux,12
+MEM-00767,,2022-06-07,USR-02,37,F,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-19,0.8,faux,64
+MEM-00768,,2023-11-29,USR-02,49,H,Vélizy-Villacoublay,recommandation,actif,2026-06-20,1.7,faux,57
+MEM-00769,,2025-12-11,USR-01,54,F,Viroflay,recommandation,actif,2026-04-23,0.0,faux,100
+MEM-00770,,2022-12-12,USR-02,54,F,Vélizy-Villacoublay,google_ads,actif,2026-04-21,0.0,faux,100
+MEM-00771,,2023-05-26,USR-02,48,H,Viroflay,site_web,actif,2026-06-21,2.6,faux,38
+MEM-00772,,2025-09-17,USR-02,37,F,Versailles,instagram,actif,2026-06-21,3.9,faux,21
+MEM-00773,,2023-09-13,USR-02,58,H,Buc,instagram,actif,2026-06-19,0.3,faux,82
+MEM-00774,,2024-02-03,USR-02,45,H,Le Chesnay-Rocquencourt,site_web,actif,2026-06-17,2.9,faux,45
+MEM-00775,,2025-01-31,USR-02,34,F,Versailles,recommandation,actif,2026-06-16,1.8,faux,51
+MEM-00776,,2023-12-10,USR-01,21,F,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-21,2.7,faux,47
+MEM-00777,,2022-05-31,USR-02,25,H,Viroflay,instagram,actif,2026-06-18,1.7,faux,56
+MEM-00778,,2021-08-25,USR-02,22,H,Le Chesnay-Rocquencourt,instagram,actif,2026-06-12,1.0,faux,77
+MEM-00779,,2021-07-27,USR-02,19,H,Le Chesnay-Rocquencourt,instagram,actif,2026-06-20,2.2,faux,43
+MEM-00780,,2023-10-17,USR-02,19,F,Versailles,google_ads,actif,2026-03-29,0.0,faux,100
+MEM-00781,,2024-10-19,USR-02,58,F,Versailles,instagram,actif,2026-06-21,2.2,faux,46
+MEM-00782,,2021-03-16,USR-02,35,H,Versailles,instagram,actif,2026-04-24,0.0,faux,100
+MEM-00783,,2021-03-10,USR-01,27,H,Buc,site_web,actif,2026-06-19,1.8,faux,55
+MEM-00784,,2023-10-31,USR-02,34,H,Versailles,google_ads,actif,2026-06-21,3.1,faux,36
+MEM-00785,,2024-11-21,USR-02,36,H,Le Chesnay-Rocquencourt,recommandation,actif,2026-06-20,4.1,faux,22
+MEM-00786,,2025-09-08,USR-02,33,H,Saint-Cyr-l'École,instagram,actif,2026-06-16,2.9,vrai,42
+MEM-00787,,2022-10-18,USR-02,39,H,Versailles,recommandation,actif,2026-06-18,2.1,faux,47
+MEM-00788,,2022-06-15,USR-02,23,H,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-18,1.1,faux,64
+MEM-00789,,2025-06-01,USR-02,26,H,Versailles,google_ads,actif,2026-06-10,0.8,faux,79
+MEM-00790,,2025-10-01,USR-01,60,F,Viroflay,instagram,actif,2026-06-21,3.1,faux,37
+MEM-00791,,2022-05-23,USR-01,57,H,Saint-Cyr-l'École,instagram,actif,2026-06-19,1.9,faux,46
+MEM-00792,,2025-04-06,USR-02,50,H,Versailles,instagram,actif,2026-06-07,0.3,faux,84
+MEM-00793,,2021-12-11,USR-02,43,F,Versailles,google_ads,actif,2026-06-20,3.3,faux,38
+MEM-00794,,2022-11-03,USR-02,54,F,Viroflay,instagram,actif,2026-06-05,0.3,faux,86
+MEM-00795,,2023-06-11,USR-01,59,F,Le Chesnay-Rocquencourt,instagram,actif,2026-06-21,5.1,faux,8
+MEM-00796,,2023-11-06,USR-01,22,F,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-20,2.2,faux,48
+MEM-00797,,2024-01-21,USR-01,32,H,Le Chesnay-Rocquencourt,instagram,actif,2026-06-20,0.9,faux,72
+MEM-00798,,2023-06-27,USR-02,23,H,Versailles,instagram,actif,2026-06-19,2.3,faux,52
+MEM-00799,,2023-08-28,USR-02,31,H,Versailles,google_ads,actif,2026-06-20,1.8,faux,54
+MEM-00800,,2024-02-22,USR-02,43,F,Le Chesnay-Rocquencourt,google_ads,actif,2026-04-26,0.0,faux,100
+MEM-00801,,2022-03-21,USR-02,38,F,Versailles,instagram,actif,2026-06-21,2.2,faux,41
+MEM-00802,,2021-01-19,USR-02,55,F,Saint-Cyr-l'École,google_ads,actif,2026-06-21,3.1,faux,28
+MEM-00803,,2022-10-11,USR-02,33,H,Le Chesnay-Rocquencourt,instagram,actif,2026-06-21,4.4,faux,16
+MEM-00804,,2025-03-27,USR-02,53,H,Saint-Cyr-l'École,recommandation,actif,2026-06-21,2.3,faux,53
+MEM-00805,,2025-03-25,USR-02,60,F,Bailly,recommandation,actif,2026-06-21,2.8,faux,43
+MEM-00806,,2026-05-15,USR-02,28,H,Bailly,instagram,actif,2026-06-16,0.4,faux,81
+MEM-00807,,2022-05-21,USR-01,39,H,Versailles,recommandation,actif,2026-06-03,0.3,vrai,80
+MEM-00808,,2023-12-20,USR-02,27,F,Versailles,site_web,actif,2026-06-21,2.4,faux,49
+MEM-00809,,2024-06-18,USR-02,57,F,Versailles,site_web,actif,2026-06-18,2.7,faux,47
+MEM-00810,,2022-05-11,USR-02,27,F,Versailles,google_ads,actif,2026-06-16,1.6,faux,55
+MEM-00811,,2022-03-15,USR-02,32,H,Versailles,recommandation,actif,2026-06-20,2.7,faux,46
+MEM-00812,,2023-06-18,USR-02,47,H,Versailles,site_web,actif,2026-06-20,2.5,vrai,43
+MEM-00813,,2023-12-08,USR-02,52,F,Versailles,instagram,actif,2026-06-16,2.0,faux,60
+MEM-00814,,2022-02-18,USR-02,35,F,Versailles,google_ads,actif,2026-06-12,0.9,faux,73
+MEM-00815,,2026-02-10,USR-02,43,F,Bailly,instagram,actif,2026-06-17,3.2,faux,32
+MEM-00816,,2021-01-18,USR-01,59,H,Versailles,recommandation,actif,2026-06-20,2.3,faux,40
+MEM-00817,,2023-09-28,USR-02,60,F,Saint-Cyr-l'École,instagram,actif,2026-06-21,4.3,faux,10
+MEM-00818,,2024-02-17,USR-02,22,F,Versailles,google_ads,actif,2026-03-03,0.0,faux,100
+MEM-00819,,2026-05-22,USR-02,31,H,Versailles,instagram,actif,2026-06-20,3.0,faux,29
+MEM-00820,,2026-01-23,USR-02,28,H,Bailly,instagram,actif,2026-06-18,2.3,vrai,51
+MEM-00821,,2021-02-28,USR-02,26,H,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-20,3.5,faux,27
+MEM-00822,,2023-12-11,USR-02,19,H,Viroflay,instagram,actif,2026-06-21,1.4,faux,67
+MEM-00823,,2022-12-26,USR-02,46,F,Vélizy-Villacoublay,site_web,actif,2026-06-19,3.1,vrai,34
+MEM-00824,,2024-05-28,USR-02,42,F,Saint-Cyr-l'École,instagram,actif,2026-06-21,1.6,faux,60
+MEM-00825,,2023-06-25,USR-02,49,H,Viroflay,instagram,actif,2026-03-21,0.0,faux,100
+MEM-00826,,2022-03-19,USR-01,55,H,Vélizy-Villacoublay,instagram,actif,2026-06-19,2.4,faux,52
+MEM-00827,,2024-01-17,USR-01,37,H,Le Chesnay-Rocquencourt,instagram,actif,2026-06-21,3.3,vrai,37
+MEM-00828,,2026-01-31,USR-02,57,F,Saint-Cyr-l'École,recommandation,actif,2026-06-13,1.4,faux,70
+MEM-00829,,2021-12-07,USR-01,51,H,Viroflay,instagram,actif,2026-06-19,3.4,vrai,24
+MEM-00830,,2023-05-05,USR-02,58,F,Versailles,instagram,actif,2026-06-20,0.5,faux,80
+MEM-00831,,2021-04-18,USR-02,46,F,Saint-Cyr-l'École,recommandation,actif,2026-06-06,0.3,faux,86
+MEM-00832,,2024-02-16,USR-02,59,F,Viroflay,google_ads,actif,2026-06-20,3.0,vrai,28
+MEM-00833,,2023-08-01,USR-02,32,F,Viroflay,site_web,actif,2026-04-16,0.0,faux,100
+MEM-00834,,2023-08-26,USR-02,55,H,Versailles,google_ads,actif,2026-06-18,3.1,faux,43
+MEM-00835,,2021-04-23,USR-02,20,F,Viroflay,instagram,actif,2026-06-20,1.4,faux,57
+MEM-00836,,2024-03-02,USR-02,20,F,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-20,0.9,faux,62
+MEM-00837,,2022-04-01,USR-02,53,F,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-19,2.0,vrai,55
+MEM-00838,,2021-12-14,USR-02,27,H,Versailles,google_ads,actif,2026-04-20,0.0,faux,100
+MEM-00839,,2022-05-16,USR-02,59,F,Jouy-en-Josas,instagram,actif,2026-03-08,0.0,faux,100
+MEM-00840,,2024-11-20,USR-02,21,F,Bailly,instagram,actif,2026-06-19,2.5,faux,51
+MEM-00841,,2021-10-30,USR-01,49,H,Jouy-en-Josas,site_web,actif,2026-06-21,2.4,faux,44
+MEM-00842,,2021-10-02,USR-02,46,H,Le Chesnay-Rocquencourt,instagram,actif,2026-06-20,0.3,faux,82
+MEM-00843,,2023-06-28,USR-01,46,H,Versailles,site_web,actif,2026-06-21,3.3,faux,38
+MEM-00844,,2024-09-12,USR-02,19,F,Buc,recommandation,actif,2026-06-20,1.9,faux,46
+MEM-00845,,2022-10-19,USR-02,21,F,Viroflay,instagram,actif,2026-06-19,2.8,faux,38
+MEM-00846,,2023-08-11,USR-02,31,F,Buc,site_web,actif,2026-06-14,1.3,vrai,64
+MEM-00847,,2022-09-08,USR-02,56,H,Saint-Cyr-l'École,recommandation,actif,2026-06-21,2.9,faux,44
+MEM-00848,,2022-12-23,USR-02,23,F,Viroflay,instagram,actif,2026-06-18,2.4,faux,38
+MEM-00849,,2025-12-29,USR-02,22,H,Le Chesnay-Rocquencourt,google_ads,actif,2026-05-13,0.0,faux,100
+MEM-00850,,2022-01-04,USR-02,47,H,Le Chesnay-Rocquencourt,instagram,actif,2026-06-20,1.6,faux,53
+MEM-00851,,2021-07-09,USR-01,60,H,Le Chesnay-Rocquencourt,site_web,actif,2026-06-12,0.4,vrai,85
+MEM-00852,,2023-09-29,USR-02,26,F,Versailles,site_web,actif,2026-06-10,0.8,faux,76
+MEM-00853,,2025-11-09,USR-02,51,F,Versailles,google_ads,actif,2026-05-07,0.0,faux,100
+MEM-00854,,2021-01-18,USR-02,27,F,Saint-Cyr-l'École,google_ads,actif,2026-06-21,2.6,faux,47
+MEM-00855,,2021-10-08,USR-02,25,H,Le Chesnay-Rocquencourt,instagram,actif,2026-06-21,1.5,faux,54
+MEM-00856,,2026-03-23,USR-02,24,H,Versailles,instagram,actif,2026-06-05,0.6,faux,73
+MEM-00857,,2021-01-06,USR-01,46,F,Viroflay,google_ads,actif,2026-06-20,3.2,faux,35
+MEM-00858,,2025-08-31,USR-02,28,F,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-21,3.0,faux,37
+MEM-00859,,2025-08-23,USR-01,27,F,Viroflay,google_ads,actif,2026-06-19,2.6,vrai,45
+MEM-00860,,2026-01-10,USR-02,25,F,Versailles,instagram,actif,2026-06-13,1.5,faux,55
+MEM-00861,,2025-10-05,USR-02,38,H,Versailles,site_web,actif,2026-06-20,1.6,faux,58
+MEM-00862,,2025-10-26,USR-02,46,F,Viroflay,recommandation,actif,2026-05-12,0.0,faux,100
+MEM-00863,,2021-08-12,USR-02,29,H,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-21,2.5,vrai,44
+MEM-00864,,2021-01-13,USR-02,27,F,Versailles,site_web,actif,2026-06-20,1.3,faux,65
+MEM-00865,,2021-03-20,USR-02,19,F,Versailles,instagram,actif,2026-06-18,2.9,faux,36
+MEM-00866,,2024-10-10,USR-02,42,H,Buc,recommandation,actif,2026-06-14,1.9,faux,57
+MEM-00867,,2022-08-06,USR-02,54,H,Viroflay,site_web,actif,2026-06-16,2.0,faux,53
+MEM-00868,,2024-04-28,USR-02,34,H,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-18,2.4,faux,44
+MEM-00869,,2025-09-03,USR-02,54,H,Jouy-en-Josas,site_web,actif,2026-06-17,2.6,faux,39
+MEM-00870,,2021-03-02,USR-02,49,H,Versailles,instagram,actif,2026-06-13,2.1,faux,55
+MEM-00871,,2024-08-29,USR-02,53,F,Viroflay,google_ads,actif,2026-06-11,0.3,faux,79
+MEM-00872,,2026-05-20,USR-02,52,F,Bailly,site_web,actif,2026-06-21,2.5,faux,44
+MEM-00873,,2022-02-22,USR-02,53,H,Bailly,google_ads,actif,2026-06-20,2.5,faux,48
+MEM-00874,,2021-09-21,USR-02,39,F,Le Chesnay-Rocquencourt,instagram,actif,2026-06-21,2.0,faux,45
+MEM-00875,,2021-05-26,USR-02,27,H,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-02,0.3,faux,94
+MEM-00876,,2025-09-29,USR-02,26,H,Versailles,instagram,actif,2026-06-21,1.8,faux,56
+MEM-00877,,2023-06-07,USR-02,46,H,Versailles,google_ads,actif,2026-06-17,0.8,vrai,77
+MEM-00878,,2025-02-11,USR-01,50,F,Jouy-en-Josas,site_web,actif,2026-05-05,0.0,faux,100
+MEM-00879,,2026-04-05,USR-02,58,H,Le Chesnay-Rocquencourt,instagram,actif,2026-06-19,1.3,faux,58
+MEM-00880,,2021-10-30,USR-01,46,F,Versailles,google_ads,actif,2026-03-19,0.0,faux,100
+MEM-00881,,2024-02-09,USR-02,28,F,Viroflay,instagram,actif,2026-06-21,1.3,faux,61
+MEM-00882,,2025-06-25,USR-02,33,F,Viroflay,instagram,actif,2026-02-24,0.0,faux,100
+MEM-00883,,2024-11-01,USR-02,50,F,Versailles,site_web,actif,2026-06-13,0.8,faux,66
+MEM-00884,,2024-09-01,USR-02,31,F,Le Chesnay-Rocquencourt,recommandation,actif,2026-06-18,1.2,faux,59
+MEM-00885,,2022-05-09,USR-01,22,H,Versailles,google_ads,actif,2026-06-17,2.8,faux,43
+MEM-00886,,2021-03-29,USR-02,31,H,Versailles,google_ads,actif,2026-04-25,0.0,faux,100
+MEM-00887,,2021-03-25,USR-02,43,H,Bailly,recommandation,actif,2026-06-07,2.1,faux,57
+MEM-00888,,2022-11-26,USR-02,27,F,Versailles,site_web,actif,2026-06-18,2.1,vrai,49
+MEM-00889,,2023-06-06,USR-02,31,F,Viroflay,site_web,actif,2026-06-21,0.6,faux,72
+MEM-00890,,2022-03-19,USR-02,19,F,Versailles,instagram,actif,2026-06-21,2.3,faux,40
+MEM-00891,,2025-11-13,USR-02,24,F,Versailles,instagram,actif,2026-06-21,3.9,faux,24
+MEM-00892,,2024-01-10,USR-02,39,H,Versailles,instagram,actif,2026-06-21,2.8,faux,38
+MEM-00893,,2022-01-03,USR-02,56,F,Versailles,google_ads,actif,2026-06-19,2.8,faux,32
+MEM-00894,,2023-12-27,USR-01,56,H,Viroflay,recommandation,actif,2026-06-21,3.0,faux,37
+MEM-00895,,2021-06-13,USR-02,57,F,Saint-Cyr-l'École,instagram,actif,2026-04-04,0.0,faux,100
+MEM-00896,,2021-05-27,USR-01,25,H,Versailles,site_web,actif,2026-05-06,0.0,faux,100
+MEM-00897,,2024-01-08,USR-02,35,H,Versailles,site_web,actif,2026-06-21,3.3,faux,30
+MEM-00898,,2025-09-26,USR-02,54,H,Vélizy-Villacoublay,instagram,actif,2026-06-16,1.6,vrai,59
+MEM-00899,,2021-07-19,USR-01,48,F,Viroflay,site_web,actif,2026-06-18,1.9,faux,47
+MEM-00900,,2022-09-29,USR-02,44,H,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-21,2.2,vrai,40
+MEM-00901,,2025-06-14,USR-02,28,H,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-06,0.7,faux,79
+MEM-00902,,2024-02-01,USR-02,29,H,Viroflay,instagram,actif,2026-06-19,3.6,faux,28
+MEM-00903,,2024-09-10,USR-02,52,H,Versailles,site_web,actif,2026-06-20,3.2,faux,34
+MEM-00904,,2021-09-16,USR-02,32,H,Le Chesnay-Rocquencourt,site_web,actif,2026-03-22,0.0,vrai,100
+MEM-00905,,2022-11-17,USR-02,31,H,Buc,site_web,actif,2026-06-19,1.7,faux,59
+MEM-00906,,2024-01-12,USR-01,30,H,Buc,instagram,actif,2026-06-19,2.1,faux,51
+MEM-00907,,2023-06-11,USR-02,27,H,Bailly,google_ads,actif,2026-06-20,1.5,faux,66
+MEM-00908,,2021-07-09,USR-02,33,F,Buc,site_web,actif,2026-06-19,1.6,faux,52
+MEM-00909,,2024-11-19,USR-02,53,F,Versailles,google_ads,actif,2026-06-19,2.2,faux,41
+MEM-00910,,2025-01-19,USR-02,35,H,Le Chesnay-Rocquencourt,instagram,actif,2026-06-21,3.3,vrai,24
+MEM-00911,,2023-07-06,USR-02,51,H,Jouy-en-Josas,instagram,actif,2026-06-20,2.8,vrai,33
+MEM-00912,,2022-03-03,USR-01,25,F,Vélizy-Villacoublay,site_web,actif,2026-06-21,2.8,faux,46
+MEM-00913,,2025-07-03,USR-01,20,H,Buc,google_ads,actif,2026-06-21,3.7,faux,22
+MEM-00914,,2023-06-06,USR-02,24,H,Buc,google_ads,actif,2026-06-14,2.2,faux,46
+MEM-00915,,2021-01-15,USR-02,58,F,Buc,google_ads,actif,2026-05-15,0.0,faux,100
+MEM-00916,,2023-12-31,USR-02,33,F,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-21,2.5,faux,37
+MEM-00917,,2023-11-22,USR-02,22,H,Versailles,google_ads,actif,2026-06-19,3.5,faux,26
+MEM-00918,,2023-01-19,USR-02,51,F,Versailles,instagram,actif,2026-06-20,3.3,faux,37
+MEM-00919,,2024-07-24,USR-02,23,F,Versailles,instagram,actif,2026-06-20,1.5,faux,59
+MEM-00920,,2024-01-04,USR-02,46,H,Versailles,instagram,actif,2026-06-03,0.3,vrai,79
+MEM-00921,,2022-01-02,USR-02,43,F,Vélizy-Villacoublay,instagram,actif,2026-03-12,0.0,faux,100
+MEM-00922,,2024-07-27,USR-02,38,F,Bailly,instagram,actif,2026-06-21,2.7,vrai,32
+MEM-00923,,2021-02-16,USR-02,22,F,Versailles,recommandation,actif,2026-06-21,2.4,faux,44
+MEM-00924,,2023-10-08,USR-02,30,H,Versailles,site_web,actif,2026-06-21,2.0,faux,53
+MEM-00925,,2025-01-14,USR-02,20,H,Viroflay,google_ads,actif,2026-05-19,0.0,faux,100
+MEM-00926,,2023-11-28,USR-02,60,F,Versailles,instagram,actif,2026-03-22,0.0,faux,100
+MEM-00927,,2023-01-02,USR-02,29,F,Jouy-en-Josas,site_web,actif,2026-06-21,3.6,faux,33
+MEM-00928,,2026-01-25,USR-02,47,H,Versailles,google_ads,actif,2026-06-21,2.2,faux,43
+MEM-00929,,2025-04-16,USR-02,27,H,Viroflay,instagram,actif,2026-06-07,0.7,faux,72
+MEM-00930,,2021-06-27,USR-01,47,H,Versailles,site_web,actif,2026-06-21,2.2,faux,46
+MEM-00931,,2023-10-05,USR-02,53,H,Viroflay,recommandation,actif,2026-06-19,3.3,faux,32
+MEM-00932,,2025-01-11,USR-01,39,F,Versailles,instagram,actif,2026-06-12,0.4,faux,72
+MEM-00933,,2025-05-27,USR-02,56,F,Versailles,recommandation,actif,2026-06-18,2.3,faux,47
+MEM-00934,,2024-09-10,USR-02,32,H,Bailly,instagram,actif,2026-06-17,4.0,faux,26
+MEM-00935,,2024-12-30,USR-01,36,H,Versailles,recommandation,actif,2026-03-31,0.0,vrai,100
+MEM-00936,,2021-02-14,USR-02,43,H,Viroflay,instagram,actif,2026-06-19,2.6,faux,38
+MEM-00937,,2021-01-03,USR-02,41,H,Le Chesnay-Rocquencourt,recommandation,actif,2026-06-19,2.3,faux,50
+MEM-00938,,2023-04-10,USR-02,25,H,Versailles,google_ads,actif,2026-06-21,1.8,vrai,52
+MEM-00939,,2022-11-10,USR-02,31,H,Buc,instagram,actif,2026-06-21,3.0,faux,28
+MEM-00940,,2025-11-28,USR-02,26,F,Versailles,site_web,actif,2026-06-18,2.4,faux,39
+MEM-00941,,2023-01-13,USR-01,49,F,Le Chesnay-Rocquencourt,site_web,actif,2026-06-19,1.6,faux,53
+MEM-00942,,2024-09-04,USR-02,27,H,Viroflay,site_web,actif,2026-06-20,3.7,faux,23
+MEM-00943,,2021-12-19,USR-01,25,H,Jouy-en-Josas,instagram,actif,2026-06-14,1.0,faux,65
+MEM-00944,,2025-10-27,USR-02,45,H,Le Chesnay-Rocquencourt,instagram,actif,2026-06-20,2.9,faux,31
+MEM-00945,,2024-10-01,USR-02,42,F,Versailles,recommandation,actif,2026-06-19,1.2,faux,63
+MEM-00946,,2025-04-07,USR-02,23,H,Le Chesnay-Rocquencourt,instagram,actif,2026-06-18,3.1,faux,34
+MEM-00947,,2021-03-19,USR-02,19,F,Viroflay,google_ads,actif,2026-06-21,4.1,faux,11
+MEM-00948,,2025-08-22,USR-01,59,F,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-19,2.6,faux,42
+MEM-00949,,2021-03-23,USR-02,44,F,Saint-Cyr-l'École,instagram,actif,2026-06-17,0.9,faux,76
+MEM-00950,,2022-03-21,USR-02,41,H,Vélizy-Villacoublay,recommandation,actif,2026-06-19,1.5,vrai,58
+MEM-00951,,2023-07-01,USR-02,29,F,Le Chesnay-Rocquencourt,instagram,actif,2026-06-20,1.7,faux,54
+MEM-00952,,2024-10-01,USR-02,30,F,Versailles,google_ads,actif,2026-06-20,2.1,faux,52
+MEM-00953,,2021-05-14,USR-02,50,H,Versailles,recommandation,actif,2026-06-21,3.2,faux,30
+MEM-00954,,2023-03-01,USR-02,26,H,Versailles,site_web,actif,2026-06-19,2.1,faux,52
+MEM-00955,,2023-10-21,USR-02,28,F,Viroflay,instagram,actif,2026-06-18,3.0,faux,41
+MEM-00956,,2025-03-06,USR-01,42,H,Versailles,google_ads,actif,2026-06-21,2.2,faux,54
+MEM-00957,,2023-10-02,USR-02,50,F,Versailles,site_web,actif,2026-03-17,0.0,faux,100
+MEM-00958,,2024-03-16,USR-02,26,F,Viroflay,recommandation,actif,2026-06-16,0.5,vrai,78
+MEM-00959,,2023-10-13,USR-02,60,F,Saint-Cyr-l'École,instagram,actif,2026-06-21,1.3,faux,57
+MEM-00960,,2024-05-18,USR-02,31,F,Versailles,google_ads,actif,2026-06-20,2.2,faux,49
+MEM-00961,,2026-03-17,USR-02,29,F,Versailles,instagram,actif,2026-06-21,2.2,faux,44
+MEM-00962,,2022-04-20,USR-02,24,F,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-18,0.9,faux,69
+MEM-00963,,2025-03-27,USR-02,36,F,Versailles,google_ads,actif,2026-06-20,4.0,faux,13
+MEM-00964,,2023-03-02,USR-02,43,H,Le Chesnay-Rocquencourt,instagram,actif,2026-06-20,1.0,faux,60
+MEM-00965,,2024-05-22,USR-01,35,F,Viroflay,google_ads,actif,2026-06-21,3.6,vrai,33
+MEM-00966,,2024-10-13,USR-02,36,H,Le Chesnay-Rocquencourt,recommandation,actif,2026-06-20,1.2,faux,69
+MEM-00967,,2026-05-02,USR-02,55,H,Le Chesnay-Rocquencourt,site_web,actif,2026-06-19,2.5,faux,49
+MEM-00968,,2021-11-09,USR-02,47,F,Versailles,site_web,actif,2026-06-18,2.1,faux,53
+MEM-00969,,2025-03-29,USR-02,26,F,Jouy-en-Josas,site_web,actif,2026-06-18,2.2,faux,54
+MEM-00970,,2025-01-22,USR-02,55,F,Viroflay,instagram,actif,2026-06-21,1.3,faux,67
+MEM-00971,,2025-12-27,USR-02,19,F,Le Chesnay-Rocquencourt,instagram,actif,2026-06-20,3.1,faux,35
+MEM-00972,,2023-06-16,USR-02,46,F,Versailles,instagram,actif,2026-03-05,0.0,faux,100
+MEM-00973,,2022-07-16,USR-02,34,H,Buc,google_ads,actif,2026-03-05,0.0,faux,100
+MEM-00974,,2023-06-28,USR-02,23,F,Jouy-en-Josas,instagram,actif,2026-03-14,0.0,faux,100
+MEM-00975,,2023-09-24,USR-02,55,H,Viroflay,recommandation,actif,2026-06-06,1.2,faux,65
+MEM-00976,,2022-06-09,USR-02,31,H,Viroflay,google_ads,actif,2026-06-09,1.5,faux,62
+MEM-00977,,2022-02-05,USR-01,24,F,Versailles,google_ads,actif,2026-03-17,0.0,faux,100
+MEM-00978,,2024-04-11,USR-01,54,H,Buc,instagram,actif,2026-06-16,0.8,faux,78
+MEM-00979,,2024-08-26,USR-02,42,F,Buc,site_web,actif,2026-06-21,1.0,vrai,73
+MEM-00980,,2021-08-26,USR-02,59,F,Vélizy-Villacoublay,site_web,actif,2026-03-10,0.0,faux,100
+MEM-00981,,2021-01-06,USR-02,53,H,Vélizy-Villacoublay,instagram,actif,2026-06-20,4.7,faux,7
+MEM-00982,,2025-02-23,USR-02,48,F,Buc,site_web,actif,2026-06-17,3.0,faux,30
+MEM-00983,,2022-08-07,USR-02,34,H,Le Chesnay-Rocquencourt,instagram,actif,2026-06-18,3.3,faux,29
+MEM-00984,,2022-12-04,USR-02,28,F,Versailles,google_ads,actif,2026-06-19,2.8,faux,46
+MEM-00985,,2021-12-11,USR-02,33,H,Buc,recommandation,actif,2026-06-20,0.9,faux,61
+MEM-00986,,2022-01-23,USR-01,43,F,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-17,2.7,faux,41
+MEM-00987,,2022-10-04,USR-02,24,F,Saint-Cyr-l'École,instagram,actif,2026-03-11,0.0,faux,100
+MEM-00988,,2024-06-09,USR-02,35,H,Versailles,google_ads,actif,2026-06-19,0.3,vrai,75
+MEM-00989,,2024-04-30,USR-02,33,F,Le Chesnay-Rocquencourt,recommandation,actif,2026-06-20,2.8,faux,44
+MEM-00990,,2023-03-03,USR-02,36,F,Versailles,instagram,actif,2026-03-07,0.0,faux,100
+MEM-00991,,2025-04-06,USR-02,35,H,Buc,recommandation,actif,2026-06-20,2.1,faux,54
+MEM-00992,,2021-12-16,USR-02,53,F,Versailles,instagram,actif,2026-06-19,1.8,faux,49
+MEM-00993,,2021-06-14,USR-02,36,H,Versailles,recommandation,actif,2026-06-18,2.4,vrai,44
+MEM-00994,,2026-05-16,USR-01,53,F,Saint-Cyr-l'École,instagram,actif,2026-05-04,0.0,faux,100
+MEM-00995,,2021-11-19,USR-02,20,H,Versailles,google_ads,actif,2026-06-21,2.3,vrai,38
+MEM-00996,,2021-10-29,USR-01,37,H,Le Chesnay-Rocquencourt,recommandation,actif,2026-06-18,3.1,faux,43
+MEM-00997,,2025-03-22,USR-02,41,F,Versailles,instagram,actif,2026-06-21,2.4,faux,36
+MEM-00998,,2026-02-16,USR-02,32,H,Versailles,site_web,actif,2026-06-21,1.0,faux,66
+MEM-00999,,2025-01-14,USR-02,21,H,Versailles,recommandation,actif,2026-06-21,3.6,faux,31
+MEM-01000,,2026-04-24,USR-02,54,F,Viroflay,google_ads,actif,2026-06-17,2.8,faux,40
+MEM-01001,,2023-05-09,USR-02,37,H,Viroflay,google_ads,actif,2026-06-19,2.5,faux,48
+MEM-01002,,2021-12-31,USR-02,52,F,Viroflay,instagram,actif,2026-06-21,2.3,faux,45
+MEM-01003,,2023-12-28,USR-02,20,F,Jouy-en-Josas,site_web,actif,2026-06-12,2.0,faux,51
+MEM-01004,,2023-12-21,USR-02,55,H,Versailles,site_web,actif,2026-06-21,2.9,faux,37
+MEM-01005,,2025-04-06,USR-02,49,F,Le Chesnay-Rocquencourt,recommandation,actif,2026-06-19,1.4,faux,65
+MEM-01006,,2021-03-14,USR-02,41,H,Le Chesnay-Rocquencourt,instagram,actif,2026-06-19,2.7,faux,48
+MEM-01007,,2022-04-08,USR-02,41,H,Buc,recommandation,actif,2026-06-21,2.6,faux,48
+MEM-01008,,2025-04-14,USR-02,24,F,Versailles,google_ads,actif,2026-06-10,0.4,faux,81
+MEM-01009,,2025-03-28,USR-02,44,H,Le Chesnay-Rocquencourt,instagram,actif,2026-03-14,0.0,faux,100
+MEM-01010,,2025-01-22,USR-02,22,F,Versailles,recommandation,actif,2026-06-21,2.2,faux,55
+MEM-01011,,2022-01-29,USR-01,58,F,Vélizy-Villacoublay,google_ads,actif,2026-03-07,0.0,vrai,100
+MEM-01012,,2023-07-31,USR-02,48,F,Le Chesnay-Rocquencourt,site_web,actif,2026-04-03,0.0,faux,100
+MEM-01013,,2023-05-25,USR-01,48,F,Versailles,recommandation,actif,2026-06-17,2.0,faux,60
+MEM-01014,,2025-07-01,USR-02,23,F,Le Chesnay-Rocquencourt,site_web,actif,2026-04-28,0.0,faux,100
+MEM-01015,,2024-03-17,USR-02,41,F,Le Chesnay-Rocquencourt,recommandation,actif,2026-06-17,1.5,vrai,65
+MEM-01016,,2021-09-11,USR-01,39,F,Le Chesnay-Rocquencourt,instagram,actif,2026-06-20,1.8,faux,51
+MEM-01017,,2022-02-15,USR-02,44,H,Vélizy-Villacoublay,google_ads,actif,2026-06-19,2.6,vrai,49
+MEM-01018,,2021-02-15,USR-02,40,H,Versailles,site_web,actif,2026-06-21,3.6,vrai,21
+MEM-01019,,2022-10-03,USR-01,43,H,Bailly,instagram,actif,2026-06-18,3.2,faux,40
+MEM-01020,,2025-09-07,USR-01,59,H,Buc,instagram,actif,2026-06-19,1.9,vrai,51
+MEM-01021,,2022-04-27,USR-02,42,H,Viroflay,site_web,actif,2026-06-16,0.7,faux,68
+MEM-01022,,2021-12-18,USR-02,43,F,Buc,recommandation,actif,2026-06-20,1.2,faux,69
+MEM-01023,,2023-03-23,USR-02,47,F,Viroflay,instagram,actif,2026-06-21,2.2,faux,49
+MEM-01024,,2024-03-06,USR-02,29,H,Viroflay,instagram,actif,2026-04-07,0.0,faux,100
+MEM-01025,,2021-01-26,USR-01,43,F,Saint-Cyr-l'École,instagram,actif,2026-06-21,3.7,vrai,21
+MEM-01026,,2024-12-18,USR-02,22,H,Versailles,instagram,actif,2026-06-21,3.5,faux,36
+MEM-01027,,2021-05-13,USR-02,24,H,Saint-Cyr-l'École,recommandation,actif,2026-06-18,0.6,faux,79
+MEM-01028,,2021-05-25,USR-02,26,F,Versailles,google_ads,actif,2026-06-13,1.6,faux,58
+MEM-01029,,2026-04-15,USR-01,37,H,Vélizy-Villacoublay,google_ads,actif,2026-06-18,3.3,faux,40
+MEM-01030,,2026-03-11,USR-02,51,H,Buc,recommandation,actif,2026-06-20,3.5,faux,35
+MEM-01031,,2023-09-24,USR-02,56,H,Versailles,google_ads,actif,2026-06-21,2.2,faux,44
+MEM-01032,,2022-08-17,USR-02,45,H,Viroflay,instagram,actif,2026-06-06,0.6,faux,74
+MEM-01033,,2025-11-11,USR-02,40,F,Viroflay,google_ads,actif,2026-06-21,3.0,vrai,28
+MEM-01034,,2026-04-21,USR-01,59,F,Versailles,instagram,actif,2026-06-20,2.7,vrai,35
+MEM-01035,,2022-12-28,USR-02,50,H,Versailles,google_ads,actif,2026-06-18,1.5,faux,61
+MEM-01036,,2021-08-15,USR-02,34,F,Buc,instagram,actif,2026-06-21,1.6,faux,54
+MEM-01037,,2021-03-18,USR-02,60,F,Versailles,site_web,actif,2026-06-21,3.1,faux,40
+MEM-01038,,2021-02-10,USR-02,51,H,Versailles,instagram,actif,2026-06-14,0.3,faux,75
+MEM-01039,,2022-08-25,USR-02,39,F,Le Chesnay-Rocquencourt,instagram,actif,2026-06-19,2.9,faux,32
+MEM-01040,,2026-01-26,USR-02,44,F,Le Chesnay-Rocquencourt,google_ads,actif,2026-04-06,0.0,faux,100
+MEM-01041,,2022-04-21,USR-02,24,H,Bailly,google_ads,actif,2026-06-20,3.1,faux,39
+MEM-01042,,2025-09-17,USR-01,49,F,Versailles,google_ads,actif,2026-06-05,0.4,faux,80
+MEM-01043,,2025-07-06,USR-02,47,F,Le Chesnay-Rocquencourt,site_web,actif,2026-06-19,2.3,faux,50
+MEM-01044,,2023-11-15,USR-02,47,H,Versailles,recommandation,actif,2026-06-11,0.4,faux,81
+MEM-01045,,2021-03-10,USR-02,55,H,Versailles,site_web,actif,2026-06-21,1.4,faux,58
+MEM-01046,,2023-05-13,USR-02,44,F,Jouy-en-Josas,site_web,actif,2026-06-21,2.3,faux,38
+MEM-01047,,2025-09-11,USR-02,19,H,Versailles,instagram,actif,2026-06-21,2.0,faux,58
+MEM-01048,,2025-04-17,USR-02,20,H,Versailles,site_web,actif,2026-06-21,1.7,faux,62
+MEM-01049,,2022-04-17,USR-01,36,H,Versailles,instagram,actif,2026-06-19,2.8,faux,37
+MEM-01050,,2023-04-09,USR-01,53,F,Le Chesnay-Rocquencourt,recommandation,actif,2026-06-11,0.3,faux,75
+MEM-01051,,2022-08-27,USR-02,41,F,Viroflay,recommandation,actif,2026-03-18,0.0,faux,100
+MEM-01052,,2023-12-15,USR-01,56,F,Viroflay,google_ads,actif,2026-06-17,3.2,faux,39
+MEM-01053,,2024-06-02,USR-02,58,F,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-09,0.6,faux,71
+MEM-01054,,2022-02-13,USR-02,32,H,Versailles,site_web,actif,2026-06-21,1.6,faux,57
+MEM-01055,,2023-01-23,USR-01,38,H,Bailly,instagram,actif,2026-06-20,3.3,faux,27
+MEM-01056,,2025-03-20,USR-02,43,H,Jouy-en-Josas,instagram,actif,2026-06-21,4.3,faux,19
+MEM-01057,,2025-02-18,USR-02,38,H,Viroflay,google_ads,actif,2026-06-19,3.4,faux,24
+MEM-01058,,2022-08-29,USR-02,59,F,Le Chesnay-Rocquencourt,recommandation,actif,2026-06-21,3.6,faux,30
+MEM-01059,,2022-05-11,USR-02,26,H,Versailles,instagram,actif,2026-06-21,3.2,faux,32
+MEM-01060,,2026-02-14,USR-01,27,F,Versailles,instagram,actif,2026-06-18,1.9,faux,53
+MEM-01061,,2021-07-22,USR-02,45,F,Le Chesnay-Rocquencourt,instagram,actif,2026-06-19,1.6,faux,53
+MEM-01062,,2026-03-22,USR-02,51,F,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-04,0.3,vrai,81
+MEM-01063,,2022-01-29,USR-02,55,F,Versailles,google_ads,actif,2026-04-07,0.0,faux,100
+MEM-01064,,2024-05-21,USR-02,28,F,Buc,google_ads,actif,2026-06-21,2.3,faux,51
+MEM-01065,,2024-12-08,USR-01,48,F,Versailles,recommandation,actif,2026-06-21,3.5,faux,25
+MEM-01066,,2023-09-23,USR-02,53,H,Viroflay,instagram,actif,2026-05-11,0.0,faux,98
+MEM-01067,,2021-08-10,USR-02,38,F,Vélizy-Villacoublay,instagram,actif,2026-06-21,2.1,faux,42
+MEM-01068,,2025-01-07,USR-02,50,H,Vélizy-Villacoublay,google_ads,actif,2026-06-16,0.3,faux,79
+MEM-01069,,2022-01-20,USR-01,58,H,Versailles,google_ads,actif,2026-06-21,3.5,faux,24
+MEM-01070,,2022-05-21,USR-01,47,H,Buc,google_ads,actif,2026-04-07,0.0,vrai,100
+MEM-01071,,2024-12-02,USR-02,48,H,Versailles,instagram,actif,2026-06-19,3.4,faux,25
+MEM-01072,,2022-09-27,USR-02,22,H,Saint-Cyr-l'École,google_ads,actif,2026-06-17,2.4,faux,46
+MEM-01073,,2023-09-17,USR-02,19,H,Versailles,recommandation,actif,2026-06-20,1.9,faux,60
+MEM-01074,,2024-07-09,USR-02,22,F,Versailles,instagram,actif,2026-06-20,2.6,faux,46
+MEM-01075,,2022-04-18,USR-01,26,H,Vélizy-Villacoublay,instagram,actif,2026-06-21,2.4,faux,44
+MEM-01076,,2023-03-18,USR-02,43,H,Viroflay,site_web,actif,2026-05-14,0.0,faux,96
+MEM-01077,,2024-12-25,USR-01,26,H,Versailles,site_web,actif,2026-06-21,3.2,faux,37
+MEM-01078,,2023-02-15,USR-01,35,H,Buc,site_web,actif,2026-04-08,0.0,faux,100
+MEM-01079,,2023-04-11,USR-02,54,H,Jouy-en-Josas,google_ads,actif,2026-06-21,4.3,faux,20
+MEM-01080,,2023-08-26,USR-02,28,F,Vélizy-Villacoublay,google_ads,actif,2026-06-20,4.5,faux,18
+MEM-01081,,2023-01-14,USR-02,45,F,Versailles,site_web,actif,2026-06-21,2.3,faux,52
+MEM-01082,,2025-07-15,USR-02,52,F,Viroflay,instagram,actif,2026-06-21,4.2,faux,24
+MEM-01083,,2021-04-21,USR-02,43,H,Viroflay,site_web,actif,2026-06-21,2.7,faux,44
+MEM-01084,,2024-05-31,USR-02,35,F,Saint-Cyr-l'École,instagram,actif,2026-06-21,2.5,vrai,47
+MEM-01085,,2023-06-28,USR-02,29,F,Versailles,instagram,actif,2026-06-16,3.0,faux,34
+MEM-01086,,2025-02-26,USR-02,43,F,Versailles,google_ads,actif,2026-06-20,1.9,faux,54
+MEM-01087,,2026-04-27,USR-02,54,F,Buc,instagram,actif,2026-06-17,3.1,faux,41
+MEM-01088,,2026-04-07,USR-02,51,F,Versailles,instagram,actif,2026-06-20,3.2,faux,27
+MEM-01089,,2022-08-26,USR-02,51,F,Le Chesnay-Rocquencourt,recommandation,actif,2026-06-21,2.7,vrai,44
+MEM-01090,,2025-08-24,USR-02,54,H,Versailles,google_ads,actif,2026-06-17,2.2,faux,45
+MEM-01091,,2022-09-06,USR-02,20,H,Versailles,google_ads,actif,2026-06-21,1.1,faux,71
+MEM-01092,,2023-06-01,USR-02,27,H,Buc,google_ads,actif,2026-06-21,3.1,faux,40
+MEM-01093,,2024-08-20,USR-01,25,H,Viroflay,google_ads,actif,2026-06-16,3.0,vrai,39
+MEM-01094,,2024-07-01,USR-02,52,F,Versailles,google_ads,actif,2026-06-20,2.3,vrai,46
+MEM-01095,,2021-04-01,USR-01,28,F,Vélizy-Villacoublay,google_ads,actif,2026-06-11,0.8,faux,67
+MEM-01096,,2024-11-30,USR-01,23,H,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-20,2.9,vrai,42
+MEM-01097,,2024-05-06,USR-02,56,H,Versailles,instagram,actif,2026-06-21,3.9,faux,21
+MEM-01098,,2025-07-31,USR-02,57,H,Viroflay,instagram,actif,2026-02-27,0.0,faux,100
+MEM-01099,,2025-03-10,USR-02,24,F,Buc,site_web,actif,2026-05-17,0.0,faux,100
+MEM-01100,,2023-07-13,USR-01,22,F,Versailles,instagram,actif,2026-06-21,4.5,faux,11
+MEM-01101,,2025-09-26,USR-02,52,H,Bailly,recommandation,actif,2026-05-03,0.0,faux,100
+MEM-01102,,2025-12-18,USR-01,39,H,Le Chesnay-Rocquencourt,instagram,actif,2026-03-21,0.0,faux,100
+MEM-01103,,2025-12-27,USR-02,30,F,Viroflay,site_web,actif,2026-06-21,1.8,faux,47
+MEM-01104,,2022-05-13,USR-02,23,F,Versailles,instagram,actif,2026-06-18,2.6,faux,38
+MEM-01105,,2026-03-14,USR-02,33,F,Jouy-en-Josas,site_web,actif,2026-06-21,3.5,vrai,20
+MEM-01106,,2022-01-07,USR-02,39,H,Bailly,instagram,actif,2026-06-20,3.6,faux,33
+MEM-01107,,2025-03-18,USR-02,40,H,Vélizy-Villacoublay,recommandation,actif,2026-03-18,0.0,faux,100
+MEM-01108,,2023-09-25,USR-02,50,F,Le Chesnay-Rocquencourt,recommandation,actif,2026-06-20,0.8,faux,62
+MEM-01109,,2026-01-22,USR-02,55,H,Buc,site_web,actif,2026-06-06,0.3,faux,77
+MEM-01110,,2025-08-12,USR-02,43,H,Saint-Cyr-l'École,instagram,actif,2026-06-17,2.1,faux,46
+MEM-01111,,2024-09-11,USR-02,42,H,Versailles,instagram,actif,2026-06-18,3.1,faux,35
+MEM-01112,,2025-03-13,USR-02,57,H,Le Chesnay-Rocquencourt,instagram,actif,2026-06-21,2.3,faux,45
+MEM-01113,,2026-03-17,USR-01,55,F,Versailles,site_web,actif,2026-06-19,4.0,faux,15
+MEM-01114,,2023-07-23,USR-02,32,F,Versailles,instagram,actif,2026-06-19,4.0,faux,14
+MEM-01115,,2022-09-07,USR-02,31,F,Bailly,instagram,actif,2026-06-20,3.5,faux,22
+MEM-01116,,2022-11-17,USR-02,50,H,Versailles,recommandation,actif,2026-06-16,2.0,vrai,60
+MEM-01117,,2022-10-03,USR-02,45,F,Versailles,instagram,actif,2026-06-21,4.2,faux,15
+MEM-01118,,2022-01-31,USR-02,30,F,Le Chesnay-Rocquencourt,recommandation,actif,2026-06-20,1.0,faux,72
+MEM-01119,,2025-11-18,USR-02,57,F,Versailles,instagram,actif,2026-06-21,4.0,faux,28
+MEM-01120,,2026-03-14,USR-02,39,H,Viroflay,instagram,actif,2026-06-21,4.5,vrai,11
+MEM-01121,,2021-01-30,USR-02,29,F,Bailly,google_ads,actif,2026-06-21,2.3,faux,53
+MEM-01122,,2023-03-08,USR-02,59,H,Viroflay,instagram,actif,2026-05-05,0.0,vrai,100
+MEM-01123,,2021-02-19,USR-02,54,F,Versailles,instagram,actif,2026-06-21,3.8,faux,22
+MEM-01124,,2023-09-02,USR-02,58,F,Saint-Cyr-l'École,instagram,actif,2026-06-21,4.1,faux,16
+MEM-01125,,2023-03-20,USR-01,54,H,Versailles,instagram,actif,2026-06-20,4.6,faux,15
+MEM-01126,,2022-04-03,USR-01,53,F,Le Chesnay-Rocquencourt,instagram,actif,2026-06-19,3.7,faux,19
+MEM-01127,,2026-03-08,USR-01,32,F,Versailles,instagram,actif,2026-06-14,1.8,faux,50
+MEM-01128,,2022-05-09,USR-02,55,F,Versailles,instagram,actif,2026-06-20,1.2,faux,68
+MEM-01129,,2023-04-27,USR-02,33,H,Buc,recommandation,actif,2026-06-17,2.7,faux,47
+MEM-01130,,2023-06-02,USR-02,38,F,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-17,1.5,faux,66
+MEM-01131,,2021-11-04,USR-02,40,H,Viroflay,site_web,actif,2026-06-18,2.3,faux,52
+MEM-01132,,2021-06-01,USR-01,32,F,Le Chesnay-Rocquencourt,instagram,actif,2026-06-18,1.9,faux,61
+MEM-01133,,2023-07-12,USR-02,48,F,Versailles,recommandation,actif,2026-06-21,2.0,vrai,45
+MEM-01134,,2026-01-05,USR-02,38,F,Versailles,instagram,actif,2026-06-21,4.2,vrai,16
+MEM-01135,,2021-08-02,USR-02,45,H,Versailles,site_web,actif,2026-06-21,0.5,faux,78
+MEM-01136,,2022-06-17,USR-02,19,H,Saint-Cyr-l'École,instagram,actif,2026-04-05,0.0,faux,100
+MEM-01137,,2024-07-15,USR-02,37,H,Buc,recommandation,actif,2026-06-17,1.3,faux,67
+MEM-01138,,2024-03-14,USR-02,50,H,Le Chesnay-Rocquencourt,instagram,actif,2026-06-21,3.5,vrai,33
+MEM-01139,,2024-11-17,USR-02,43,H,Viroflay,recommandation,actif,2026-06-20,2.9,faux,43
+MEM-01140,,2025-09-25,USR-02,46,F,Viroflay,instagram,actif,2026-06-20,3.9,faux,29
+MEM-01141,,2025-12-07,USR-02,35,H,Bailly,google_ads,actif,2026-06-21,1.9,faux,50
+MEM-01142,,2025-12-10,USR-02,60,H,Versailles,recommandation,actif,2026-06-17,1.6,vrai,62
+MEM-01143,,2023-05-26,USR-01,36,F,Buc,site_web,actif,2026-03-08,0.0,faux,100
+MEM-01144,,2023-02-07,USR-02,52,H,Versailles,site_web,actif,2026-05-11,0.0,faux,97
+MEM-01145,,2024-04-09,USR-02,41,F,Le Chesnay-Rocquencourt,instagram,actif,2026-06-21,4.1,faux,19
+MEM-01146,,2023-07-24,USR-02,32,F,Versailles,site_web,actif,2026-06-20,3.7,faux,26
+MEM-01147,,2022-06-28,USR-02,59,F,Versailles,instagram,actif,2026-06-21,2.3,faux,45
+MEM-01148,,2025-08-15,USR-02,58,H,Bailly,google_ads,actif,2026-06-20,1.3,faux,64
+MEM-01149,,2021-07-24,USR-02,59,F,Jouy-en-Josas,instagram,actif,2026-04-14,0.0,faux,100
+MEM-01150,,2024-12-15,USR-02,36,F,Saint-Cyr-l'École,instagram,actif,2026-06-21,2.5,vrai,49
+MEM-01151,,2021-04-06,USR-02,57,H,Versailles,instagram,actif,2026-06-21,3.1,faux,36
+MEM-01152,,2021-03-10,USR-02,23,F,Versailles,instagram,actif,2026-05-19,0.0,faux,100
+MEM-01153,,2023-09-14,USR-02,55,H,Versailles,google_ads,actif,2026-06-14,1.6,vrai,67
+MEM-01154,,2025-08-10,USR-02,52,H,Jouy-en-Josas,google_ads,actif,2026-06-20,3.7,faux,23
+MEM-01155,,2023-12-06,USR-01,26,H,Vélizy-Villacoublay,instagram,actif,2026-03-01,0.0,faux,100
+MEM-01156,,2022-09-06,USR-02,41,H,Le Chesnay-Rocquencourt,instagram,actif,2026-04-24,0.0,faux,100
+MEM-01157,,2021-11-29,USR-02,20,F,Saint-Cyr-l'École,instagram,actif,2026-06-18,1.4,vrai,54
+MEM-01158,,2025-08-31,USR-02,19,F,Viroflay,instagram,actif,2026-06-20,1.5,faux,54
+MEM-01159,,2021-04-19,USR-02,56,F,Versailles,site_web,actif,2026-06-21,2.8,faux,35
+MEM-01160,,2024-08-10,USR-02,56,H,Buc,google_ads,actif,2026-06-19,3.7,faux,23
+MEM-01161,,2023-03-28,USR-02,34,H,Viroflay,instagram,actif,2026-06-20,3.2,faux,38
+MEM-01162,,2022-09-10,USR-02,50,F,Jouy-en-Josas,instagram,actif,2026-06-19,1.4,faux,62
+MEM-01163,,2021-08-21,USR-02,28,F,Versailles,site_web,actif,2026-06-13,1.7,vrai,62
+MEM-01164,,2021-10-29,USR-02,40,H,Versailles,google_ads,actif,2026-06-18,3.6,faux,34
+MEM-01165,,2021-07-27,USR-02,23,F,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-21,3.4,faux,31
+MEM-01166,,2025-05-22,USR-02,56,F,Versailles,instagram,actif,2026-06-20,3.6,faux,28
+MEM-01167,,2022-06-26,USR-02,37,F,Le Chesnay-Rocquencourt,recommandation,actif,2026-06-21,2.0,faux,50
+MEM-01168,,2021-07-05,USR-02,25,H,Versailles,site_web,actif,2026-06-21,1.4,faux,59
+MEM-01169,,2023-06-27,USR-02,40,F,Le Chesnay-Rocquencourt,instagram,actif,2026-06-20,3.2,vrai,27
+MEM-01170,,2026-04-30,USR-01,37,F,Versailles,instagram,actif,2026-06-19,3.2,vrai,41
+MEM-01171,,2023-10-17,USR-02,57,F,Versailles,google_ads,actif,2026-06-20,2.3,faux,50
+MEM-01172,,2023-09-26,USR-01,41,H,Jouy-en-Josas,site_web,actif,2026-06-18,3.0,faux,33
+MEM-01173,,2022-07-29,USR-02,35,F,Bailly,instagram,actif,2026-06-19,2.2,faux,53
+MEM-01174,,2021-08-20,USR-02,49,F,Buc,instagram,actif,2026-06-20,2.5,faux,45
+MEM-01175,,2025-05-30,USR-01,50,F,Versailles,instagram,actif,2026-04-16,0.0,faux,100
+MEM-01176,,2025-11-10,USR-02,25,H,Viroflay,instagram,actif,2026-06-19,4.2,faux,20
+MEM-01177,,2024-07-30,USR-02,44,H,Vélizy-Villacoublay,google_ads,actif,2026-06-20,2.1,faux,51
+MEM-01178,,2025-07-21,USR-02,31,H,Versailles,site_web,actif,2026-06-18,2.7,faux,46
+MEM-01179,,2026-03-18,USR-02,42,H,Jouy-en-Josas,site_web,actif,2026-06-21,1.4,faux,58
+MEM-01180,,2022-01-20,USR-02,36,H,Jouy-en-Josas,instagram,actif,2026-06-19,2.7,faux,45
+MEM-01181,,2025-07-18,USR-02,40,F,Vélizy-Villacoublay,instagram,actif,2026-06-21,0.3,faux,83
+MEM-01182,,2025-02-15,USR-02,21,H,Versailles,google_ads,actif,2026-06-19,2.4,faux,42
+MEM-01183,,2024-02-21,USR-02,37,F,Viroflay,site_web,actif,2026-06-18,3.4,faux,27
+MEM-01184,,2022-12-07,USR-02,28,F,Versailles,site_web,actif,2026-06-13,1.1,faux,61
+MEM-01185,,2024-02-02,USR-01,45,H,Versailles,recommandation,actif,2026-06-21,3.6,faux,32
+MEM-01186,,2022-04-02,USR-02,49,H,Versailles,google_ads,actif,2026-06-18,1.0,faux,67
+MEM-01187,,2025-09-14,USR-01,56,H,Versailles,google_ads,actif,2026-06-20,4.3,vrai,11
+MEM-01188,,2026-03-31,USR-02,56,F,Buc,google_ads,actif,2026-06-21,3.1,faux,26
+MEM-01189,,2024-01-29,USR-01,30,H,Viroflay,google_ads,actif,2026-06-20,2.1,faux,45
+MEM-01190,,2021-10-07,USR-02,27,F,Jouy-en-Josas,site_web,actif,2026-06-17,1.6,faux,63
+MEM-01191,,2023-02-22,USR-02,60,H,Versailles,google_ads,actif,2026-06-21,4.4,faux,14
+MEM-01192,,2025-10-23,USR-02,34,H,Versailles,google_ads,actif,2026-06-19,1.4,faux,68
+MEM-01193,,2021-07-31,USR-02,24,F,Vélizy-Villacoublay,instagram,actif,2026-05-20,0.0,faux,97
+MEM-01194,,2021-09-23,USR-02,46,H,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-21,3.7,faux,17
+MEM-01195,,2025-12-04,USR-02,49,H,Buc,google_ads,actif,2026-06-20,2.1,faux,55
+MEM-01196,,2021-05-25,USR-02,27,F,Le Chesnay-Rocquencourt,instagram,actif,2026-06-13,1.7,faux,63
+MEM-01197,,2023-03-03,USR-02,54,H,Le Chesnay-Rocquencourt,instagram,actif,2026-06-21,3.2,faux,37
+MEM-01198,,2024-01-07,USR-02,27,F,Buc,google_ads,actif,2026-06-20,3.1,faux,39
+MEM-01199,,2022-07-15,USR-02,33,F,Le Chesnay-Rocquencourt,google_ads,actif,2026-06-21,2.6,faux,37
+MEM-01200,,2024-04-25,USR-02,52,H,Versailles,instagram,actif,2026-03-28,0.0,faux,100
+MEM-01201,,2024-02-18,USR-02,24,F,Versailles,site_web,resilie,2026-02-19,0.0,vrai,100
+MEM-01202,,2021-09-27,USR-02,48,H,Jouy-en-Josas,site_web,resilie,2026-01-07,0.0,faux,100
+MEM-01203,,2023-03-13,USR-01,22,H,Jouy-en-Josas,instagram,resilie,2026-03-10,0.0,faux,100
+MEM-01204,,2022-09-19,USR-02,39,H,Bailly,site_web,resilie,2026-02-02,0.0,vrai,100
+MEM-01205,,2023-11-13,USR-02,45,H,Versailles,instagram,resilie,2026-03-08,0.0,faux,100
+MEM-01206,,2021-05-17,USR-02,20,F,Versailles,recommandation,resilie,2026-02-15,0.0,faux,100
+MEM-01207,,2024-01-15,USR-01,60,F,Viroflay,recommandation,resilie,2026-01-23,0.0,faux,100
+MEM-01208,,2023-07-03,USR-01,60,F,Viroflay,instagram,resilie,2026-02-19,0.0,faux,100
+MEM-01209,,2026-05-03,USR-02,32,H,Viroflay,google_ads,resilie,2026-05-08,0.0,faux,100
+MEM-01210,,2025-10-02,USR-02,34,F,Saint-Cyr-l'École,instagram,resilie,2026-01-19,0.0,faux,100
+MEM-01211,,2022-03-06,USR-02,20,H,Le Chesnay-Rocquencourt,site_web,resilie,2025-12-05,0.0,vrai,100
+MEM-01212,,2023-08-19,USR-01,57,H,Jouy-en-Josas,instagram,resilie,2025-12-30,0.0,faux,100
+MEM-01213,,2023-06-05,USR-02,20,H,Versailles,site_web,resilie,2026-03-28,0.0,faux,100
+MEM-01214,,2023-06-12,USR-01,38,F,Versailles,site_web,resilie,2025-12-24,0.0,vrai,100
+MEM-01215,,2025-07-10,USR-01,20,H,Versailles,instagram,resilie,2026-05-09,0.0,faux,100
+MEM-01216,,2021-11-02,USR-02,57,H,Versailles,instagram,resilie,2025-12-06,0.0,faux,100
+MEM-01217,,2022-06-23,USR-01,52,H,Buc,instagram,resilie,2026-01-21,0.0,faux,100
+MEM-01218,,2022-06-24,USR-02,48,F,Bailly,instagram,resilie,2026-03-30,0.0,faux,100
+MEM-01219,,2024-05-27,USR-01,30,F,Versailles,google_ads,resilie,2025-12-24,0.0,vrai,100
+MEM-01220,,2026-05-21,USR-02,57,F,Viroflay,instagram,resilie,2025-12-07,0.0,vrai,100
+MEM-01221,,2025-01-19,USR-02,28,H,Viroflay,site_web,resilie,2026-01-27,0.0,faux,100
+MEM-01222,,2024-08-01,USR-01,39,H,Versailles,google_ads,resilie,2026-01-28,0.0,faux,100
+MEM-01223,,2025-01-28,USR-01,22,H,Versailles,google_ads,resilie,2026-02-26,0.0,faux,100
+MEM-01224,,2024-02-11,USR-02,58,H,Saint-Cyr-l'École,google_ads,resilie,2026-02-26,0.0,faux,100
+MEM-01225,,2022-08-21,USR-02,25,F,Le Chesnay-Rocquencourt,instagram,resilie,2026-02-12,0.0,faux,100
+MEM-01226,,2022-07-16,USR-02,37,F,Bailly,instagram,resilie,2026-04-12,0.0,faux,100
+MEM-01227,,2026-04-28,USR-02,31,H,Versailles,instagram,resilie,2026-02-23,0.0,faux,100
+MEM-01228,,2026-05-18,USR-02,20,H,Saint-Cyr-l'École,instagram,resilie,2026-04-15,0.0,faux,100
+MEM-01229,,2021-07-29,USR-02,38,H,Viroflay,google_ads,resilie,2026-03-01,0.0,vrai,100
+MEM-01230,,2025-01-26,USR-01,35,F,Versailles,instagram,resilie,2026-04-22,0.0,faux,100
+MEM-01231,,2023-01-25,USR-02,29,F,Versailles,recommandation,resilie,2026-02-28,0.0,faux,100
+MEM-01232,,2021-04-03,USR-02,58,F,Bailly,site_web,resilie,2026-04-06,0.0,faux,100
+MEM-01233,,2026-04-10,USR-02,54,F,Versailles,instagram,resilie,2025-12-19,0.0,faux,100
+MEM-01234,,2024-12-31,USR-02,34,H,Versailles,recommandation,resilie,2025-12-21,0.0,vrai,100
+MEM-01235,,2026-04-12,USR-02,33,F,Versailles,google_ads,resilie,2026-02-26,0.0,faux,100
+MEM-01236,,2021-03-05,USR-01,54,H,Versailles,site_web,resilie,2026-03-03,0.0,faux,100
+MEM-01237,,2024-10-09,USR-02,31,H,Vélizy-Villacoublay,google_ads,resilie,2026-05-13,0.0,faux,98
+MEM-01238,,2023-11-03,USR-02,41,H,Vélizy-Villacoublay,site_web,resilie,2026-01-21,0.0,faux,100
+MEM-01239,,2025-07-29,USR-02,46,F,Vélizy-Villacoublay,google_ads,resilie,2025-12-08,0.0,faux,100
+MEM-01240,,2026-03-01,USR-02,48,H,Versailles,google_ads,resilie,2026-04-29,0.0,faux,100
+MEM-01241,,2021-07-18,USR-02,49,F,Versailles,site_web,resilie,2026-03-12,0.0,faux,100
+MEM-01242,,2023-07-17,USR-02,42,H,Viroflay,recommandation,resilie,2026-05-07,0.0,faux,100
+MEM-01243,,2022-12-30,USR-02,34,H,Versailles,google_ads,resilie,2026-04-18,0.0,faux,100
+MEM-01244,,2023-01-13,USR-02,28,F,Versailles,google_ads,resilie,2025-12-28,0.0,faux,100
+MEM-01245,,2021-05-24,USR-02,52,H,Le Chesnay-Rocquencourt,site_web,resilie,2026-03-03,0.0,faux,100
+MEM-01246,,2023-06-09,USR-02,60,H,Saint-Cyr-l'École,google_ads,resilie,2026-01-24,0.0,vrai,100
+MEM-01247,,2025-08-04,USR-02,43,H,Versailles,instagram,resilie,2026-03-25,0.0,vrai,100
+MEM-01248,,2025-09-19,USR-02,40,H,Le Chesnay-Rocquencourt,instagram,resilie,2026-05-10,0.0,faux,98
+MEM-01249,,2025-01-10,USR-02,49,F,Buc,recommandation,resilie,2026-01-15,0.0,faux,100
+MEM-01250,,2022-07-06,USR-02,36,H,Versailles,google_ads,resilie,2026-04-25,0.0,faux,100
+MEM-01251,,2025-11-02,USR-01,50,H,Le Chesnay-Rocquencourt,instagram,resilie,2026-03-23,0.0,faux,100
+MEM-01252,,2026-02-09,USR-01,38,F,Versailles,google_ads,resilie,2026-03-10,0.0,faux,100
+MEM-01253,,2024-08-10,USR-01,27,F,Viroflay,instagram,resilie,2025-12-10,0.0,vrai,100
+MEM-01254,,2025-10-16,USR-02,28,F,Buc,recommandation,resilie,2025-12-20,0.0,faux,100
+MEM-01255,,2023-12-03,USR-01,25,F,Versailles,google_ads,resilie,2026-01-29,0.0,faux,100
+MEM-01256,,2025-04-23,USR-02,23,H,Vélizy-Villacoublay,google_ads,resilie,2025-12-31,0.0,faux,100
+MEM-01257,,2022-11-29,USR-02,27,F,Viroflay,instagram,resilie,2026-03-08,0.0,faux,100
+MEM-01258,,2021-11-13,USR-02,46,H,Le Chesnay-Rocquencourt,site_web,resilie,2025-12-20,0.0,vrai,100
+MEM-01259,,2025-10-11,USR-02,51,F,Le Chesnay-Rocquencourt,instagram,resilie,2026-01-10,0.0,faux,100
+MEM-01260,,2024-02-14,USR-02,56,H,Viroflay,recommandation,resilie,2026-04-04,0.0,faux,100
+MEM-01261,,2024-02-05,USR-02,56,F,Viroflay,google_ads,resilie,2026-04-04,0.0,faux,100
+MEM-01262,,2025-12-30,USR-02,22,H,Jouy-en-Josas,instagram,resilie,2025-12-21,0.0,faux,100
+MEM-01263,,2023-01-31,USR-02,43,F,Viroflay,google_ads,resilie,2026-04-25,0.0,faux,100
+MEM-01264,,2026-01-03,USR-02,50,F,Le Chesnay-Rocquencourt,instagram,resilie,2026-03-25,0.0,faux,100
+MEM-01265,,2022-09-30,USR-01,52,H,Viroflay,instagram,resilie,2026-02-19,0.0,faux,100
+MEM-01266,,2021-03-13,USR-02,35,H,Versailles,instagram,resilie,2026-03-20,0.0,faux,100
+MEM-01267,,2025-08-11,USR-02,32,F,Le Chesnay-Rocquencourt,google_ads,resilie,2026-02-13,0.0,faux,100
+MEM-01268,,2023-05-15,USR-02,44,F,Saint-Cyr-l'École,recommandation,resilie,2026-04-17,0.0,faux,100
+MEM-01269,,2021-11-28,USR-01,32,H,Versailles,google_ads,resilie,2026-01-05,0.0,faux,100
+MEM-01270,,2025-12-24,USR-02,53,F,Viroflay,google_ads,resilie,2025-12-14,0.0,faux,100
+MEM-01271,,2025-06-28,USR-01,41,F,Versailles,google_ads,resilie,2025-12-05,0.0,faux,100
+MEM-01272,,2025-04-01,USR-02,51,H,Viroflay,instagram,resilie,2026-03-15,0.0,faux,100
+MEM-01273,,2025-05-21,USR-02,54,H,Le Chesnay-Rocquencourt,google_ads,resilie,2026-02-24,0.0,faux,100
+MEM-01274,,2023-12-17,USR-01,55,H,Viroflay,site_web,resilie,2026-03-27,0.0,vrai,100
+MEM-01275,,2021-01-02,USR-02,27,F,Bailly,instagram,resilie,2026-03-07,0.0,faux,100
+MEM-01276,,2024-06-16,USR-02,28,H,Viroflay,site_web,resilie,2025-12-08,0.0,faux,100
+MEM-01277,,2021-04-19,USR-01,30,H,Versailles,site_web,resilie,2026-04-15,0.0,faux,100
+MEM-01278,,2022-01-12,USR-02,37,F,Versailles,google_ads,resilie,2026-04-02,0.0,faux,100
+MEM-01279,,2022-11-22,USR-02,53,F,Vélizy-Villacoublay,google_ads,resilie,2026-02-20,0.0,faux,100
+MEM-01280,,2023-07-08,USR-02,33,H,Versailles,instagram,resilie,2026-04-26,0.0,faux,100
+MEM-01281,,2026-04-29,USR-02,45,F,Versailles,google_ads,resilie,2026-04-24,0.0,faux,100
+MEM-01282,,2022-09-18,USR-02,30,H,Le Chesnay-Rocquencourt,site_web,resilie,2026-01-06,0.0,faux,100
+MEM-01283,,2021-12-29,USR-01,27,H,Viroflay,google_ads,resilie,2026-04-20,0.0,faux,100
+MEM-01284,,2024-03-12,USR-02,45,H,Le Chesnay-Rocquencourt,instagram,resilie,2026-03-22,0.0,vrai,100
+MEM-01285,,2021-02-05,USR-02,34,H,Versailles,instagram,resilie,2025-12-28,0.0,faux,100
+MEM-01286,,2026-05-20,USR-01,49,H,Vélizy-Villacoublay,instagram,resilie,2026-02-09,0.0,faux,100
+MEM-01287,,2023-11-15,USR-02,44,F,Le Chesnay-Rocquencourt,recommandation,resilie,2026-03-11,0.0,faux,100
+MEM-01288,,2026-01-09,USR-02,45,H,Le Chesnay-Rocquencourt,site_web,resilie,2026-01-15,0.0,faux,100
+MEM-01289,,2023-01-20,USR-02,33,F,Versailles,instagram,resilie,2026-04-28,0.0,vrai,100
+MEM-01290,,2026-03-14,USR-01,26,H,Jouy-en-Josas,site_web,resilie,2026-03-24,0.0,faux,100
+MEM-01291,,2021-12-24,USR-01,29,H,Versailles,google_ads,resilie,2026-04-26,0.0,faux,100
+MEM-01292,,2025-06-21,USR-02,30,H,Versailles,google_ads,resilie,2026-04-19,0.0,vrai,100
+MEM-01293,,2025-04-25,USR-02,19,F,Saint-Cyr-l'École,site_web,resilie,2025-12-13,0.0,faux,100
+MEM-01294,,2025-12-05,USR-02,47,F,Versailles,google_ads,resilie,2026-03-21,0.0,vrai,100
+MEM-01295,,2024-05-18,USR-02,37,F,Le Chesnay-Rocquencourt,site_web,resilie,2026-04-17,0.0,faux,100
+MEM-01296,,2022-10-24,USR-02,31,H,Le Chesnay-Rocquencourt,instagram,resilie,2026-01-30,0.0,faux,100
+MEM-01297,,2025-03-01,USR-02,23,H,Le Chesnay-Rocquencourt,instagram,resilie,2026-02-05,0.0,faux,100
+MEM-01298,,2024-12-23,USR-02,48,F,Le Chesnay-Rocquencourt,google_ads,resilie,2026-02-08,0.0,faux,100
+MEM-01299,,2024-11-08,USR-02,30,F,Versailles,site_web,resilie,2026-03-13,0.0,vrai,100
+MEM-01300,,2022-12-01,USR-02,33,H,Le Chesnay-Rocquencourt,site_web,resilie,2026-03-30,0.0,faux,100
+MEM-01301,,2021-07-09,USR-02,20,H,Le Chesnay-Rocquencourt,google_ads,resilie,2026-05-13,0.0,vrai,96
+MEM-01302,,2025-08-03,USR-01,31,F,Le Chesnay-Rocquencourt,instagram,resilie,2026-05-12,0.0,faux,100
+MEM-01303,,2022-09-23,USR-02,23,F,Jouy-en-Josas,site_web,resilie,2026-01-08,0.0,faux,100
+MEM-01304,,2021-10-19,USR-02,30,H,Le Chesnay-Rocquencourt,instagram,resilie,2026-04-17,0.0,faux,100
+MEM-01305,,2022-01-09,USR-02,39,F,Versailles,instagram,resilie,2026-04-15,0.0,vrai,100
+MEM-01306,,2022-09-21,USR-01,27,H,Viroflay,recommandation,resilie,2026-02-20,0.0,faux,100
+MEM-01307,,2025-10-21,USR-02,20,F,Buc,instagram,resilie,2026-01-02,0.0,vrai,100
+MEM-01308,,2024-01-16,USR-02,60,F,Viroflay,instagram,resilie,2025-12-24,0.0,faux,100
+MEM-01309,,2021-04-03,USR-02,54,H,Viroflay,google_ads,resilie,2026-03-22,0.0,vrai,100
+MEM-01310,,2023-02-08,USR-02,39,F,Viroflay,site_web,resilie,2025-12-11,0.0,faux,100
+MEM-01311,,2025-08-29,USR-01,19,F,Vélizy-Villacoublay,instagram,resilie,2025-12-18,0.0,faux,100
+MEM-01312,,2026-04-01,USR-02,39,H,Jouy-en-Josas,google_ads,resilie,2026-05-06,0.0,faux,100
+MEM-01313,,2026-04-10,USR-02,28,H,Le Chesnay-Rocquencourt,instagram,resilie,2026-05-06,0.0,faux,100
+MEM-01314,,2025-06-25,USR-02,22,F,Le Chesnay-Rocquencourt,instagram,resilie,2026-02-21,0.0,faux,100
+MEM-01315,,2025-10-29,USR-02,30,H,Versailles,google_ads,resilie,2026-02-16,0.0,faux,100
+MEM-01316,,2022-01-18,USR-02,27,F,Versailles,instagram,resilie,2026-01-06,0.0,faux,100
+MEM-01317,,2025-06-16,USR-02,40,H,Versailles,instagram,resilie,2026-02-10,0.0,faux,100
+MEM-01318,,2021-01-13,USR-02,34,H,Versailles,google_ads,resilie,2026-01-06,0.0,faux,100
+MEM-01319,,2024-01-03,USR-02,36,F,Versailles,instagram,resilie,2025-12-04,0.0,faux,100
+MEM-01320,,2022-01-30,USR-02,29,H,Versailles,site_web,resilie,2026-01-02,0.0,faux,100
+MEM-01321,,2025-02-09,USR-02,54,F,Viroflay,google_ads,resilie,2026-01-05,0.0,faux,100
+MEM-01322,,2024-03-02,USR-01,50,H,Le Chesnay-Rocquencourt,instagram,resilie,2026-04-28,0.0,faux,100
+MEM-01323,,2024-11-04,USR-02,35,F,Versailles,google_ads,resilie,2025-12-04,0.0,faux,100
+MEM-01324,,2023-08-17,USR-02,50,H,Saint-Cyr-l'École,instagram,resilie,2026-04-15,0.0,faux,100
+MEM-01325,,2023-02-19,USR-01,34,F,Versailles,google_ads,resilie,2025-12-08,0.0,faux,100
+MEM-01326,,2021-10-31,USR-02,51,H,Versailles,recommandation,resilie,2025-12-04,0.0,faux,100
+MEM-01327,,2023-03-01,USR-02,57,H,Viroflay,site_web,resilie,2026-03-16,0.0,faux,100
+MEM-01328,,2022-10-05,USR-02,49,F,Versailles,instagram,resilie,2026-01-20,0.0,faux,100
+MEM-01329,,2024-02-06,USR-02,34,F,Le Chesnay-Rocquencourt,instagram,resilie,2025-12-30,0.0,faux,100
+MEM-01330,,2021-08-11,USR-02,31,H,Viroflay,google_ads,resilie,2026-02-06,0.0,faux,100
+MEM-01331,,2024-05-08,USR-02,22,H,Viroflay,instagram,resilie,2026-01-18,0.0,faux,100
+MEM-01332,,2026-05-22,USR-02,50,F,Vélizy-Villacoublay,instagram,resilie,2026-04-29,0.0,faux,100
+MEM-01333,,2023-10-08,USR-02,19,F,Le Chesnay-Rocquencourt,instagram,resilie,2026-04-14,0.0,faux,100
+MEM-01334,,2025-05-14,USR-02,53,H,Buc,recommandation,resilie,2026-03-15,0.0,faux,100
+MEM-01335,,2024-03-13,USR-02,50,F,Versailles,google_ads,resilie,2026-04-26,0.0,faux,100
+MEM-01336,,2026-03-26,USR-02,42,F,Vélizy-Villacoublay,site_web,resilie,2025-12-21,0.0,faux,100
+MEM-01337,,2021-01-28,USR-01,21,H,Vélizy-Villacoublay,recommandation,resilie,2025-12-17,0.0,faux,100
+MEM-01338,,2026-04-04,USR-02,40,F,Vélizy-Villacoublay,instagram,resilie,2025-12-28,0.0,faux,100
+MEM-01339,,2022-03-05,USR-02,34,H,Vélizy-Villacoublay,google_ads,resilie,2026-04-11,0.0,faux,100
+MEM-01340,,2024-03-12,USR-02,47,H,Vélizy-Villacoublay,instagram,resilie,2026-03-12,0.0,faux,100
+MEM-01341,,2022-11-15,USR-02,37,F,Buc,instagram,resilie,2026-04-08,0.0,faux,100
+MEM-01342,,2024-02-11,USR-02,28,H,Versailles,instagram,resilie,2026-02-21,0.0,faux,100
+MEM-01343,,2025-09-14,USR-02,60,F,Saint-Cyr-l'École,google_ads,resilie,2026-01-16,0.0,faux,100
+MEM-01344,,2026-05-14,USR-02,41,F,Jouy-en-Josas,instagram,resilie,2026-01-15,0.0,faux,100
+MEM-01345,,2023-02-23,USR-01,37,H,Versailles,recommandation,resilie,2026-05-12,0.0,faux,97
+MEM-01346,,2026-04-14,USR-02,27,F,Jouy-en-Josas,site_web,resilie,2026-02-23,0.0,faux,100
+MEM-01347,,2021-04-18,USR-02,31,H,Versailles,google_ads,resilie,2026-05-05,0.0,faux,100
+MEM-01348,,2024-04-05,USR-02,45,H,Saint-Cyr-l'École,recommandation,resilie,2026-05-13,0.0,faux,97
+MEM-01349,,2021-10-02,USR-02,29,F,Le Chesnay-Rocquencourt,site_web,resilie,2026-02-12,0.0,faux,100
+MEM-01350,,2026-02-10,USR-02,23,H,Buc,site_web,resilie,2026-01-06,0.0,faux,100
+MEM-01351,,2024-03-21,USR-02,46,H,Versailles,recommandation,en_pause,2026-04-02,0.3,faux,100
+MEM-01352,,2024-02-13,USR-02,42,H,Versailles,site_web,en_pause,2026-04-02,0.1,faux,100
+MEM-01353,,2026-05-09,USR-02,53,F,Jouy-en-Josas,instagram,en_pause,2026-05-29,0.1,vrai,90
+MEM-01354,,2022-06-19,USR-02,26,F,Bailly,instagram,en_pause,2026-05-10,0.0,vrai,100
+MEM-01355,,2025-11-05,USR-02,25,F,Versailles,instagram,en_pause,2026-04-17,0.3,faux,100
+MEM-01356,,2025-11-11,USR-02,40,F,Vélizy-Villacoublay,instagram,en_pause,2026-04-09,0.3,faux,100
+MEM-01357,,2023-08-25,USR-01,56,H,Versailles,site_web,en_pause,2026-04-08,0.3,faux,100
+MEM-01358,,2021-01-27,USR-01,44,F,Versailles,recommandation,en_pause,2026-05-21,0.0,faux,93
+MEM-01359,,2021-01-25,USR-02,22,F,Vélizy-Villacoublay,instagram,en_pause,2026-03-29,0.4,faux,100
+MEM-01360,,2022-03-03,USR-02,23,F,Jouy-en-Josas,instagram,en_pause,2026-04-09,0.2,faux,100
+MEM-01361,,2023-05-10,USR-01,36,H,Versailles,google_ads,en_pause,2026-04-11,0.2,faux,100
+MEM-01362,,2021-11-22,USR-02,52,F,Versailles,google_ads,en_pause,2026-05-06,0.1,faux,100
+MEM-01363,,2026-05-21,USR-01,49,H,Versailles,instagram,en_pause,2026-05-29,0.2,faux,94
+MEM-01364,,2021-11-13,USR-02,20,H,Buc,instagram,en_pause,2026-04-15,0.1,vrai,100
+MEM-01365,,2025-09-02,USR-02,25,H,Versailles,recommandation,en_pause,2026-05-07,0.4,faux,100
+MEM-01366,,2026-02-25,USR-02,49,H,Versailles,site_web,en_pause,2026-05-13,0.3,faux,92
+MEM-01367,,2021-06-17,USR-02,49,F,Saint-Cyr-l'École,instagram,en_pause,2026-03-28,0.1,faux,100
+MEM-01368,,2025-12-13,USR-02,58,F,Jouy-en-Josas,instagram,en_pause,2026-05-12,0.2,faux,100
+MEM-01369,,2022-12-07,USR-01,54,F,Versailles,site_web,en_pause,2026-05-20,0.0,faux,96
+MEM-01370,,2025-06-03,USR-02,30,F,Versailles,google_ads,en_pause,2026-05-24,0.0,faux,95
+MEM-01371,,2025-09-08,USR-02,53,F,Versailles,google_ads,en_pause,2026-05-26,0.1,faux,91
+MEM-01372,,2024-12-04,USR-02,19,F,Bailly,site_web,en_pause,2026-05-23,0.3,faux,89
+MEM-01373,,2022-06-08,USR-02,59,F,Versailles,instagram,en_pause,2026-04-01,0.3,faux,100
+MEM-01374,,2025-05-16,USR-02,31,F,Saint-Cyr-l'École,google_ads,en_pause,2026-05-20,0.3,faux,90
+MEM-01375,,2025-04-27,USR-02,43,H,Buc,google_ads,en_pause,2026-04-11,0.3,vrai,100
+MEM-01376,,2024-11-09,USR-02,39,H,Versailles,instagram,en_pause,2026-05-14,0.1,faux,100
+MEM-01377,,2024-01-21,USR-02,57,F,Versailles,instagram,en_pause,2026-03-30,0.0,faux,100
+MEM-01378,,2025-11-08,USR-01,57,F,Saint-Cyr-l'École,google_ads,en_pause,2026-03-27,0.3,faux,100
+MEM-01379,,2023-02-16,USR-02,46,F,Bailly,site_web,en_pause,2026-05-25,0.1,faux,99
+MEM-01380,,2022-06-30,USR-02,57,H,Versailles,site_web,en_pause,2026-04-30,0.1,faux,100

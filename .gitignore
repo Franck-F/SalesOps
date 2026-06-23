@@ -1,0 +1,8 @@
+# Fichiers temporaires Office (verrou Word/Excel ouvert)
+~$*
+*.tmp
+# OS / éditeurs
+Thumbs.db
+.DS_Store
+desktop.ini
+.vscode/

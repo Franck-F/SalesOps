@@ -1,0 +1,8 @@
+﻿utilisateur_id,nom,role,actif,objectif_mensuel
+USR-01,Bensaid,gerant,vrai,8
+USR-02,Lefevre,commercial,vrai,25
+USR-03,Garnier,accueil,vrai,0
+USR-04,Robin,coach,vrai,0
+USR-05,Moreau,coach,vrai,0
+USR-06,Petit,coach,vrai,0
+USR-07,David,alternant_comm,vrai,0
