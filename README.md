@@ -35,9 +35,9 @@ pas de CRM (Excel + tél. perso), funnel non défini, zéro automatisation, aucu
 ### Données (pour le prototype)
 | Jeu de données | Fichier |
 |---|---|
-| **ACTUEL** — Excel « suivi prospects » brouillon | [05-Donnees-ACTUELLES-suivi-prospects.xlsx](05-Donnees-ACTUELLES-suivi-prospects.xlsx) |
-| **CIBLE** — 10 entités structurées (+ KPI) | [06-Donnees-CIBLE.xlsx](06-Donnees-CIBLE.xlsx) · [README](06-Donnees-CIBLE-README.md) · [CSV](data-cible/) |
-| **Base adhérents** — 1 200 actifs enrichis | [07-Base-adherents.xlsx](07-Base-adherents.xlsx) |
+| **ACTUEL** — Excel « suivi prospects » brouillon | [Data base/05-Donnees-ACTUELLES-suivi-prospects.xlsx](Data%20base/05-Donnees-ACTUELLES-suivi-prospects.xlsx) |
+| **CIBLE** — 10 entités structurées (+ KPI) | [Data base/06-Donnees-CIBLE.xlsx](Data%20base/06-Donnees-CIBLE.xlsx) · [README](06-Donnees-CIBLE-README.md) · [CSV](data-cible/) |
+| **Base adhérents** — 1 200 actifs enrichis | [Data base/07-Base-adherents.xlsx](Data%20base/07-Base-adherents.xlsx) |
 
 ### Jours 3 & 4 — Stratégie, prototype & pitch *(en cours)*
 - Funnel **TO-BE** + règles de passage · outils · KPI · gouvernance
