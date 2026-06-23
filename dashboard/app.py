@@ -158,7 +158,7 @@ kpis_html += f'<div class="mu-kpi"><div class="l">MRR · revenu mensuel</div><di
 kpis_html += f'<div class="mu-kpi"><div class="l">ARPM · panier moyen</div><div class="v">{pc(k["arpm"])} <span class="u">€</span></div><div class="s">Essentiel 49 € · Premium 69 €</div></div>'
 kpis_html += f'<div class="mu-kpi"><div class="l">Adhérents actifs</div><div class="v">{nb(k["n_actifs"])}</div><div class="s">Capacité max 170 simultanés</div></div>'
 kpis_html += f'<div class="mu-kpi"><div class="l">Conversion lead → adhérent</div><div class="v">{pc(k["conv"]*100)} <span class="u">%</span></div><div class="s">{k["n_adh"]} adhésions / {k["n_leads"]} leads</div></div>'
-kpis_html += f'<div class="mu-kpi accent"><div class="l">Risque churn élevé</div><div class="v">{k["risque_eleve"]}</div><div class="s" style="color:#2A432E;font-weight:600">{round(100*k["risque_eleve"]/ch["total"])} % de la base · à cibler</div></div>'
+kpis_html += f'<div class="mu-kpi accent"><div class="l">Risque de churn estimé</div><div class="v">{k["risque_eleve"]}</div><div class="s" style="color:#2A432E;font-weight:600">{round(100*k["risque_eleve"]/ch["total"])} % de la base · à cibler</div></div>'
 kpis_html += f'<div class="mu-kpi accent"><div class="l">Résiliations · 30 j</div><div class="v">{k["churn30"]}</div><div class="s" style="color:#2A432E;font-weight:600">+ {ch["inactifs"]} inactifs &gt; 30 j</div></div>'
 kpis_html += '</div>'
 st.markdown(kpis_html, unsafe_allow_html=True)
