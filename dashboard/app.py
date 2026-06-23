@@ -7,6 +7,7 @@ from pathlib import Path
 
 import streamlit as st
 import plotly.graph_objects as go
+import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import data as D  # noqa: E402
@@ -26,68 +27,123 @@ html, body, [class*="css"], .stApp, button, input, select, textarea {
 .stApp { background:#FFFDF8; color:#2A432E; }
 #MainMenu, footer, [data-testid="stToolbar"], [data-testid="stDecoration"] { display:none; }
 [data-testid="stHeader"] { background:transparent; }
+[data-testid="stSidebarCollapseButton"] { display:none; }
+[data-testid="collapsedControl"] { display:none; }
 .block-container { padding-top:1.4rem; padding-bottom:3rem; max-width:1320px; }
 ::selection { background:rgba(170,203,85,0.35); }
 
 /* ----- Sidebar sombre ----- */
 [data-testid="stSidebar"] { background:#2A432E; }
 [data-testid="stSidebar"] * { color:#FFFDF8; }
-[data-testid="stSidebar"] .block-container { padding-top:1.5rem; }
-.mu-logo { font-weight:700; font-size:20px; letter-spacing:-0.03em; text-transform:uppercase; }
+[data-testid="stSidebar"] .block-container { padding-top:1.5rem; padding-bottom:140px; }
+.mu-logo { font-weight:700; font-size:20px; letter-spacing:-0.03em; text-transform:uppercase; display: flex; align-items: center; gap: 8px; }
+.mu-logo::before {
+  content: ''; display:inline-block; width:22px; height:22px; background-color:#AACB55;
+  -webkit-mask-size:contain; -webkit-mask-repeat:no-repeat; -webkit-mask-position:center;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 3v18h18'/%3E%3Cpath d='M18 17V9'/%3E%3Cpath d='M13 17V5'/%3E%3Cpath d='M8 17v-3'/%3E%3C/svg%3E");
+}
 .mu-logo span { color:#AACB55; }
 .mu-sub { font-size:11px; letter-spacing:0.12em; text-transform:uppercase;
   color:rgba(255,253,248,0.5); margin:6px 0 14px; }
 [data-testid="stSidebar"] hr { border-color:rgba(255,253,248,0.12); }
 [data-testid="stSidebar"] [role="radiogroup"] { gap:4px; }
 [data-testid="stSidebar"] [role="radiogroup"] label {
-  padding:9px 12px; border-radius:4px; border-left:2px solid transparent;
-  font-size:14px; color:rgba(255,253,248,0.65); cursor:pointer; transition:.15s; }
-[data-testid="stSidebar"] [role="radiogroup"] label:hover { color:#fff; }
+  padding:10px 14px; border-radius:8px; border-left:3px solid transparent;
+  font-size:14px; color:rgba(255,253,248,0.65); cursor:pointer; transition:all .2s ease; margin-bottom: 2px;}
+[data-testid="stSidebar"] [role="radiogroup"] label p { display:flex; align-items:center; gap:10px; margin:0; }
+[data-testid="stSidebar"] [role="radiogroup"] label p::before {
+  content: ''; display:inline-block; width:18px; height:18px; background-color:currentColor;
+  -webkit-mask-size:contain; -webkit-mask-repeat:no-repeat; -webkit-mask-position:center;
+}
+[data-testid="stSidebar"] [role="radiogroup"] label:nth-child(1) p::before { -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='7' height='9' x='3' y='3' rx='1'/%3E%3Crect width='7' height='5' x='14' y='3' rx='1'/%3E%3Crect width='7' height='9' x='14' y='12' rx='1'/%3E%3Crect width='7' height='5' x='3' y='16' rx='1'/%3E%3C/svg%3E"); }
+[data-testid="stSidebar"] [role="radiogroup"] label:nth-child(2) p::before { -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolygon points='22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3'/%3E%3C/svg%3E"); }
+[data-testid="stSidebar"] [role="radiogroup"] label:nth-child(3) p::before { -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='22 7 13.5 15.5 8.5 10.5 2 17'/%3E%3Cpolyline points='16 7 22 7 22 13'/%3E%3C/svg%3E"); }
+[data-testid="stSidebar"] [role="radiogroup"] label:nth-child(4) p::before { -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2'/%3E%3Ccircle cx='9' cy='7' r='4'/%3E%3Cpath d='M22 21v-2a4 4 0 0 0-3-3.87'/%3E%3Cpath d='M16 3.13a4 4 0 0 1 0 7.75'/%3E%3C/svg%3E"); }
+
+[data-testid="stSidebar"] [role="radiogroup"] label:hover { color:#fff; background:rgba(255,253,248,0.05); }
 [data-testid="stSidebar"] [role="radiogroup"] label:has(input:checked) {
   background:rgba(170,203,85,0.16); color:#FFFDF8; border-left-color:#AACB55; font-weight:600; }
 [data-testid="stSidebar"] [role="radiogroup"] label > div:first-child { display:none; }
-.mu-salle { border:1px solid rgba(255,253,248,0.14); border-radius:6px; padding:13px; margin-top:18px; }
+.mu-salle { margin-top:60px; border:1px solid rgba(255,253,248,0.14); border-radius:12px; padding:16px; background:rgba(0,0,0,0.1); }
 .mu-salle .k { font-size:10.5px; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,253,248,0.5); }
 .mu-salle .v { font-size:14px; font-weight:600; margin-top:3px; }
 .mu-salle .s { font-size:12px; color:rgba(255,253,248,0.55); margin-top:2px; }
+.mu-user { display: flex; align-items: center; gap: 12px; margin-top: 12px; padding: 12px; border-radius: 12px; background: rgba(255,253,248,0.05); border: 1px solid rgba(255,253,248,0.08); cursor: pointer; transition: all .2s; }
+.mu-user:hover { background: rgba(255,253,248,0.1); }
+.mu-avatar { width: 34px; height: 34px; border-radius: 50%; background: #AACB55; color: #2A432E; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 13px; }
+.mu-user-info { display: flex; flex-direction: column; }
+.mu-name { font-size: 13px; font-weight: 600; color: #FFFDF8; line-height: 1.2; }
+.mu-role { font-size: 11px; color: rgba(255,253,248,0.6); }
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fillBar {
+  from { width: 0; }
+  to { width: var(--target-width); }
+}
+@keyframes chartPop {
+  0% { opacity: 0; transform: scale(0.96) translateY(10px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
 
 /* ----- Cartes / éléments ----- */
-.mu-card { background:#FFFDF8; border:1px solid color-mix(in srgb,#737D74 25%,transparent);
-  border-radius:4px; padding:22px; margin-bottom:16px; }
-.mu-h2 { margin:0 0 4px; font-size:16px; font-weight:700; text-transform:uppercase;
+.mu-card { background:#FFFDF8; border:1px solid color-mix(in srgb,#737D74 15%,transparent); box-shadow: 0 4px 16px rgba(0,0,0,0.03);
+  border-radius:12px; padding:24px; margin-bottom:16px; animation: slideUp 0.4s ease-out forwards; transition: all 0.2s ease; }
+.mu-h2 { margin:0 0 4px; font-size:17px; font-weight:700; text-transform:uppercase;
   letter-spacing:-0.01em; color:#2A432E; }
-.mu-sub2 { margin:0 0 16px; font-size:12px; color:#737D74; }
-.mu-kpigrid { display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); gap:13px; margin-bottom:22px; }
-.mu-kpi { background:#FFFDF8; border:1px solid color-mix(in srgb,#737D74 25%,transparent);
-  border-radius:4px; padding:16px; }
-.mu-kpi.accent { border-left:3px solid #2A432E; }
-.mu-kpi .l { font-size:10px; letter-spacing:0.07em; text-transform:uppercase; color:#737D74; font-weight:500; }
-.mu-kpi .v { font-size:26px; font-weight:700; letter-spacing:-0.02em; margin-top:9px; line-height:1; white-space:nowrap; }
-.mu-kpi .v .u { font-size:15px; color:#859356; }
-.mu-kpi .s { font-size:11px; color:#737D74; margin-top:8px; }
+.mu-sub2 { margin:0 0 16px; font-size:13px; color:#737D74; }
+.mu-kpigrid { display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); gap:16px; margin-bottom:24px; }
+.mu-kpi { background:#FFFDF8; border:1px solid color-mix(in srgb,#737D74 15%,transparent); box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+  border-radius:12px; padding:18px; animation: slideUp 0.4s ease-out forwards; transition: all 0.2s ease; }
+.mu-kpi.accent { border-left:4px solid #2A432E; }
+.mu-kpi .l { font-size:11px; letter-spacing:0.07em; text-transform:uppercase; color:#737D74; font-weight:600; }
+.mu-kpi .v { font-size:28px; font-weight:700; letter-spacing:-0.02em; margin-top:10px; line-height:1; white-space:nowrap; }
+.mu-kpi .v .u { font-size:16px; color:#859356; }
+.mu-kpi .s { font-size:12px; color:#737D74; margin-top:10px; }
 .mu-grid2 { display:grid; grid-template-columns:minmax(0,1.25fr) minmax(0,1fr); gap:16px; }
 .mu-grid2e { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
-.mu-grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
-.mu-grid4 { display:grid; grid-template-columns:repeat(4,1fr); gap:13px; }
-.mu-mini { border:1px solid color-mix(in srgb,#737D74 18%,transparent); border-radius:4px; padding:14px; }
-.mu-mini .l { font-size:10px; letter-spacing:0.05em; text-transform:uppercase; color:#737D74; }
-.mu-mini .v { font-size:23px; font-weight:700; color:#2A432E; margin-top:6px; line-height:1; }
-.mu-mini .v .u { font-size:13px; color:#859356; }
-.mu-mini .s { font-size:11px; color:#737D74; margin-top:7px; }
-.mu-row { display:flex; justify-content:space-between; font-size:12.5px; margin-bottom:5px; }
-.mu-track { height:24px; border-radius:3px; background:color-mix(in srgb,#737D74 8%,transparent); }
-.mu-fill { height:100%; border-radius:3px; }
-.mu-callout { border-radius:0 4px 4px 0; padding:13px 15px; font-size:12.5px; line-height:1.5; }
-.mu-tbl { width:100%; border-collapse:collapse; font-size:13px; }
-.mu-tbl th { text-align:right; color:#737D74; font-size:10px; letter-spacing:0.05em;
-  text-transform:uppercase; font-weight:500; padding:0 0 10px; }
+.mu-grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+.mu-grid4 { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+.mu-mini { border:1px solid color-mix(in srgb,#737D74 15%,transparent); border-radius:12px; padding:16px; box-shadow: 0 2px 8px rgba(0,0,0,0.015); background:#FFFDF8; animation: slideUp 0.4s ease-out forwards; transition: all 0.2s ease; }
+.mu-card:hover, .mu-kpi:hover, .mu-mini:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.06); }
+
+/* Animation des graphiques Plotly */
+.stPlotlyChart { opacity: 0; animation: chartPop 0.8s cubic-bezier(0.1, 0.8, 0.2, 1) 0.1s forwards; }
+
+/* @media queries for responsivness */
+@media (max-width: 1024px) {
+  .mu-kpigrid { grid-template-columns: repeat(3, 1fr); }
+  .mu-grid4 { grid-template-columns: repeat(2, 1fr); }
+  .mu-grid3 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+  .mu-kpigrid { grid-template-columns: repeat(2, 1fr); }
+  .mu-grid2, .mu-grid2e, .mu-grid3, .mu-grid4 { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+  .mu-kpigrid { grid-template-columns: 1fr; }
+}
+
+.mu-mini .l { font-size:11px; letter-spacing:0.05em; text-transform:uppercase; color:#737D74; font-weight:500; }
+.mu-mini .v { font-size:25px; font-weight:700; color:#2A432E; margin-top:8px; line-height:1; }
+.mu-mini .v .u { font-size:14px; color:#859356; }
+.mu-mini .s { font-size:12px; color:#737D74; margin-top:8px; }
+.mu-row { display:flex; justify-content:space-between; font-size:13px; margin-bottom:6px; }
+.mu-track { height:26px; border-radius:6px; background:color-mix(in srgb,#737D74 8%,transparent); overflow:hidden; }
+.mu-fill { height:100%; border-radius:6px; width: 0; animation: fillBar 1s cubic-bezier(0.1, 0.8, 0.2, 1) 0.2s forwards; }
+.mu-callout { border-radius:0 12px 12px 0; padding:16px 18px; font-size:13.5px; line-height:1.6; }
+.mu-tbl { width:100%; border-collapse:collapse; font-size:13.5px; }
+.mu-tbl th { text-align:right; color:#737D74; font-size:11px; letter-spacing:0.05em;
+  text-transform:uppercase; font-weight:600; padding:0 0 12px; }
 .mu-tbl th:first-child, .mu-tbl td:first-child { text-align:left; }
-.mu-tbl td { text-align:right; padding:11px 0; border-top:1px solid color-mix(in srgb,#737D74 18%,transparent); }
-.mu-dark { background:#2A432E; color:#FFFDF8; border-radius:4px; padding:22px; }
-h1.mu-title { margin:0; font-size:29px; font-weight:700; letter-spacing:-0.03em;
+.mu-tbl td { text-align:right; padding:13px 0; border-top:1px solid color-mix(in srgb,#737D74 15%,transparent); }
+.mu-dark { background:linear-gradient(145deg, #2A432E, #223725); color:#FFFDF8; border-radius:12px; padding:26px; box-shadow: 0 8px 24px rgba(42,67,46,0.15); }
+h1.mu-title { margin:0; font-size:32px; font-weight:700; letter-spacing:-0.03em;
   text-transform:uppercase; color:#2A432E; line-height:1; }
-.mu-badge { display:inline-flex; align-items:center; gap:7px; background:#D6E393; border-radius:4px;
-  padding:8px 12px; font-size:11px; font-weight:600; letter-spacing:0.05em; text-transform:uppercase; color:#2A432E; }
+.mu-badge { display:inline-flex; align-items:center; gap:8px; background:linear-gradient(135deg, #D6E393, #AACB55); border-radius:8px;
+  padding:8px 14px; font-size:12px; font-weight:600; letter-spacing:0.05em; text-transform:uppercase; color:#2A432E; box-shadow: 0 2px 8px rgba(170,203,85,0.2); }
 </style>
 """, unsafe_allow_html=True)
 
@@ -106,7 +162,67 @@ def get_data():
     return D.load_all()
 
 
+def bar(label, value_txt, pct, color, h=24):
+    return (f'<div style="margin-bottom:13px"><div class="mu-row">'
+            f'<span style="font-weight:500">{label}</span><span style="color:{MUTE}">{value_txt}</span></div>'
+            f'<div class="mu-track" style="height:{h}px"><div class="mu-fill" '
+            f'style="--target-width:{pct:.1f}%;background:{color}"></div></div></div>')
+
 d = get_data()
+
+# ---------- Sidebar ----------
+with st.sidebar:
+    st.markdown('<div class="mu-logo">MoveUp<span>.</span></div>'
+                '<div class="mu-sub">Pilotage SalesOps</div>', unsafe_allow_html=True)
+    st.markdown("---")
+    
+    tab = st.radio("nav", ["Vue d'ensemble", "Funnel & commercial",
+                           "Acquisition / ROI", "Rétention / churn"], label_visibility="collapsed")
+
+    st.markdown('<div class="mu-salle"><div class="k">Salle</div>'
+                '<div class="v">MoveUp · Versailles</div>'
+                '<div class="s">1 000 m² · 1 200 adhérents</div></div>'
+                '<div class="mu-user"><div class="mu-avatar">CG</div>'
+                '<div class="mu-user-info"><div class="mu-name">Camille G.</div>'
+                '<div class="mu-role">Admin SalesOps</div></div></div>', unsafe_allow_html=True)
+
+# ---------- Header & Filtres ----------
+hc = st.columns([2.5, 1.5])
+with hc[0]:
+    st.markdown('<h1 class="mu-title">Pilotage commercial.</h1>'
+                f'<p style="margin:9px 0 0;font-size:14px;color:{MUTE}">Ce qu\'un Excel partagé ne '
+                'montrait pas — leads, conversion, acquisition &amp; rétention, en un coup d\'œil.</p>',
+                unsafe_allow_html=True)
+with hc[1]:
+    TODAY = pd.Timestamp("2026-06-23")
+    periodes = {
+        "2 dernières semaines": TODAY - pd.Timedelta(weeks=2),
+        "4 dernières semaines": TODAY - pd.Timedelta(weeks=4),
+        "8 dernières semaines": TODAY - pd.Timedelta(weeks=8),
+        "12 dernières semaines": TODAY - pd.Timedelta(weeks=12),
+        "Tout l'historique": None,
+    }
+
+    h_cols = st.columns([0.4, 2.5, 2.2])
+    with h_cols[0]:
+        st.markdown('<div style="margin-top:6px;text-align:right">'
+                    '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#737D74" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'
+                    '<rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>'
+                    '<line x1="16" y1="2" x2="16" y2="6"></line>'
+                    '<line x1="8" y1="2" x2="8" y2="6"></line>'
+                    '<line x1="3" y1="10" x2="21" y2="10"></line></svg></div>', unsafe_allow_html=True)
+    with h_cols[1]:
+        periode_sel = st.selectbox("Période d'analyse", list(periodes.keys()), index=0, label_visibility="collapsed")
+    with h_cols[2]:
+        st.markdown('<div style="text-align:right;margin-bottom:8px;margin-top:2px"><span class="mu-badge">'
+                    '<span style="width:7px;height:7px;border-radius:50%;background:#859356"></span>'
+                    'Modèle CIBLE</span></div>', unsafe_allow_html=True)
+    
+    start_date = periodes[periode_sel]
+    if start_date:
+        d["lead"] = d["lead"][d["lead"]["date_creation"] >= start_date]
+        d["acquisition"] = d["acquisition"][d["acquisition"]["date"] >= start_date]
+
 k = D.kpis(d)
 q = D.qualite_commerciale(d)
 roi = D.roi_canal(d)
@@ -126,31 +242,7 @@ def bar(label, value_txt, pct, color, h=24):
     return (f'<div style="margin-bottom:13px"><div class="mu-row">'
             f'<span style="font-weight:500">{label}</span><span style="color:{MUTE}">{value_txt}</span></div>'
             f'<div class="mu-track" style="height:{h}px"><div class="mu-fill" '
-            f'style="width:{pct:.1f}%;background:{color}"></div></div></div>')
-
-
-# ---------- Sidebar ----------
-with st.sidebar:
-    st.markdown('<div class="mu-logo">MoveUp<span>.</span></div>'
-                '<div class="mu-sub">Pilotage SalesOps</div>', unsafe_allow_html=True)
-    st.markdown("---")
-    tab = st.radio("nav", ["Vue d'ensemble", "Funnel & commercial",
-                           "Acquisition / ROI", "Rétention / churn"], label_visibility="collapsed")
-    st.markdown('<div class="mu-salle"><div class="k">Salle</div>'
-                '<div class="v">MoveUp · Versailles</div>'
-                '<div class="s">1 000 m² · 1 200 adhérents</div></div>', unsafe_allow_html=True)
-
-# ---------- Header ----------
-hc = st.columns([3, 1])
-with hc[0]:
-    st.markdown('<h1 class="mu-title">Pilotage commercial.</h1>'
-                f'<p style="margin:9px 0 0;font-size:14px;color:{MUTE}">Ce qu\'un Excel partagé ne '
-                'montrait pas — leads, conversion, acquisition &amp; rétention, en un coup d\'œil.</p>',
-                unsafe_allow_html=True)
-with hc[1]:
-    st.markdown('<div style="text-align:right;margin-top:6px"><span class="mu-badge">'
-                '<span style="width:7px;height:7px;border-radius:50%;background:#859356"></span>'
-                'Modèle CIBLE · fictif</span></div>', unsafe_allow_html=True)
+            f'style="--target-width:{pct:.1f}%;background:{color}"></div></div></div>')
 
 # ---------- KPI row (toujours visible) ----------
 kpis_html = '<div class="mu-kpigrid">'
@@ -231,7 +323,7 @@ elif tab == "Funnel & commercial":
             pct = r.volume / k["n_leads"] * 100
             col = fcolors.get(r.etape, OLIVE)
             html += (f'<div style="display:flex;align-items:center;gap:16px"><div style="width:120px;font-size:13px;font-weight:500">{r.etape}</div>'
-                     f'<div style="flex:1"><div class="mu-track" style="height:30px"><div class="mu-fill" style="height:100%;width:{pct:.1f}%;background:{col}"></div></div></div>'
+                     f'<div style="flex:1"><div class="mu-track" style="height:30px"><div class="mu-fill" style="height:100%;--target-width:{pct:.1f}%;background:{col}"></div></div></div>'
                      f'<div style="width:46px;text-align:right;font-weight:700;font-size:15px">{nb(r.volume)}</div></div>')
             if i < len(gates):
                 hot = ";color:#2A432E;font-weight:600" if i == 2 else f";color:{MUTE}"
@@ -334,17 +426,84 @@ else:
             f'<b>{int(seg.get("Élevé",0))} adhérents à risque élevé</b> + <b>{ch["inactifs"]} inactifs</b> : cibles prioritaires de rétention. '
             f'Seulement {ch["coaching"]:.0f} % utilisent le coaching → fort potentiel d\'upsell.</div></div>', unsafe_allow_html=True)
 
-    st.markdown('<div class="mu-card"><div class="mu-h2">Base adhérents.</div>'
-                '<div class="mu-sub2">Filtrer par niveau de risque pour cibler les actions de rétention.</div>', unsafe_allow_html=True)
-    seg_sel = st.selectbox("Risque", ["Tous", "Élevé", "Moyen", "Faible"], label_visibility="collapsed")
     a = d["adherents"]
-    if seg_sel != "Tous":
-        a = a[a.segment_risque == seg_sel]
-    cols = ["membre_id", "prenom", "nom", "commune", "formule", "montant_mensuel",
-            "anciennete_mois", "frequence_hebdo", "utilisation_coaching", "score_risque_churn", "segment_risque"]
-    st.caption(f"{len(a)} adhérent(s)")
-    st.dataframe(a[cols].sort_values("score_risque_churn", ascending=False),
-                 hide_index=True, use_container_width=True, height=300)
+    st.markdown('<div class="mu-card">', unsafe_allow_html=True)
+    st.markdown('<h2 class="mu-h2">Base adhérents — exploration.</h2>', unsafe_allow_html=True)
+    st.markdown('<p class="mu-sub2">trié par score de risque</p>', unsafe_allow_html=True)
+    
+    if "reset_filters" not in st.session_state:
+        st.session_state.seg_filter = "Tous"
+        st.session_state.formule_filter = "Toutes"
+        st.session_state.commune_filter = "Toutes"
+        st.session_state.search_filter = ""
+        st.session_state.reset_filters = True
+
+    def reset_form():
+        st.session_state.seg_filter = "Tous"
+        st.session_state.formule_filter = "Toutes"
+        st.session_state.commune_filter = "Toutes"
+        st.session_state.search_filter = ""
+
+    f1, f2, f3, f4, f5 = st.columns([1.5, 1.5, 1.5, 2, 1])
+    with f1:
+        seg_filter = st.selectbox("Segment de risque", ["Tous", "Élevé", "Moyen", "Faible"], key="seg_filter")
+    with f2:
+        formules = ["Toutes"] + list(a["formule"].dropna().unique())
+        form_filter = st.selectbox("Formule", formules, key="formule_filter")
+    with f3:
+        communes = ["Toutes"] + list(a["commune"].dropna().unique())
+        com_filter = st.selectbox("Commune", communes, key="commune_filter")
+    with f4:
+        search_filter = st.text_input("Recherche", placeholder="Nom d'adhérent…", key="search_filter")
+    with f5:
+        st.markdown("<br>", unsafe_allow_html=True)
+        st.button("Réinitialiser", on_click=reset_form, use_container_width=True)
+
+    filtered = a.copy()
+    if seg_filter != "Tous": filtered = filtered[filtered["segment_risque"] == seg_filter]
+    if form_filter != "Toutes": filtered = filtered[filtered["formule"] == form_filter]
+    if com_filter != "Toutes": filtered = filtered[filtered["commune"] == com_filter]
+    if search_filter:
+        search_lower = search_filter.lower()
+        full_name = filtered["prenom"].astype(str) + " " + filtered["nom"].astype(str)
+        mask = full_name.str.lower().str.contains(search_lower, na=False)
+        filtered = filtered[mask]
+
+    st.caption(f"{len(filtered)} / {len(a)} adhérents")
+
+    if not filtered.empty:
+        display_df = pd.DataFrame()
+        display_df["Adhérent"] = filtered["prenom"] + " " + filtered["nom"]
+        display_df["Commune"] = filtered["commune"]
+        display_df["Formule"] = filtered["formule"]
+        display_df["Ancienneté"] = filtered["anciennete_mois"]
+        display_df["Fréq/sem"] = filtered["frequence_hebdo"]
+        display_df["Coaching"] = filtered["utilisation_coaching"]
+        display_df["Niveau"] = filtered["segment_risque"]
+        display_df["Taux"] = filtered["score_risque_churn"].astype(int).astype(str) + " %"
+        
+        display_df["_score"] = filtered["score_risque_churn"]
+        display_df = display_df.sort_values("_score", ascending=False).drop(columns=["_score"])
+
+        def style_risk(val):
+            # Only style the Taux column, no background, just text color
+            if not isinstance(val, str): return ""
+            try:
+                score = int(val.replace(" %", ""))
+                if score >= 60: return "color: #FF4B4B; font-weight: bold;" # Élevé
+                elif score >= 30: return "color: #FFA421; font-weight: bold;" # Moyen
+                else: return "color: #859356; font-weight: bold;" # Faible
+            except:
+                return ""
+
+        styled_df = display_df.style.map(style_risk, subset=["Taux"])
+        st.dataframe(styled_df, hide_index=True, use_container_width=True, height=400)
+    else:
+        st.info("Aucun adhérent ne correspond à ces critères.")
+    
+    csv = filtered.to_csv(index=False).encode('utf-8')
+    st.download_button(label="📥 Télécharger la liste (CSV)", data=csv, file_name="adherents_risque.csv", mime="text/csv")
+    
     st.markdown('</div>', unsafe_allow_html=True)
 
 st.markdown(f'<div style="text-align:center;color:{MUTE};font-size:11px;margin-top:24px">'
