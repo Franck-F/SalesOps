@@ -38,6 +38,8 @@ def load_all():
         "newsletter": read("fact_newsletter.csv"),
         "user": read("dim_utilisateur.csv"),
         "adherents": read("base_adherents.csv"),
+        "audience": read("fact_audience.csv"),
+        "pages": read("fact_pages.csv"),
     }
     for c in ["date_creation", "date_premier_contact", "date_cloture"]:
         d["lead"][c] = pd.to_datetime(d["lead"][c], errors="coerce")
@@ -46,6 +48,10 @@ def load_all():
     d["abo"]["date_resiliation"] = pd.to_datetime(d["abo"]["date_resiliation"], errors="coerce")
     d["acquisition"]["date"] = pd.to_datetime(d["acquisition"]["date"], errors="coerce")
     d["adherents"]["date_dernier_passage"] = pd.to_datetime(d["adherents"]["date_dernier_passage"], errors="coerce")
+    if "audience" in d and "date" in d["audience"].columns:
+        d["audience"]["date"] = pd.to_datetime(d["audience"]["date"], errors="coerce")
+    if "pages" in d and "date" in d["pages"].columns:
+        d["pages"]["date"] = pd.to_datetime(d["pages"]["date"], errors="coerce")
     return d
 
 
@@ -160,6 +166,45 @@ def filter_period(d, label):
             fd[key] = d[key][in_p(s)]
     return fd
 
+def audience_kpis(d):
+    if "audience" not in d or d["audience"].empty:
+        return {"sessions": 0, "users": 0, "views": 0, "duration_s": 0, "pages_session": 0, "bounce_rate": 0}
+    a = d["audience"]
+    sess = a["sessions"].sum()
+    users = a["utilisateurs"].sum()
+    dur = (a["duree_moy_session_sec"] * a["sessions"]).sum() / sess if sess > 0 else 0
+    pps = (a["pages_par_session"] * a["sessions"]).sum() / sess if sess > 0 else 0
+    bounce = (a["taux_rebond"] * a["sessions"]).sum() / sess if sess > 0 else 0
+    
+    views = d["pages"]["pages_vues"].sum() if "pages" in d and not d["pages"].empty else 0
+    return {
+        "sessions": sess, "users": users, "views": views, 
+        "duration_s": dur, "pages_session": pps, "bounce_rate": bounce
+    }
+
+def audience_device(d):
+    if "audience" not in d or d["audience"].empty:
+        return pd.DataFrame()
+    a = d["audience"]
+    g = a.groupby("device").apply(lambda x: pd.Series({
+        "sessions": x["sessions"].sum(),
+        "duree_s": (x["duree_moy_session_sec"] * x["sessions"]).sum() / x["sessions"].sum() if x["sessions"].sum() > 0 else 0,
+        "rebond": (x["taux_rebond"] * x["sessions"]).sum() / x["sessions"].sum() if x["sessions"].sum() > 0 else 0
+    })).reset_index()
+    tot = g["sessions"].sum()
+    g["pct_sessions"] = (g["sessions"] / tot) * 100 if tot > 0 else 0
+    return g.sort_values("sessions", ascending=False)
+
+def pages_top(d):
+    if "pages" not in d or d["pages"].empty:
+        return pd.DataFrame()
+    p = d["pages"]
+    g = p.groupby("page").apply(lambda x: pd.Series({
+        "vues": x["pages_vues"].sum(),
+        "duree_s": (x["duree_moy_page_sec"] * x["pages_vues"]).sum() / x["pages_vues"].sum() if x["pages_vues"].sum() > 0 else 0,
+        "sortie": (x["taux_sortie"] * x["pages_vues"]).sum() / x["pages_vues"].sum() if x["pages_vues"].sum() > 0 else 0
+    })).reset_index()
+    return g.sort_values("vues", ascending=False)
 
 if __name__ == "__main__":
     d = load_all()
