@@ -166,7 +166,6 @@ kpis_html += f'<div class="mu-kpi"><div class="l">Conversion lead → adhérent<
 kpis_html += f'<div class="mu-kpi accent"><div class="l">Risque de churn estimé</div><div class="v">{k["risque_eleve"]}</div><div class="s" style="color:#2A432E;font-weight:600">{round(100*k["risque_eleve"]/ch["total"])} % de la base · à cibler</div></div>'
 kpis_html += f'<div class="mu-kpi accent"><div class="l">Résiliations · 30 j</div><div class="v">{k["churn30"]}</div><div class="s" style="color:#2A432E;font-weight:600">+ {ch["inactifs"]} inactifs &gt; 30 j</div></div>'
 kpis_html += '</div>'
-st.markdown(kpis_html, unsafe_allow_html=True)
 
 f = D.funnel(fd)
 fv = dict(zip(f.etape, f.volume))
@@ -174,6 +173,7 @@ fcolors = {"Lead": LIME, "Contacté": LIME, "Visite": OLIVE, "Essai réalisé": 
 
 # ===================== VUE D'ENSEMBLE =====================
 if tab == "Vue d'ensemble":
+    st.markdown(kpis_html, unsafe_allow_html=True)
     g = st.columns([1.25, 1])
     with g[0]:
         bars = ('<div class="mu-card"><div style="display:flex;justify-content:space-between;align-items:baseline">'
