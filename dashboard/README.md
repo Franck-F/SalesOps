@@ -3,6 +3,11 @@
 Prototype de **dashboard de pilotage commercial** (Streamlit + Plotly) branché sur le jeu de
 données **CIBLE** de MoveUp. Il rend visible ce qu'un simple Excel ne permettait pas de voir.
 
+![Aperçu du dashboard MoveUp](preview.png)
+
+> 🎨 Design **MoveUp** (police Poppins, palette crème `#FFFDF8` / vert `#2A432E` / lime `#AACB55`)
+> appliqué via `.streamlit/config.toml` + CSS, d'après la maquette Claude Design.
+
 ## ▶️ Lancer le dashboard
 
 **Avec `uv`** (recommandé — environnement reproductible via `pyproject.toml` + `uv.lock`) :
