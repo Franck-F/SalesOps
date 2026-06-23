@@ -107,16 +107,6 @@ def get_data():
 
 
 d = get_data()
-k = D.kpis(d)
-q = D.qualite_commerciale(d)
-roi = D.roi_canal(d)
-ch = D.churn_view(d)
-lead = d["lead"]
-n_perdu = int((lead.statut_lead == "perdu").sum())
-n_gagne = int((lead.statut_lead == "gagne").sum())
-open_mask = lead.statut_lead.isin(["nouveau", "contacte", "visite", "essai"])
-n_encours = int(open_mask.sum())
-n_chauds = int((open_mask & (lead.score >= 70)).sum())
 
 PLOT = dict(paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)",
             font=dict(family="Poppins", color=INK), margin=dict(l=8, r=8, t=8, b=8))
@@ -136,9 +126,24 @@ with st.sidebar:
     st.markdown("---")
     tab = st.radio("nav", ["Vue d'ensemble", "Funnel & commercial",
                            "Acquisition / ROI", "Rétention / churn"], label_visibility="collapsed")
+    st.markdown("---")
+    periode = st.selectbox("Période", ["12 semaines", "8 semaines", "4 semaines", "Juin 2026"])
     st.markdown('<div class="mu-salle"><div class="k">Salle</div>'
                 '<div class="v">MoveUp · Versailles</div>'
                 '<div class="s">1 000 m² · 1 200 adhérents</div></div>', unsafe_allow_html=True)
+
+# ---------- Filtrage période (flux) — stocks (MRR/adhérents/churn) inchangés ----------
+fd = D.filter_period(d, periode)
+k = D.kpis(fd)
+q = D.qualite_commerciale(fd)
+roi = D.roi_canal(fd)
+ch = D.churn_view(d)
+lead = fd["lead"]
+n_perdu = int((lead.statut_lead == "perdu").sum())
+n_gagne = int((lead.statut_lead == "gagne").sum())
+open_mask = lead.statut_lead.isin(["nouveau", "contacte", "visite", "essai"])
+n_encours = int(open_mask.sum())
+n_chauds = int((open_mask & (lead.score >= 70)).sum())
 
 # ---------- Header ----------
 hc = st.columns([3, 1])
@@ -163,7 +168,7 @@ kpis_html += f'<div class="mu-kpi accent"><div class="l">Résiliations · 30 j</
 kpis_html += '</div>'
 st.markdown(kpis_html, unsafe_allow_html=True)
 
-f = D.funnel(d)
+f = D.funnel(fd)
 fv = dict(zip(f.etape, f.volume))
 fcolors = {"Lead": LIME, "Contacté": LIME, "Visite": OLIVE, "Essai réalisé": OLIVE, "Adhésion": INK}
 
@@ -194,7 +199,7 @@ if tab == "Vue d'ensemble":
 
     st.markdown('<div class="mu-card"><div class="mu-h2">Volume hebdomadaire.</div>'
                 f'<div class="mu-sub2">Leads (lime) vs adhésions (vert foncé) par semaine.</div>', unsafe_allow_html=True)
-    lh = D.leads_hebdo(d)
+    lh = D.leads_hebdo(fd)
     fig = go.Figure()
     fig.add_trace(go.Scatter(x=lh.semaine, y=lh.Leads, name="Leads", mode="lines",
                              line=dict(color=LIME, width=2.6), fill="tozeroy", fillcolor="rgba(170,203,85,0.14)"))
