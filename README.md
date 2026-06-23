@@ -17,32 +17,53 @@ pas de CRM (Excel + tél. perso), funnel non défini, zéro automatisation, aucu
 
 ---
 
+## 🗂️ Arborescence
+
+| Dossier / fichier | Contenu |
+|---|---|
+| [`J1/`](J1/) | Dossier d'entreprise, dictionnaires, process AS-IS, modèle de données |
+| [`Data base/`](Data%20base/) | Jeux de données Excel + CSV (`Data base/data-cible/`) |
+| [`dashboard/`](dashboard/) | **Prototype dashboard Streamlit** (J4) |
+| [`J3-Strategie-conception.md`](J3-Strategie-conception.md) | Plan & stratégie du Jour 3 (TO-BE) |
+
+---
+
 ## 📦 Livrables par jour
 
 ### Jour 1 — Cadrage & définition du cas
 | Livrable | Fichier |
 |---|---|
-| Dossier d'entreprise | [01-Dossier-entreprise.md](01-Dossier-entreprise.md) |
-| Dictionnaire de données — **CIBLE** (idéal) | [02-Dictionnaire-de-variables.md](02-Dictionnaire-de-variables.md) · [.docx](02-Dictionnaire-de-variables.docx) |
-| Dictionnaire de données — **ACTUEL** (Excel) | [02b-Dictionnaire-de-donnees-ACTUEL.md](02b-Dictionnaire-de-donnees-ACTUEL.md) |
+| Dossier d'entreprise | [J1/01-Dossier-entreprise.md](J1/01-Dossier-entreprise.md) |
+| Dictionnaire de données — **CIBLE** (idéal) | [J1/02-Dictionnaire-de-variables.md](J1/02-Dictionnaire-de-variables.md) · [.docx](J1/02-Dictionnaire-de-variables.docx) |
+| Dictionnaire de données — **ACTUEL** (Excel) | [J1/02b-Dictionnaire-de-donnees-ACTUEL.md](J1/02b-Dictionnaire-de-donnees-ACTUEL.md) |
 
 ### Jour 2 — Diagnostic & analyse
 | Livrable | Fichier |
 |---|---|
-| Processus de vente **AS-IS** (+ irritants) | [03-Processus-vente-AS-IS.md](03-Processus-vente-AS-IS.md) · [PNG](03-Processus-vente-AS-IS.png) |
-| Modèle de données (ERD, 10 entités) | [04-Modele-de-donnees.excalidraw](04-Modele-de-donnees.excalidraw) |
+| Processus de vente **AS-IS** (+ irritants) | [J1/03-Processus-vente-AS-IS.md](J1/03-Processus-vente-AS-IS.md) · [PNG](J1/03-Processus-vente-AS-IS.png) |
+| Modèle de données (ERD, 10 entités) | [J1/04-Modele-de-donnees.excalidraw](J1/04-Modele-de-donnees.excalidraw) |
 
 ### Données (pour le prototype)
 | Jeu de données | Fichier |
 |---|---|
-| **ACTUEL** — Excel « suivi prospects » brouillon | [Data base/05-Donnees-ACTUELLES-suivi-prospects.xlsx](Data%20base/05-Donnees-ACTUELLES-suivi-prospects.xlsx) |
-| **CIBLE** — 10 entités structurées (+ KPI) | [Data base/06-Donnees-CIBLE.xlsx](Data%20base/06-Donnees-CIBLE.xlsx) · [README](06-Donnees-CIBLE-README.md) · [CSV](data-cible/) |
-| **Base adhérents** — 1 200 actifs enrichis | [Data base/07-Base-adherents.xlsx](Data%20base/07-Base-adherents.xlsx) |
+| **ACTUEL** — Excel « suivi prospects » brouillon | [Data base/05-…xlsx](Data%20base/05-Donnees-ACTUELLES-suivi-prospects.xlsx) |
+| **CIBLE** — 10 entités structurées (+ KPI) | [Data base/06-…xlsx](Data%20base/06-Donnees-CIBLE.xlsx) · [README](J1/06-Donnees-CIBLE-README.md) · [CSV](Data%20base/data-cible/) |
+| **Base adhérents** — 1 200 actifs enrichis | [Data base/07-…xlsx](Data%20base/07-Base-adherents.xlsx) |
 
-### Jours 3 & 4 — Stratégie, prototype & pitch *(en cours)*
-- Funnel **TO-BE** + règles de passage · outils · KPI · gouvernance
-- **Prototype : dashboard de pilotage** (funnel, conversion, ROI canal, churn)
-- Support de soutenance
+### Jour 3 — Stratégie & conception
+- [J3-Strategie-conception.md](J3-Strategie-conception.md) : KPI cibles, **funnel TO-BE + règles de passage**, outils, gouvernance.
+
+### Jour 4 — Prototype & pitch
+- ✅ **Dashboard Streamlit fonctionnel** → [`dashboard/`](dashboard/) (funnel, ROI canal, churn, base adhérents).
+
+---
+
+## ▶️ Lancer le dashboard
+
+```bash
+pip install -r dashboard/requirements.txt
+streamlit run dashboard/app.py
+```
 
 ---
 
@@ -52,17 +73,17 @@ pas de CRM (Excel + tél. perso), funnel non défini, zéro automatisation, aucu
 `fact_paiement` · `fact_interaction` · `fact_rdv` · `fact_checkin`
 **Acquisition / marketing (2)** : `fact_acquisition` · `fact_newsletter`
 
-Détail des variables, types et KPI → [02-Dictionnaire-de-variables.md](02-Dictionnaire-de-variables.md).
+Détail des variables, types et KPI → [J1/02-Dictionnaire-de-variables.md](J1/02-Dictionnaire-de-variables.md).
 
 ---
 
-## 📈 Chiffres clés du cas (estimés)
+## 📈 Chiffres clés du cas
 
 | | Valeur |
 |---|---|
-| Conversion globale lead → adhérent | **13 %** (200 → 26 / mois) |
+| Conversion globale lead → adhérent | **13,7 %** |
 | Speed-to-lead moyen | ~26 h |
 | No-show sur essais | 40 % |
 | MRR / ARPM | ~67 k€ / ~56 € |
 | Adhérents à risque de churn élevé | 333 |
-| ROI : CAC Instagram vs Google Ads | 84 € vs 364 € |
+| ROI : CAC Instagram vs Google Ads | **84 € vs 364 €** |
