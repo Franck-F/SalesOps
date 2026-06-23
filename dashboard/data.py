@@ -132,6 +132,35 @@ def leads_hebdo(d):
     return pd.concat([s, a], axis=1).fillna(0).astype(int).reset_index()
 
 
+def filter_period(d, label):
+    """Filtre les FLUX (leads/rdv/acquisition/audience/pages) sur la période choisie.
+    Les STOCKS (membres/abonnements/adhérents) restent inchangés (instantanés).
+    label : '12 semaines' (= tout) · '8 semaines' · '4 semaines' · 'Juin 2026'."""
+    lead = d["lead"]
+    if not label or label.startswith("12") or label.lower().startswith("tout"):
+        return d
+    end = lead["date_creation"].max()
+    if label.startswith("Juin"):
+        def in_p(s):
+            return (s.dt.year == 2026) & (s.dt.month == 6)
+    else:
+        wk = 8 if label.startswith("8") else 4
+        start = end - pd.Timedelta(weeks=wk)
+
+        def in_p(s):
+            return s >= start
+    fd = dict(d)
+    fd["lead"] = lead[in_p(lead["date_creation"])]
+    ids = set(fd["lead"]["lead_id"])
+    if "rdv" in d:
+        fd["rdv"] = d["rdv"][d["rdv"]["lead_id"].isin(ids)]
+    for key in ("acquisition", "audience", "pages"):
+        if key in d and "date" in d[key].columns:
+            s = pd.to_datetime(d[key]["date"], errors="coerce")
+            fd[key] = d[key][in_p(s)]
+    return fd
+
+
 if __name__ == "__main__":
     d = load_all()
     print("Tables:", {k: len(v) for k, v in d.items()})
