@@ -1,0 +1,24 @@
+[project]
+name = "salesops-moveup"
+version = "0.1.0"
+description = "MoveUp — Projet SalesOps : dashboard de pilotage commercial (Epitech)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "streamlit>=1.40",
+    "pandas>=2.0",
+    "plotly>=6.0",
+]
+
+# Dépendances optionnelles pour (re)générer les jeux de données et documents.
+# Installer avec : uv sync --group generators
+[dependency-groups]
+generators = [
+    "openpyxl>=3.1",
+    "python-docx>=1.1",
+    "matplotlib>=3.8",
+]
+
+# Projet applicatif (pas un package à builder) : uv gère seulement l'environnement.
+[tool.uv]
+package = false

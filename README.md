@@ -60,10 +60,15 @@ pas de CRM (Excel + tél. perso), funnel non défini, zéro automatisation, aucu
 
 ## ▶️ Lancer le dashboard
 
+Avec **uv** (recommandé — `pyproject.toml` + `uv.lock`) :
+
 ```bash
-pip install -r dashboard/requirements.txt
-streamlit run dashboard/app.py
+uv sync
+uv run streamlit run dashboard/app.py
 ```
+
+> Fallback pip : `pip install -r dashboard/requirements.txt && streamlit run dashboard/app.py`
+> (Re)générer données/documents : `uv sync --group generators`.
 
 ---
 

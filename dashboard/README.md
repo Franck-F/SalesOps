@@ -5,15 +5,24 @@ données **CIBLE** de MoveUp. Il rend visible ce qu'un simple Excel ne permettai
 
 ## ▶️ Lancer le dashboard
 
-```bash
-# 1. installer les dépendances (idéalement dans un venv)
-pip install -r dashboard/requirements.txt
+**Avec `uv`** (recommandé — environnement reproductible via `pyproject.toml` + `uv.lock`) :
 
-# 2. lancer (depuis la racine du repo)
+```bash
+uv sync                                # crée le venv et installe les dépendances
+uv run streamlit run dashboard/app.py
+```
+
+Ou avec **pip** :
+
+```bash
+pip install -r dashboard/requirements.txt
 streamlit run dashboard/app.py
 ```
 
 Le navigateur s'ouvre sur `http://localhost:8501`.
+
+> Dépendances déclarées dans le `pyproject.toml` **à la racine** du repo.
+> Pour (re)générer les jeux de données / documents : `uv sync --group generators`.
 
 ## 🧩 Structure
 
