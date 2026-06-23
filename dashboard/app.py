@@ -66,8 +66,8 @@ button[title="View fullscreen"], [data-testid="StyledFullScreenButton"], [data-t
 .mu-salle .k { font-size:10.5px; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,253,248,0.5); }
 .mu-salle .v { font-size:14px; font-weight:600; margin-top:3px; }
 .mu-salle .s { font-size:12px; color:rgba(255,253,248,0.55); margin-top:2px; }
-.mu-user { display: flex; align-items: center; gap: 12px; margin-top: 12px; padding: 12px; border-radius: 12px; background: rgba(255,253,248,0.05); border: 1px solid rgba(255,253,248,0.08); cursor: pointer; transition: all .2s; }
-.mu-user:hover { background: rgba(255,253,248,0.1); }
+.mu-user { display: flex; align-items: center; gap: 12px; margin-top: 12px; padding: 12px; border-radius: 12px; background: transparent; border: none; cursor: pointer; transition: all .2s; }
+.mu-user:hover { background: rgba(255,253,248,0.05); }
 .mu-avatar { width: 34px; height: 34px; border-radius: 50%; background: #AACB55; color: #2A432E; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 13px; }
 .mu-user-info { display: flex; flex-direction: column; }
 .mu-name { font-size: 13px; font-weight: 600; color: #FFFDF8; line-height: 1.2; }
@@ -178,14 +178,13 @@ with st.sidebar:
         st.image(str(logo_path), width=180)
     st.markdown('<div class="mu-sub" style="margin-top:-10px;">Pilotage SalesOps</div>', unsafe_allow_html=True)
     st.markdown("---")
-    st.markdown('<div style="font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,253,248,0.35);font-weight:600;padding:0 4px;margin-bottom:6px">Navigation</div>', unsafe_allow_html=True)
     tab = st.radio("nav", ["Vue d'ensemble", "Funnel & commercial",
                            "Acquisition / ROI", "Rétention / churn"], label_visibility="collapsed")
 
     st.markdown('<div class="mu-bottom-wrapper"><div class="mu-salle"><div class="k">Salle</div>'
-                '<div class="v">124 / 170</div><div class="s">Capacité actuelle</div></div>'
-                '<div class="mu-user"><div class="mu-avatar">CG</div>'
-                '<div class="mu-user-info"><div class="mu-name">Camille G.</div>'
+                '<div class="v">MoveUp · Versailles</div><div class="s">1 000 m² · 1 200 adhérents</div></div>'
+                '<div class="mu-user"><div class="mu-avatar">KF</div>'
+                '<div class="mu-user-info"><div class="mu-name">Franck Koffi</div>'
                 '<div class="mu-role">Admin SalesOps</div></div></div></div>', unsafe_allow_html=True)
 
 # ---------- Header & Filtres ----------
