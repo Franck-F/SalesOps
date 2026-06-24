@@ -11,6 +11,8 @@ import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import data as D  # noqa: E402
+import importlib
+importlib.reload(D)
 
 # ---------- Palette ----------
 CREAM, INK, MUTE = "#FFFDF8", "#2A432E", "#737D74"
@@ -95,23 +97,48 @@ button[title="View fullscreen"], [data-testid="StyledFullScreenButton"], [data-t
 .mu-h2 { margin:0 0 4px; font-size:16px; font-weight:700; text-transform:uppercase;
   letter-spacing:0.01em; color:#2A432E; }
 .mu-sub2 { margin:0 0 16px; font-size:13px; color:#737D74; }
-.mu-kpigrid { display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); gap:14px; margin-bottom:24px; }
-.mu-kpi { background:#FFFDF8; border:1px solid color-mix(in srgb,#737D74 13%,transparent); box-shadow: 0 2px 10px rgba(0,0,0,0.03);
-  border-radius:16px; padding:20px; animation: slideUp 0.4s ease-out forwards; transition: all 0.25s ease; position:relative; overflow:hidden; }
-.mu-kpi.accent { background:linear-gradient(135deg,rgba(42,67,46,0.04) 0%,rgba(42,67,46,0.01) 100%); border-color:rgba(42,67,46,0.2); border-top:3px solid #2A432E; }
-.mu-kpi.accent .v { color:#2A432E; }
-.mu-kpi .icon { position:absolute; top:14px; right:14px; width:28px; height:28px; border-radius:8px; display:flex; align-items:center; justify-content:center; }
-.mu-kpi .icon svg { width:14px; height:14px; }
-.mu-kpi .l { font-size:10.5px; letter-spacing:0.08em; text-transform:uppercase; color:#737D74; font-weight:600; }
-.mu-kpi .v { font-size:30px; font-weight:700; letter-spacing:-0.03em; margin-top:12px; line-height:1; white-space:nowrap; color:#2A432E; }
-.mu-kpi .v .u { font-size:15px; color:#859356; font-weight:600; }
-.mu-kpi .s { font-size:11.5px; color:#737D74; margin-top:10px; line-height:1.4; }
+.mu-kpigrid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; margin-bottom:24px; }
+.mu-kpi { background:#FFFDF8; border:1px solid color-mix(in srgb,#737D74 15%,transparent); box-shadow: 0 4px 16px rgba(0,0,0,0.02);
+  border-radius:16px; padding:22px; animation: slideUp 0.5s cubic-bezier(0.1, 0.8, 0.2, 1) forwards; transition: all 0.3s cubic-bezier(0.1, 0.8, 0.2, 1); position:relative; overflow:hidden; }
+
+.mu-kpi::before { content:''; position:absolute; top:0; left:0; width:100%; height:4px; transition: height 0.3s ease; }
+.mu-kpi:hover::before { height:6px; }
+
+.mu-kpi.lime { background:linear-gradient(145deg, rgba(170,203,85,0.08) 0%, #FFFDF8 100%); border-color:rgba(170,203,85,0.2); }
+.mu-kpi.lime::before { background:#AACB55; }
+.mu-kpi.lime .icon { background:rgba(170,203,85,0.2); color:#5d7524; }
+
+.mu-kpi.olive { background:linear-gradient(145deg, rgba(133,147,86,0.08) 0%, #FFFDF8 100%); border-color:rgba(133,147,86,0.2); }
+.mu-kpi.olive::before { background:#859356; }
+.mu-kpi.olive .icon { background:rgba(133,147,86,0.2); color:#424b26; }
+
+.mu-kpi.dark { background:linear-gradient(145deg, #2A432E 0%, #223725 100%); border:none; box-shadow: 0 8px 24px rgba(42,67,46,0.15); }
+.mu-kpi.dark::before { background:#AACB55; }
+.mu-kpi.dark .l, .mu-kpi.dark .s { color:rgba(255,253,248,0.7); }
+.mu-kpi.dark .v { color:#FFFDF8; }
+.mu-kpi.dark .v .u { color:#AACB55; }
+.mu-kpi.dark .icon { background:rgba(255,253,248,0.1); color:#AACB55; }
+
+.mu-kpi.danger { background:linear-gradient(145deg, rgba(255,75,75,0.05) 0%, #FFFDF8 100%); border-color:rgba(255,75,75,0.15); }
+.mu-kpi.danger::before { background:#FF4B4B; }
+.mu-kpi.danger .icon { background:rgba(255,75,75,0.12); color:#D63232; }
+
+.mu-kpi.accent { background:linear-gradient(135deg,rgba(42,67,46,0.04) 0%,rgba(42,67,46,0.01) 100%); border-color:rgba(42,67,46,0.2); }
+.mu-kpi.accent::before { background:#2A432E; }
+
+.mu-kpi .icon { position:absolute; top:18px; right:18px; width:34px; height:34px; border-radius:10px; display:flex; align-items:center; justify-content:center; backdrop-filter:blur(4px); }
+.mu-kpi .icon svg { width:18px; height:18px; stroke-width:2; }
+.mu-kpi .l { font-size:11px; letter-spacing:0.08em; text-transform:uppercase; color:#737D74; font-weight:600; padding-right: 30px; }
+.mu-kpi .v { font-size:32px; font-weight:700; letter-spacing:-0.03em; margin-top:14px; line-height:1; white-space:nowrap; color:#2A432E; }
+.mu-kpi .v .u { font-size:16px; color:#859356; font-weight:600; }
+.mu-kpi .s { font-size:12px; color:#737D74; margin-top:10px; line-height:1.4; display:flex; align-items:center; gap:6px; }
+.mu-kpi .s::before { content:''; display:inline-block; width:4px; height:4px; border-radius:50%; background:currentColor; opacity:0.5; }
 .mu-grid2 { display:grid; grid-template-columns:minmax(0,1.25fr) minmax(0,1fr); gap:16px; }
 .mu-grid2e { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
 .mu-grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
 .mu-grid4 { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
-.mu-mini { border:1px solid color-mix(in srgb,#737D74 13%,transparent); border-radius:14px; padding:18px; box-shadow: 0 2px 8px rgba(0,0,0,0.025); background:#FFFDF8; animation: slideUp 0.4s ease-out forwards; transition: all 0.25s ease; }
-.mu-card:hover, .mu-kpi:hover, .mu-mini:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 12px 32px rgba(42,67,46,0.12); z-index: 2; border-color: rgba(170,203,85,0.4); }
+.mu-mini { border:1px solid color-mix(in srgb,#737D74 13%,transparent); border-radius:14px; padding:18px; box-shadow: 0 2px 8px rgba(0,0,0,0.025); background:#FFFDF8; animation: slideUp 0.4s ease-out forwards; transition: all 0.25s cubic-bezier(0.1, 0.8, 0.2, 1); }
+.mu-card:hover, .mu-kpi:hover, .mu-mini:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(42,67,46,0.1); z-index: 2; border-color: rgba(170,203,85,0.4); }
 
 /* ----- Tables ----- */
 .mu-table { width:100%; border-collapse:collapse; font-size:13px; text-align:right; }
@@ -244,6 +271,8 @@ k = D.kpis(fd)
 q = D.qualite_commerciale(fd)
 roi = D.roi_canal(fd)
 ch = D.churn_view(d)
+em = D.email_kpis(fd)
+ak = D.audience_kpis(fd)
 lead = fd["lead"]
 n_perdu = int((lead.statut_lead == "perdu").sum())
 n_gagne = int((lead.statut_lead == "gagne").sum())
@@ -256,24 +285,34 @@ PLOT = dict(paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)",
             xaxis=dict(showgrid=False, zeroline=False, showline=False, tickfont=dict(size=11)),
             yaxis=dict(gridcolor="rgba(115,125,116,0.12)", zeroline=False, showline=False, tickfont=dict(size=11)))
 
-kpis_html = '<div class="mu-kpigrid">'
-kpis_html += f'<div class="mu-kpi"><div class="l">MRR · revenu mensuel</div><div class="v">{nb(k["mrr"])} <span class="u">€</span></div><div class="s">Base abonnements actifs</div></div>'
-kpis_html += f'<div class="mu-kpi"><div class="l">ARPM · panier moyen</div><div class="v">{pc(k["arpm"])} <span class="u">€</span></div><div class="s">Essentiel 49 € · Premium 69 €</div></div>'
-kpis_html += f'<div class="mu-kpi"><div class="l">Adhérents actifs</div><div class="v">{nb(k["n_actifs"])}</div><div class="s">Capacité max 170 simultanés</div></div>'
-kpis_html += f'<div class="mu-kpi"><div class="l">Conversion lead → adhérent</div><div class="v">{pc(k["conv"]*100)} <span class="u">%</span></div><div class="s">{k["n_adh"]} adhésions / {k["n_leads"]} leads</div></div>'
-kpis_html += f'<div class="mu-kpi accent"><div class="l">Risque churn élevé</div><div class="v">{k["risque_eleve"]}</div><div class="s" style="color:#2A432E;font-weight:600">{round(100*k["risque_eleve"]/ch["total"])} % de la base · à cibler</div></div>'
-kpis_html += f'<div class="mu-kpi accent"><div class="l">Résiliations · 30 j</div><div class="v">{k["churn30"]}</div><div class="s" style="color:#2A432E;font-weight:600">+ {ch["inactifs"]} inactifs &gt; 30 j</div></div>'
-kpis_html += '</div>'
-
-f = D.funnel(fd)
-fv = dict(zip(f.etape, f.volume))
-fcolors = {"Lead": LIME, "Contacté": LIME, "Visite": OLIVE, "Essai réalisé": OLIVE, "Adhésion": INK}
-
 # ===================== VUE D'ENSEMBLE =====================
 if tab == "Vue d'ensemble":
+    kpis_html = '<div class="mu-kpigrid">'
+    kpis_html += f'<div class="mu-kpi lime"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div><div class="l">MRR · revenu mensuel</div><div class="v">{nb(k["mrr"])} <span class="u">€</span></div><div class="s">Base abonnements actifs</div></div>'
+    kpis_html += f'<div class="mu-kpi olive"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" /></svg></div><div class="l">ARPM · panier moyen</div><div class="v">{pc(k["arpm"])} <span class="u">€</span></div><div class="s">Essentiel 49 € · Premium 69 €</div></div>'
+    kpis_html += f'<div class="mu-kpi dark"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg></div><div class="l">Adhérents actifs</div><div class="v">{nb(k["n_actifs"])}</div><div class="s">Capacité max 170 simultanés</div></div>'
+    kpis_html += f'<div class="mu-kpi accent"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg></div><div class="l">Conversion lead → adhérent</div><div class="v">{pc(k["conv"]*100)} <span class="u">%</span></div><div class="s">{k["n_adh"]} adhésions / {k["n_leads"]} leads</div></div>'
+
+    total_depense = roi["depense"].sum()
+    total_adhesions_paid = roi["adhesions"].sum()
+    global_cac = total_depense / total_adhesions_paid if total_adhesions_paid else 0.0
+    ltv_cac_ratio = k["ltv"] / global_cac if global_cac > 0 else 0.0
+
+    kpis_html += f'<div class="mu-kpi lime"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div><div class="l">LTV · Valeur à vie</div><div class="v">{nb(k["ltv"])} <span class="u">€</span></div><div class="s">Valeur client sur sa durée de vie</div></div>'
+    kpis_html += f'<div class="mu-kpi olive"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg></div><div class="l">Ratio LTV:CAC</div><div class="v">{pc(ltv_cac_ratio)} <span class="u">x</span></div><div class="s">Retour long terme (cible &gt; 3x)</div></div>'
+    kpis_html += f'<div class="mu-kpi danger"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg></div><div class="l">Risque churn élevé</div><div class="v">{k["risque_eleve"]}</div><div class="s" style="color:#D63232;font-weight:600">{round(100*k["risque_eleve"]/ch["total"])} % de la base · à cibler</div></div>'
+    kpis_html += f'<div class="mu-kpi danger"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6" /></svg></div><div class="l">Résiliations · 30 j</div><div class="v">{k["churn30"]}</div><div class="s" style="color:#D63232;font-weight:600">+ {ch["inactifs"]} inactifs &gt; 30 j</div></div>'
+    kpis_html += '</div>'
+
+    f = D.funnel(fd)
+    fv = dict(zip(f.etape, f.volume))
+    fcolors = {"Lead": LIME, "Contacté": LIME, "Visite": OLIVE, "Essai réalisé": OLIVE, "Adhésion": INK}
+
     st.markdown(kpis_html, unsafe_allow_html=True)
     g = st.columns([1.25, 1])
     with g[0]:
+        f = D.funnel(fd)
+        fcolors = {"Lead": LIME, "Contacté": LIME, "Visite": OLIVE, "Essai réalisé": OLIVE, "Adhésion": INK}
         bars = ('<div class="mu-card"><div style="display:flex;justify-content:space-between;align-items:baseline">'
                 '<div class="mu-h2">Funnel de vente.</div>'
                 f'<span style="font-size:11px;color:{MUTE}">mensuel · lead → adhésion</span></div>'
@@ -324,6 +363,8 @@ if tab == "Vue d'ensemble":
 
 # ===================== FUNNEL & COMMERCIAL =====================
 elif tab == "Funnel & commercial":
+    f = D.funnel(fd)
+    fcolors = {"Lead": LIME, "Contacté": LIME, "Visite": OLIVE, "Essai réalisé": OLIVE, "Adhésion": INK}
     g = st.columns([1.25, 1])
     with g[0]:
         steps = list(f.itertuples(index=False))
@@ -355,8 +396,12 @@ elif tab == "Funnel & commercial":
             f'<div style="display:flex;justify-content:space-between"><span style="font-weight:600">Leads chauds ouverts</span><span style="font-weight:700">{n_chauds} · à relancer</span></div>'
             '</div></div>', unsafe_allow_html=True)
 
+    sessions = ak["sessions"]
+    conv_web = (k["n_leads"] / sessions * 100) if sessions > 0 else 0.0
+
     st.markdown(
-        '<div class="mu-card"><div class="mu-h2">Qualité commerciale.</div><div class="mu-grid4" style="margin-top:14px">'
+        '<div class="mu-card"><div class="mu-h2">Qualité commerciale.</div><div class="mu-kpigrid" style="margin-top:14px;grid-template-columns:repeat(5,minmax(0,1fr))">'
+        f'<div class="mu-mini"><div class="l">Conv. Visiteur → Lead</div><div class="v">{conv_web:.1f} <span class="u">%</span></div><div class="s">Micro-conversion web</div></div>'
         f'<div class="mu-mini"><div class="l">Speed-to-lead</div><div class="v">{q["speed_to_lead"]:.0f} <span class="u">h</span></div><div class="s" style="color:#2A432E;font-weight:500">Cible &lt; 1 h</div></div>'
         f'<div class="mu-mini"><div class="l">No-show essais</div><div class="v">{q["no_show"]:.0f} <span class="u">%</span></div><div class="s">Aucune confirmation auto</div></div>'
         f'<div class="mu-mini"><div class="l">Relance post-essai</div><div class="v">{q["relance"]:.0f} <span class="u">%</span></div><div class="s">{100-q["relance"]:.0f} % jamais rappelés</div></div>'
@@ -393,19 +438,41 @@ elif tab == "Acquisition / ROI":
 
     rows = ""
     for _, r in roi.iterrows():
-        dep = f'{nb(r.depense)} €' if r.depense else '0 € · organique'
-        cpl = f'{r.cpl:.0f} €' if r.cpl == r.cpl else '—'
-        cac = f'{r.cac:.0f} €' if r.cac == r.cac else '—'
+        dep = f'{nb(r.depense)} €' if r.depense else '0 €'
+        cpl = f'{r.cpl:.0f} €' if pd.notna(r.cpl) else '—'
+        cac = f'{r.cac:.0f} €' if pd.notna(r.cac) else '—'
+        ctr = f'{r.ctr*100:.1f} %' if pd.notna(r.ctr) else '—'
+        cpc = f'{r.cpc:.2f} €' if pd.notna(r.cpc) else '—'
+        roas = f'{(r.adhesions * k["arpm"]) / r.depense:.1f}x' if r.depense > 0 else '—'
         ccol = "#859356" if r.canal == "instagram" else INK
         rows += (f'<tr><td style="font-weight:600"><span style="display:inline-flex;align-items:center;gap:8px">'
                  f'<span style="width:9px;height:9px;border-radius:2px;background:{cbar.get(r.canal,OLIVE)}"></span>{r.canal.replace("_"," ").title()}</span></td>'
                  f'<td>{dep}</td><td>{int(r.leads)}</td><td>{int(r.adhesions)}</td><td>{cpl}</td>'
-                 f'<td style="font-weight:600;color:{ccol}">{cac}</td><td>{pc(r.conv_pct)} %</td></tr>')
+                 f'<td style="font-weight:600;color:{ccol}">{cac}</td><td>{ctr}</td><td>{cpc}</td><td style="font-weight:600;color:#2A432E">{roas}</td><td>{pc(r.conv_pct)} %</td></tr>')
+
+    valeur_lead = k["arpm"] * k["conv"]
+    
     st.markdown(
-        '<div class="mu-card"><div class="mu-h2">ROI par canal.</div>'
+        f'<div class="mu-card" style="display:flex;justify-content:space-between;align-items:center;padding:16px 24px;border-left:4px solid #AACB55">'
+        f'<div style="display:flex;align-items:center;gap:24px">'
+        f'<div><div style="font-size:11.5px;text-transform:uppercase;color:{MUTE};font-weight:600;letter-spacing:0.05em">Valeur d\'un lead (Max CPC)</div>'
+        f'<div style="font-size:24px;font-weight:700;color:#2A432E;margin-top:2px">{valeur_lead:.1f} <span style="font-size:14px;color:#859356">€</span></div></div>'
+        f'<div style="width:1px;height:36px;background:color-mix(in srgb,#737D74 20%,transparent)"></div>'
+        f'<div><div style="font-size:12px;color:{MUTE};line-height:1.4">Valeur théorique = ARPM × Taux de conversion.<br>C\'est le coût maximal que vous pouvez payer par lead pour être rentable dès le premier mois.</div></div>'
+        f'</div></div>', unsafe_allow_html=True)
+
+    st.markdown(
+        '<div class="mu-card"><div class="mu-h2">Performances par canal.</div>'
         '<table class="mu-tbl"><thead><tr><th>Canal</th><th>Dépense</th><th>Leads</th><th>Adhésions</th>'
-        f'<th>CPL</th><th>CAC</th><th>Conv.</th></tr></thead><tbody>{rows}</tbody></table></div>',
+        f'<th>CPL</th><th>CAC</th><th>CTR</th><th>CPC</th><th>ROAS</th><th>Conv.</th></tr></thead><tbody>{rows}</tbody></table></div>',
         unsafe_allow_html=True)
+        
+    st.markdown(
+        '<div class="mu-card"><div class="mu-h2">Email & Newsletter.</div><div class="mu-grid3" style="margin-top:14px">'
+        f'<div class="mu-mini"><div class="l">Taux d\'ouverture</div><div class="v">{em["ouvertures"]*100:.1f} <span class="u">%</span></div></div>'
+        f'<div class="mu-mini"><div class="l">Taux de clic</div><div class="v">{em["clics"]*100:.1f} <span class="u">%</span></div></div>'
+        f'<div class="mu-mini"><div class="l">Désabonnements</div><div class="v">{em["desabos"]}</div></div>'
+        '</div></div>', unsafe_allow_html=True)
     st.markdown(
         '<div class="mu-grid2e">'
         f'<div class="mu-card" style="border-left:3px solid #AACB55;margin:0"><div style="font-size:13px;font-weight:600;margin-bottom:6px">Réallouer le payant</div>'
@@ -429,6 +496,8 @@ elif tab == "Rétention / churn":
     with g[1]:
         st.markdown(
             '<div class="mu-card"><div class="mu-h2">Signaux de rétention.</div><div class="mu-grid2e" style="margin-top:14px">'
+            f'<div class="mu-mini"><div class="l">Taux de Churn</div><div class="v">{k["churn_rate"]*100:.1f} <span class="u">%</span></div><div class="s">Mensuel</div></div>'
+            f'<div class="mu-mini"><div class="l">Rétention</div><div class="v">{k["retention"]*100:.1f} <span class="u">%</span></div><div class="s">Cohorte active</div></div>'
             f'<div class="mu-mini"><div class="l">Inactifs &gt; 30 j</div><div class="v">{ch["inactifs"]}</div><div class="s">sans visite</div></div>'
             f'<div class="mu-mini"><div class="l">Risque élevé</div><div class="v">{int(seg.get("Élevé",0))}</div><div class="s">à cibler en priorité</div></div>'
             f'<div class="mu-mini"><div class="l">Utilisent le coaching</div><div class="v">{ch["coaching"]:.0f} <span class="u">%</span></div><div class="s">levier d\'upsell</div></div>'
@@ -537,13 +606,13 @@ elif tab == "Audience web":
         return f"{m} min {s:02d} s"
 
     html = f"""
-    <div class="mu-kpigrid">
-        <div class="mu-kpi"><div class="l">Sessions</div><div class="v">{nb(ak['sessions'])}</div><div class="s">sur la période</div></div>
-        <div class="mu-kpi"><div class="l">Utilisateurs</div><div class="v">{nb(ak['users'])}</div><div class="s">visiteurs uniques</div></div>
-        <div class="mu-kpi"><div class="l">Pages vues</div><div class="v">{nb(int(ak['views']))}</div><div class="s">{ak['pages_session']:.1f} / session</div></div>
-        <div class="mu-kpi"><div class="l">Durée moy. session</div><div class="v">{fmts(ak['duration_s'])}</div><div class="s">toutes sources</div></div>
-        <div class="mu-kpi"><div class="l">Pages / session</div><div class="v">{ak['pages_session']:.1f}</div><div class="s">profondeur</div></div>
-        <div class="mu-kpi"><div class="l">Taux de rebond</div><div class="v">{ak['bounce_rate']*100:.0f}<span class="u"> %</span></div><div class="s">sessions 1 page</div></div>
+    <div class="mu-kpigrid" style="grid-template-columns:repeat(3,minmax(0,1fr))">
+        <div class="mu-kpi lime"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg></div><div class="l">Sessions</div><div class="v">{nb(ak['sessions'])}</div><div class="s">sur la période</div></div>
+        <div class="mu-kpi olive"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg></div><div class="l">Utilisateurs</div><div class="v">{nb(ak['users'])}</div><div class="s">visiteurs uniques</div></div>
+        <div class="mu-kpi accent"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 10h16M4 14h16M4 18h16" /></svg></div><div class="l">Pages vues</div><div class="v">{nb(int(ak['views']))}</div><div class="s">{ak['pages_session']:.1f} / session</div></div>
+        <div class="mu-kpi dark"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div><div class="l">Durée moy. session</div><div class="v">{fmts(ak['duration_s'])}</div><div class="s">toutes sources</div></div>
+        <div class="mu-kpi lime"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" /></svg></div><div class="l">Pages / session</div><div class="v">{ak['pages_session']:.1f}</div><div class="s">profondeur</div></div>
+        <div class="mu-kpi danger"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" /></svg></div><div class="l">Taux de rebond</div><div class="v">{ak['bounce_rate']*100:.0f}<span class="u"> %</span></div><div class="s">sessions 1 page</div></div>
     </div>
     
     <div class="mu-grid2e">

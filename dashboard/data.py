@@ -63,14 +63,20 @@ def kpis(d):
     n_adh = int((lead.statut_lead == "gagne").sum())
     churn30 = int(abo[abo.date_resiliation.notna() & ((TODAY - abo.date_resiliation).dt.days <= 30)].shape[0])
     risque = int((d["adherents"].segment_risque == "Élevé").sum())
+    arpm = mrr / n_actifs if n_actifs else 0.0
+    churn_rate = churn30 / n_actifs if n_actifs else 0.0
+    ltv = arpm / churn_rate if churn_rate > 0 else 0.0
     return {
         "mrr": mrr,
-        "arpm": mrr / n_actifs if n_actifs else 0.0,
+        "arpm": arpm,
         "n_actifs": n_actifs,
         "n_leads": n_leads,
         "n_adh": n_adh,
         "conv": n_adh / n_leads if n_leads else 0.0,
         "churn30": churn30,
+        "churn_rate": churn_rate,
+        "retention": 1 - churn_rate,
+        "ltv": ltv,
         "risque_eleve": risque,
     }
 
@@ -109,7 +115,12 @@ def qualite_commerciale(d):
 
 def roi_canal(d):
     acq, lead = d["acquisition"], d["lead"]
-    g = acq.groupby("canal").agg(depense=("depense", "sum"), leads=("leads_generes", "sum")).reset_index()
+    g = acq.groupby("canal").agg(
+        depense=("depense", "sum"), 
+        leads=("leads_generes", "sum"),
+        impressions=("impressions", "sum"),
+        clics=("clics", "sum")
+    ).reset_index()
     adh = (lead[lead.statut_lead == "gagne"].groupby("source").size()
            .rename("adhesions").reset_index().rename(columns={"source": "canal"}))
     g = g.merge(adh, on="canal", how="left")
@@ -117,6 +128,8 @@ def roi_canal(d):
     g["cpl"] = (g.depense / g.leads).where(g.depense > 0)
     g["cac"] = (g.depense / g.adhesions).where((g.depense > 0) & (g.adhesions > 0))
     g["conv_pct"] = (g.adhesions / g.leads * 100).round(1)
+    g["ctr"] = (g.clics / g.impressions).where(g.impressions > 0)
+    g["cpc"] = (g.depense / g.clics).where(g.clics > 0)
     return g.sort_values("depense", ascending=False).reset_index(drop=True)
 
 
@@ -160,7 +173,7 @@ def filter_period(d, label):
     ids = set(fd["lead"]["lead_id"])
     if "rdv" in d:
         fd["rdv"] = d["rdv"][d["rdv"]["lead_id"].isin(ids)]
-    for key in ("acquisition", "audience", "pages"):
+    for key in ("acquisition", "audience", "pages", "newsletter"):
         if key in d and "date" in d[key].columns:
             s = pd.to_datetime(d[key]["date"], errors="coerce")
             fd[key] = d[key][in_p(s)]
@@ -205,6 +218,16 @@ def pages_top(d):
         "sortie": (x["taux_sortie"] * x["pages_vues"]).sum() / x["pages_vues"].sum() if x["pages_vues"].sum() > 0 else 0
     })).reset_index()
     return g.sort_values("vues", ascending=False)
+
+def email_kpis(d):
+    if "newsletter" not in d or d["newsletter"].empty:
+        return {"ouvertures": 0.0, "clics": 0.0, "desabos": 0}
+    nl = d["newsletter"]
+    return {
+        "ouvertures": float(nl["taux_ouverture"].mean()),
+        "clics": float(nl["taux_clic_email"].mean()),
+        "desabos": int(nl["desabonnements"].sum())
+    }
 
 if __name__ == "__main__":
     d = load_all()
